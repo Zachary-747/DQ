@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DropQuote - v4.6</title>
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <style>
+        :root {
+            --bg-color: #0b0b0b;
+            --cell-size: 30px;
+            --fat-cell-size: 55px; /* Larger for mobile thumbs */
+            --highlight: #00aaff;
+            --error: #ff4444;
+            --used-text: #999;
+            --used-bg: #333;
+            --text-color: #eee;
+        }
+
+        body {
+            background-color: var(--bg-color); color: var(--text-color);
+            font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; 
+            align-items: center; padding: 5px; margin: 0; user-select: none;
+            touch-action: manipulation;
+        }
+
+        #room-panel {
+            background: #1a1a1a; padding: 25px; border-radius: 12px; margin-top: 50px;
+            border: 2px solid var(--highlight); width: 90%; max-width: 350px; text-align: center;
+        }
+        input { background: #000; color: #fff; border: 1px solid #555; padding: 12px; border-radius: 4px; font-size: 18px; width: 85%; margin-bottom: 15px; text-align: center; }
+        .btn-join { background: var(--highlight); color: white; border: none; padding: 12px 24px; border-radius: 4px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }
+
+        #game-ui { display: none; width: 100%; flex-direction: column; align-items: center; }
+        .p2p-panel {
+            background: #1a1a1a; padding: 8px 12px; border-radius: 8px; margin-bottom: 10px;
+            border: 1px solid #333; width: 95%; max-width: 500px; display: flex; justify-content: space-between; align-items: center;
+        }
+        .status-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; background: #555; }
+        .status-online { background: #2ecc71; box-shadow: 0 0 8px #2ecc71; }
+        .status-linked { background: var(--highlight); box-shadow: 0 0 8px var(--highlight); }
+
+        /* BIGGER BANK LETTERS FOR BETTER READABILITY */
+        .letters-bank { display: grid; grid-template-columns: repeat(12, 1fr); background: #1a1a1a; border: 1px solid #333; margin-bottom: 5px; }
+        .column { display: flex; flex-direction: column; width: var(--cell-size); border-right: 1px solid #333; }
+        .column.active-col { background: rgba(0, 170, 255, 0.2); }
+        .letter-tile { 
+            height: 40px; 
+            display: flex; justify-content: center; align-items: center; 
+            font-weight: bold; font-size: 1.3em; 
+            border-bottom: 1px solid #222; 
+        }
+        
+        .used { color: var(--used-text) !important; background: var(--used-bg); }
+        .overused { color: var(--error) !important; background: rgba(255,0,0,0.15); }
+
+        .fat-finger-bar { display: flex; justify-content: center; gap: 8px; background: #222; padding: 10px; width: 100%; min-height: 75px; border-top: 2px solid var(--highlight); flex-wrap: wrap; }
+        .fat-tile { width: var(--fat-cell-size); height: var(--fat-cell-size); background: #eee; color: #000; display: flex; justify-content: center; align-items: center; font-size: 1.8em; font-weight: bold; border-radius: 8px; cursor: pointer; }
+
+        .quote-grid { display: grid; grid-template-columns: repeat(12, var(--cell-size)); gap: 2px; background: #222; padding: 4px; border: 2px solid #444; }
+        .cell { width: var(--cell-size); height: var(--cell-size); background: #fff; color: #000; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1.1em; cursor: pointer; border-radius: 2px; }
+        .cell.black { background: #000; color: #fff; cursor: default; }
+        .cell.selected { background: var(--highlight) !important; color: white; }
+
+        .controls { display: flex; gap: 15px; margin-top: 15px; width: 100%; justify-content: center; margin-bottom: 30px;}
+        .btn { padding: 15px 25px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; color: white; font-size: 1.1em; }
+        .btn-back { background: #555; }
+        .btn-hint { background: #f39c12; }
+
+        #modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); justify-content: center; align-items: center; z-index: 100; }
+        .modal-content { background: #fff; color: #000; padding: 30px; border-radius: 12px; text-align: center; width: 85%; }
+    </style>
+</head>
+<body>
+
+    <div id="room-panel">
+        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v4.6</h2>
+        <p style="font-size: 0.9em; color: #888; margin-bottom: 20px;">Remote Quote Loading Enabled</p>
+        <input type="text" id="room-id-input" placeholder="Room Name">
+        <button class="btn-join" onclick="joinRoom()">Enter Game</button>
+    </div>
+
+    <div id="game-ui">
+        <div class="p2p-panel">
+            <div><span id="dot" class="status-dot"></span> <span id="p2p-status">Connecting...</span></div>
+            <div id="room-name-display" style="color:var(--highlight); font-weight: bold;">---</div>
+        </div>
+        <div id="author-name" style="color:var(--highlight); font-weight:bold; margin-bottom:8px; font-size: 1.2em;">...</div>
+        <div id="lettersBank" class="letters-bank"></div>
+        <div id="fatFingerBar" class="fat-finger-bar"></div>
+        <div id="quoteGrid" class="quote-grid"></div>
+        <div class="controls">
+            <button class="btn btn-back" onclick="handleBackspaceSync()">BACK</button>
+            <button class="btn btn-hint" onclick="handleHintSync()">HINT</button>
+        </div>
+    </div>
+
+    <div id="modal-overlay">
+        <div class="modal-content">
+            <p id="full-quote-text" style="font-size: 1.3em; font-weight: bold; margin-bottom: 10px;"></p>
+            <h3 id="modal-author" style="color:#666; margin-bottom: 20px;"></h3>
+            <button onclick="requestNewGame()" style="background:var(--highlight); padding:15px 30px; border:none; color:#fff; border-radius:8px; font-weight:bold; font-size: 1.1em;">Next Quote</button>
+        </div>
+    </div>
+
+    <script>
+        // PASTE YOUR RAW GITHUB URL HERE
+        const QUOTE_SOURCE_URL = 'https://github.com/Zachary-747/DQ/blob/main/quotes.json';
+
+        let quotesPool = [];
+        let peer, conn, selectedIdx = null, currentQuote = "", currentAuthor = "", currentQuoteId = null;
+        let bankLetters = Array.from({ length: 12 }, () => []);
+        let isHost = false;
+
+        async function loadQuotes() {
+            try {
+                const response = await fetch(QUOTE_SOURCE_URL);
+                quotesPool = await response.json();
+            } catch (e) {
+                console.error("Cloud Load Failed", e);
+                quotesPool = [{"id":0, "author":"System", "quote":"Check your internet and Quote URL."}];
+            }
+        }
+
+        function joinRoom() {
+            const val = document.getElementById('room-id-input').value.trim().toLowerCase();
+            if(!val) return;
+            loadQuotes().then(() => {
+                document.getElementById('room-panel').style.display = 'none';
+                document.getElementById('game-ui').style.display = 'flex';
+                document.getElementById('room-name-display').innerText = val.toUpperCase();
+                initPeer(val);
+            });
+        }
+
+        function initPeer(roomName) {
+            const hostId = `dq-v46-room-${roomName}`;
+            peer = new Peer(hostId);
+            peer.on('open', () => { isHost = true; updateStatus("Waiting...", "status-online"); pickInitialQuote(); });
+            peer.on('error', (err) => { if (err.type === 'unavailable-id' || err.type === 'id-taken') { peer.destroy(); joinAsGuest(hostId); } });
+            peer.on('connection', (incoming) => { conn = incoming; setupConn(); });
+        }
+
+        function joinAsGuest(hostId) {
+            isHost = false;
+            peer = new Peer(); 
+            peer.on('open', () => { conn = peer.connect(hostId); setupConn(); });
+        }
+
+        function setupConn() {
+            conn.on('open', () => {
+                updateStatus("Linked!", "status-linked");
+                if(!isHost) send('guest-ready', {});
+            });
+            conn.on('data', (data) => {
+                if(data.type === 'guest-ready' && isHost && currentQuote) send('init-game', {quote: currentQuote, author: currentAuthor, id: currentQuoteId});
+                if(data.type === 'init-game') initGame(data.payload);
+                if(data.type === 'fill') applyFill(data.payload.letter, data.payload.idx, false);
+                if(data.type === 'back') applyBack(data.payload.idx, false);
+                if(data.type === 'hint') applyHint(data.payload.idx, data.payload.char);
+                if(data.type === 'select') applySelection(data.payload.idx);
+                if(data.type === 'new-request') { if(isHost) pickInitialQuote(true); }
+            });
+        }
+
+        function updateStatus(txt, cls) {
+            document.getElementById('p2p-status').innerText = txt;
+            document.getElementById('dot').className = "status-dot " + cls;
+        }
+
+        function send(type, payload) { if(conn && conn.open) conn.send({type, payload}); }
+
+        function pickInitialQuote(broadcast = false) {
+            const history = JSON.parse(localStorage.getItem('dq_history_v3') || '[]');
+            const usedIds = history.map(h => h.id);
+            const available = quotesPool.filter(q => !usedIds.includes(q.id));
+            const selected = available.length > 0 ? available[Math.floor(Math.random()*available.length)] : quotesPool[Math.floor(Math.random()*quotesPool.length)];
+            const gameData = {quote: selected.quote, author: selected.author, id: selected.id};
+            initGame(gameData);
+            if(broadcast) send('init-game', gameData);
+        }
+
+        function initGame(data) {
+            currentQuote = data.quote.toUpperCase();
+            currentAuthor = data.author;
+            currentQuoteId = data.id;
+            bankLetters = Array.from({ length: 12 }, () => []);
+            document.getElementById('quoteGrid').innerHTML = "";
+            document.getElementById('author-name').innerText = currentAuthor;
+            document.getElementById('modal-overlay').style.display = 'none';
+
+            for (let i = 0; i < 84; i++) {
+                const cell = document.createElement('div');
+                cell.id = `cell-${i}`;
+                const char = currentQuote[i] || ' ';
+                if (i >= currentQuote.length || char === ' ') {
+                    cell.className = 'cell black';
+                } else if (/[^A-Z]/.test(char)) {
+                    cell.className = 'cell black';
+                    cell.innerText = char;
+                    cell.style.display = 'flex'; 
+                    cell.style.alignItems = (char === "'" || char === "’") ? 'flex-start' : 'flex-end';
+                } else {
+                    cell.className = 'cell';
+                    cell.onclick = () => { selectCell(i); send('select', {idx: i}); };
+                    bankLetters[i % 12].push(char);
+                }
+                document.getElementById('quoteGrid').appendChild(cell);
+            }
+            bankLetters.forEach(col => col.sort());
+            renderBank();
+            selectCell(findFirstEmpty());
+        }
+
+        function getColState(colIdx) {
+            let cells = Array.from(document.querySelectorAll('.cell'));
+            let used = cells.filter(c => (parseInt(c.id.split('-')[1]) % 12 === colIdx) && !c.classList.contains('black') && c.innerText !== "").map(c => c.innerText);
+            let counts = {}; used.forEach(l => counts[l] = (counts[l] || 0) + 1);
+            let available = {}; bankLetters[colIdx].forEach(l => available[l] = (available[l] || 0) + 1);
+            return { counts, available };
+        }
+
+        function renderBank() {
+            const bank = document.getElementById('lettersBank');
+            bank.innerHTML = "";
+            bankLetters.forEach((col, colIdx) => {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'column' + (selectedIdx % 12 === colIdx ? ' active-col' : '');
+                let state = getColState(colIdx);
+                let tempCounts = {...state.counts};
+                col.forEach(l => {
+                    const tile = document.createElement('div');
+                    tile.className = 'letter-tile';
+                    if (tempCounts[l] > 0) {
+                        tile.className += (state.counts[l] > state.available[l]) ? ' overused' : ' used';
+                        tempCounts[l]--;
+                    }
+                    tile.innerText = l;
+                    colDiv.appendChild(tile);
+                });
+                bank.appendChild(colDiv);
+            });
+            updateFatFinger();
+        }
+
+        function updateFatFinger() {
+            const bar = document.getElementById('fatFingerBar');
+            bar.innerHTML = "";
+            if (selectedIdx === null) return;
+            const colIdx = selectedIdx % 12;
+            let state = getColState(colIdx);
+            let tempCounts = {...state.counts};
+            bankLetters[colIdx].forEach(l => {
+                const b = document.createElement('div');
+                b.className = 'fat-tile'; 
+                if (tempCounts[l] > 0) {
+                    b.className += (state.counts[l] > state.available[l]) ? ' overused' : ' used';
+                    tempCounts[l]--;
+                }
+                b.innerText = l;
+                b.onclick = () => { applyFill(l, selectedIdx, true); };
+                bar.appendChild(b);
+            });
+        }
+
+        function selectCell(i) { applySelection(i); }
+        function applySelection(i) {
+            const cell = document.getElementById(`cell-${i}`);
+            if (!cell || cell.classList.contains('black')) return;
+            document.querySelectorAll('.cell').forEach(c => c.classList.remove('selected'));
+            selectedIdx = i;
+            cell.classList.add('selected');
+            renderBank();
+        }
+
+        function applyFill(l, i, notify) {
+            const cell = document.getElementById(`cell-${i}`);
+            if(!cell) return;
+            cell.innerText = l;
+            if(notify) { send('fill', {letter: l, idx: i}); moveToNext(); }
+            renderBank(); checkWin();
+        }
+
+        function handleBackspaceSync() { applyBack(selectedIdx, true); }
+        function applyBack(i, notify) {
+            const cell = document.getElementById(`cell-${i}`);
+            if(!cell) return;
+            cell.innerText = "";
+            if(notify) { send('back', {idx: i}); moveToPrev(); }
+            renderBank();
+        }
+
+        function handleHintSync() {
+            const empties = Array.from(document.querySelectorAll('.cell')).filter(c => !c.classList.contains('black') && c.innerText === "");
+            if(!empties.length) return;
+            const target = empties[Math.floor(Math.random() * empties.length)];
+            const idx = parseInt(target.id.split('-')[1]);
+            const char = currentQuote[idx];
+            applyHint(idx, char);
+            send('hint', {idx, char});
+        }
+        function applyHint(idx, char) { const c = document.getElementById(`cell-${idx}`); if(c) c.innerText = char; renderBank(); checkWin(); }
+
+        function moveToNext() {
+            let n = selectedIdx + 1;
+            while(n < 84 && (!document.getElementById(`cell-${n}`) || document.getElementById(`cell-${n}`).classList.contains('black'))) n++;
+            if (n < 84) { applySelection(n); send('select', {idx: n}); }
+        }
+
+        function moveToPrev() {
+            let n = selectedIdx - 1;
+            while(n >= 0 && (!document.getElementById(`cell-${n}`) || document.getElementById(`cell-${n}`).classList.contains('black'))) n--;
+            if (n >= 0) { applySelection(n); send('select', {idx: n}); }
+        }
+
+        function findFirstEmpty() {
+            for(let i=0; i<84; i++) {
+                const c = document.getElementById(`cell-${i}`);
+                if(c && !c.classList.contains('black')) return i;
+            }
+            return 0;
+        }
+
+        function checkWin() {
+            let s = "";
+            for(let i=0; i<currentQuote.length; i++) {
+                const c = document.getElementById(`cell-${i}`);
+                s += c.classList.contains('black') ? currentQuote[i] : (c.innerText || "?");
+            }
+            if (s === currentQuote) {
+                document.getElementById('full-quote-text').innerText = `"${currentQuote}"`;
+                document.getElementById('modal-author').innerText = `- ${currentAuthor}`;
+                document.getElementById('modal-overlay').style.display = 'flex';
+                saveToHistory();
+            }
+        }
+
+        function saveToHistory() {
+            let history = JSON.parse(localStorage.getItem('dq_history_v3') || '[]');
+            if(!history.find(h => h.id === currentQuoteId)) {
+                history.push({id: currentQuoteId, date: new Date().toISOString()});
+                if(history.length > 90) history.shift();
+                localStorage.setItem('dq_history_v3', JSON.stringify(history));
+            }
+        }
+
+        function requestNewGame() {
+            if(isHost) pickInitialQuote(true);
+            else send('new-request', {});
+        }
+    </script>
+</body>
+</html>
