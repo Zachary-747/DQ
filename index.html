@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DropQuote - v4.7</title>
+    <title>DropQuote - v4.8</title>
     <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
     <style>
         :root {
             --bg-color: #0b0b0b;
             --cell-size: 30px;
-            --fat-cell-size: 55px;
+            --fat-cell-size: 50px;
             --highlight: #00aaff;
             --error: #ff4444;
             --used-text: #999;
@@ -29,7 +29,6 @@
             border: 2px solid var(--highlight); width: 90%; max-width: 350px; text-align: center;
         }
         input { background: #000; color: #fff; border: 1px solid #555; padding: 12px; border-radius: 4px; font-size: 18px; width: 85%; margin-bottom: 15px; text-align: center; outline: none; }
-        input:focus { border-color: var(--highlight); }
         .btn-join { background: var(--highlight); color: white; border: none; padding: 12px 24px; border-radius: 4px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }
 
         #game-ui { display: none; width: 100%; flex-direction: column; align-items: center; }
@@ -38,37 +37,29 @@
             border: 1px solid #333; width: 95%; max-width: 500px; display: flex; justify-content: space-between; align-items: center;
         }
         .status-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; background: #555; }
-        .status-online { background: #2ecc71; box-shadow: 0 0 8px #2ecc71; }
         .status-linked { background: var(--highlight); box-shadow: 0 0 8px var(--highlight); }
-
-        .header { text-align: center; margin: 5px 0; }
-        .author-label { font-size: 1.2em; font-weight: bold; color: var(--highlight); }
 
         .letters-bank { display: grid; grid-template-columns: repeat(12, 1fr); background: #1a1a1a; border: 1px solid #333; margin-bottom: 5px; }
         .column { display: flex; flex-direction: column; width: var(--cell-size); border-right: 1px solid #333; }
         .column.active-col { background: rgba(0, 170, 255, 0.2); }
-        .letter-tile { 
-            height: 40px; 
-            display: flex; justify-content: center; align-items: center; 
-            font-weight: bold; font-size: 1.3em; 
-            border-bottom: 1px solid #222; 
-        }
+        .letter-tile { height: 40px; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1.3em; border-bottom: 1px solid #222; }
         
         .used { color: var(--used-text) !important; background: var(--used-bg); }
         .overused { color: var(--error) !important; background: rgba(255,0,0,0.15); border: 1px inset rgba(255,0,0,0.3); }
 
-        .fat-finger-bar { display: flex; justify-content: center; gap: 8px; background: #222; padding: 10px; width: 100%; min-height: 75px; border-top: 2px solid var(--highlight); flex-wrap: wrap; }
-        .fat-tile { width: var(--fat-cell-size); height: var(--fat-cell-size); background: #eee; color: #000; display: flex; justify-content: center; align-items: center; font-size: 1.8em; font-weight: bold; border-radius: 8px; cursor: pointer; }
+        .fat-finger-bar { display: flex; justify-content: center; gap: 6px; background: #222; padding: 8px; width: 100%; min-height: 65px; border-top: 2px solid var(--highlight); flex-wrap: wrap; }
+        .fat-tile { width: var(--fat-cell-size); height: var(--fat-cell-size); background: #eee; color: #000; display: flex; justify-content: center; align-items: center; font-size: 1.6em; font-weight: bold; border-radius: 6px; cursor: pointer; }
 
         .quote-grid { display: grid; grid-template-columns: repeat(12, var(--cell-size)); gap: 2px; background: #222; padding: 4px; border: 2px solid #444; }
         .cell { width: var(--cell-size); height: var(--cell-size); background: #fff; color: #000; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1.1em; cursor: pointer; border-radius: 2px; }
         .cell.black { background: #000; color: #fff; cursor: default; }
         .cell.selected { background: var(--highlight) !important; color: white; }
 
-        .controls { display: flex; gap: 15px; margin-top: 15px; width: 100%; justify-content: center; margin-bottom: 30px;}
-        .btn { padding: 15px 25px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; color: white; font-size: 1.1em; }
+        .controls { display: flex; gap: 8px; margin-top: 15px; width: 100%; justify-content: center; margin-bottom: 20px;}
+        .btn { padding: 12px 15px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; color: white; font-size: 0.9em; }
         .btn-back { background: #555; }
         .btn-hint { background: #f39c12; }
+        .btn-skip { background: #c0392b; }
 
         #modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); justify-content: center; align-items: center; z-index: 100; }
         .modal-content { background: #fff; color: #000; padding: 30px; border-radius: 12px; text-align: center; width: 85%; }
@@ -77,7 +68,7 @@
 <body>
 
     <div id="room-panel">
-        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v4.7</h2>
+        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v4.8</h2>
         <input type="text" id="room-id-input" placeholder="Room Name">
         <button class="btn-join" onclick="joinRoom()">Enter Game</button>
     </div>
@@ -94,6 +85,7 @@
         <div class="controls">
             <button class="btn btn-back" onclick="handleBackspaceSync()">BACK</button>
             <button class="btn btn-hint" onclick="handleHintSync()">HINT</button>
+            <button class="btn btn-skip" onclick="handleSkipSync()">SKIP</button>
         </div>
     </div>
 
@@ -106,7 +98,6 @@
     </div>
 
     <script>
-        // PASTE YOUR RAW GITHUB URL BETWEEN THE SINGLE QUOTES BELOW
         const QUOTE_SOURCE_URL = 'https://raw.githubusercontent.com/Zachary-747/DQ/refs/heads/main/quotes.json';
 
         let quotesPool = [];
@@ -120,7 +111,7 @@
                 quotesPool = await response.json();
             } catch (e) {
                 console.error("Cloud Load Failed", e);
-                quotesPool = [{"id":0, "author":"System", "quote":"Error: Could not fetch quotes. check your URL."}];
+                quotesPool = [{"id":0, "author":"System", "quote":"Error: Check your Internet/GitHub."}];
             }
         }
 
@@ -136,7 +127,7 @@
         }
 
         function initPeer(roomName) {
-            const hostId = `dq-v47-room-${roomName}`;
+            const hostId = `dq-v48-room-${roomName}`;
             peer = new Peer(hostId);
             peer.on('open', () => { isHost = true; updateStatus("Waiting...", "status-online"); pickInitialQuote(); });
             peer.on('error', (err) => { if (err.type === 'unavailable-id' || err.type === 'id-taken') { peer.destroy(); joinAsGuest(hostId); } });
@@ -160,6 +151,7 @@
                 if(data.type === 'fill') applyFill(data.payload.letter, data.payload.idx, false);
                 if(data.type === 'back') applyBack(data.payload.idx, false);
                 if(data.type === 'hint') applyHint(data.payload.idx, data.payload.char);
+                if(data.type === 'skip') applySkip(false);
                 if(data.type === 'select') applySelection(data.payload.idx);
                 if(data.type === 'new-request') { if(isHost) pickInitialQuote(true); }
             });
@@ -300,6 +292,15 @@
             const char = currentQuote[idx];
             applyHint(idx, char);
             send('hint', {idx, char});
+        }
+        function handleSkipSync() { applySkip(true); }
+        function applySkip(notify) {
+            Array.from(document.querySelectorAll('.cell')).forEach(c => {
+                const idx = parseInt(c.id.split('-')[1]);
+                if(!c.classList.contains('black')) c.innerText = currentQuote[idx];
+            });
+            if(notify) send('skip', {});
+            checkWin();
         }
         function applyHint(idx, char) { const c = document.getElementById(`cell-${idx}`); if(c) c.innerText = char; renderBank(); checkWin(); }
 
