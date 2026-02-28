@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DropQuote - v5.5</title>
+    <title>DropQuote - v5.6</title>
     <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
     <style>
         :root {
@@ -58,8 +58,8 @@
         .cell.selected { background: var(--highlight) !important; color: white; }
         .cell.is-hint { color: var(--hint-color) !important; font-weight: 900; pointer-events: none; }
 
-        .version-row { width: 100%; text-align: center; padding: 10px 0 5px 0; color: #444; font-size: 11px; font-weight: bold; letter-spacing: 1px; }
-        .controls { display: flex; gap: 10px; width: 100%; justify-content: center; margin-bottom: 25px; }
+        .version-row { width: 100%; text-align: center; padding: 15px 0 10px 0; color: #888; font-size: 14px; font-weight: 800; letter-spacing: 2px; border-top: 1px solid #222; margin-top: 10px; }
+        .controls { display: flex; gap: 10px; width: 100%; justify-content: center; margin-bottom: 30px; }
         .btn { padding: 12px 20px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; color: white; font-size: 0.9em; min-width: 80px; }
         .btn-skip { background: #c0392b; }
         .btn-hint { background: #f39c12; }
@@ -72,7 +72,7 @@
 <body>
 
     <div id="room-panel">
-        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v5.5</h2>
+        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v5.6</h2>
         <input type="text" id="room-id-input" placeholder="Room Name" autocomplete="off">
         <button id="join-btn" class="btn-join" onclick="joinRoom()">Enter Game</button>
     </div>
@@ -87,7 +87,7 @@
         <div id="fatFingerBar" class="fat-finger-bar"></div>
         <div id="quoteGrid" class="quote-grid"></div>
         
-        <div class="version-row">v5.5</div>
+        <div class="version-row">VERSION 5.6</div>
         
         <div class="controls">
             <button class="btn btn-skip" onclick="handleSkipSync()">SKIP</button>
@@ -106,11 +106,26 @@
 
     <script>
         const QUOTE_SOURCE_URL = 'https://raw.githubusercontent.com/Zachary-747/DQ/refs/heads/main/quotes.json?v=' + Date.now();
-
+        let lastRoomName = "";
         let quotesPool = [];
         let peer, conn, selectedIdx = null, currentQuote = "", currentAuthor = "", currentQuoteId = null;
         let bankLetters = Array.from({ length: 12 }, () => []);
         let isHost = false;
+
+        // Sleep/Wake Detection
+        let lastTime = Date.now();
+        setInterval(() => {
+            let currentTime = Date.now();
+            if (currentTime > (lastTime + 5000)) { 
+                console.log("Wake detected. Re-establishing link...");
+                if (peer && peer.disconnected) {
+                    peer.reconnect();
+                } else if (!conn || !conn.open) {
+                    reconnectLogic();
+                }
+            }
+            lastTime = currentTime;
+        }, 2000);
 
         async function loadQuotes() {
             try {
@@ -126,6 +141,7 @@
         function joinRoom() {
             const val = document.getElementById('room-id-input').value.trim().toLowerCase();
             if(!val) return;
+            lastRoomName = val;
             document.getElementById('join-btn').innerText = "Loading...";
             loadQuotes().then(() => {
                 document.getElementById('room-panel').style.display = 'none';
@@ -136,17 +152,29 @@
         }
 
         function initPeer(roomName) {
-            const hostId = `dq-v55-room-${roomName}`;
+            const hostId = `dq-v56-room-${roomName}`;
             peer = new Peer(hostId);
-            peer.on('open', () => { isHost = true; updateStatus("Waiting...", "status-online"); pickInitialQuote(); });
+            peer.on('open', () => { isHost = true; updateStatus("Waiting...", "status-online"); if(!currentQuote) pickInitialQuote(); });
             peer.on('error', (err) => { if (err.type === 'unavailable-id' || err.type === 'id-taken') { peer.destroy(); joinAsGuest(hostId); } });
             peer.on('connection', (incoming) => { conn = incoming; setupConn(); });
+            peer.on('disconnected', () => { peer.reconnect(); });
         }
 
         function joinAsGuest(hostId) {
             isHost = false;
             peer = new Peer(); 
-            peer.on('open', () => { conn = peer.connect(hostId); setupConn(); });
+            peer.on('open', () => { 
+                conn = peer.connect(hostId); 
+                setupConn(); 
+            });
+        }
+
+        function reconnectLogic() {
+            if (lastRoomName) {
+                updateStatus("Syncing...", "status-online");
+                if (isHost) initPeer(lastRoomName);
+                else joinAsGuest(`dq-v56-room-${lastRoomName}`);
+            }
         }
 
         function setupConn() {
@@ -163,6 +191,10 @@
                 if(data.type === 'skip') applySkip(false);
                 if(data.type === 'select') applySelection(data.payload.idx);
                 if(data.type === 'new-request') { if(isHost) pickInitialQuote(true); }
+            });
+            conn.on('close', () => {
+                updateStatus("Lost Link", "status-online");
+                setTimeout(reconnectLogic, 1000);
             });
         }
 
@@ -269,24 +301,18 @@
 
         function handleInputFromCol(letter, colIdx) {
             let targetIdx = null;
-
-            // Rule: If cursor is in the WRONG column, prioritize the same ROW in the target column
             if (selectedIdx === null || (selectedIdx % 12 !== colIdx)) {
                 let currentRow = Math.floor(selectedIdx / 12);
                 let sameRowInTargetCol = currentRow * 12 + colIdx;
-                
                 const preferredCell = document.getElementById(`cell-${sameRowInTargetCol}`);
                 if (preferredCell && !preferredCell.classList.contains('black') && !preferredCell.classList.contains('is-hint') && preferredCell.innerText === "") {
                     targetIdx = sameRowInTargetCol;
                 } else {
-                    // Fallback to top-down search in that column
                     targetIdx = findFirstEmptyInCol(colIdx);
                 }
             } else {
-                // If already in correct column, just fill the selected spot
                 targetIdx = selectedIdx;
             }
-
             if (targetIdx !== null) {
                 applySelection(targetIdx);
                 send('select', {idx: targetIdx});
