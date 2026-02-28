@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DropQuote - v5.3</title>
+    <title>DropQuote - v5.4</title>
     <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
     <style>
         :root {
@@ -20,16 +20,17 @@
 
         body {
             background-color: var(--bg-color); color: var(--text-color);
-            font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            display: flex; flex-direction: column; 
             align-items: center; padding: 2px; margin: 0; user-select: none;
-            touch-action: manipulation;
+            -webkit-user-select: none; touch-action: manipulation;
         }
 
         #room-panel {
             background: #1a1a1a; padding: 25px; border-radius: 12px; margin-top: 50px;
             border: 2px solid var(--highlight); width: 90%; max-width: 350px; text-align: center;
         }
-        input { background: #000; color: #fff; border: 1px solid #555; padding: 12px; border-radius: 4px; font-size: 18px; width: 85%; margin-bottom: 15px; text-align: center; outline: none; }
+        input { background: #000; color: #fff; border: 1px solid #555; padding: 12px; border-radius: 4px; font-size: 18px; width: 85%; margin-bottom: 15px; text-align: center; outline: none; -webkit-appearance: none; }
         .btn-join { background: var(--highlight); color: white; border: none; padding: 12px 24px; border-radius: 4px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }
 
         #game-ui { display: none; width: 100%; flex-direction: column; align-items: center; }
@@ -71,9 +72,9 @@
 <body>
 
     <div id="room-panel">
-        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v5.3</h2>
-        <input type="text" id="room-id-input" placeholder="Room Name">
-        <button class="btn-join" onclick="joinRoom()">Enter Game</button>
+        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v5.4</h2>
+        <input type="text" id="room-id-input" placeholder="Room Name" autocomplete="off">
+        <button id="join-btn" class="btn-join" onclick="joinRoom()">Enter Game</button>
     </div>
 
     <div id="game-ui">
@@ -86,7 +87,7 @@
         <div id="fatFingerBar" class="fat-finger-bar"></div>
         <div id="quoteGrid" class="quote-grid"></div>
         <div class="controls">
-            <div class="version-label">v5.3</div>
+            <div class="version-label">v5.4</div>
             <button class="btn btn-skip" onclick="handleSkipSync()">SKIP</button>
             <button class="btn btn-hint" onclick="handleHintSync()">HINT</button>
             <button class="btn btn-back" onclick="handleBackspaceSync()">BACK</button>
@@ -112,15 +113,24 @@
         async function loadQuotes() {
             try {
                 const response = await fetch(QUOTE_SOURCE_URL);
+                if (!response.ok) throw new Error('Network error');
                 quotesPool = await response.json();
+                return true;
             } catch (e) {
-                quotesPool = [{"id":0, "author":"System", "quote":"Error loading quotes."}];
+                console.error("Quote load failed", e);
+                quotesPool = [{"id":0, "author":"System", "quote":"Please refresh and try again."}];
+                return false;
             }
         }
 
         function joinRoom() {
             const val = document.getElementById('room-id-input').value.trim().toLowerCase();
             if(!val) return;
+            
+            const btn = document.getElementById('join-btn');
+            btn.innerText = "Loading...";
+            btn.disabled = true;
+
             loadQuotes().then(() => {
                 document.getElementById('room-panel').style.display = 'none';
                 document.getElementById('game-ui').style.display = 'flex';
@@ -130,20 +140,41 @@
         }
 
         function initPeer(roomName) {
-            const hostId = `dq-v53-room-${roomName}`;
+            const hostId = `dq-v54-room-${roomName}`;
             peer = new Peer(hostId);
-            peer.on('open', () => { isHost = true; updateStatus("Waiting...", "status-online"); pickInitialQuote(); });
-            peer.on('error', (err) => { if (err.type === 'unavailable-id' || err.type === 'id-taken') { peer.destroy(); joinAsGuest(hostId); } });
-            peer.on('connection', (incoming) => { conn = incoming; setupConn(); });
+            
+            peer.on('open', () => { 
+                isHost = true; 
+                updateStatus("Waiting...", "status-online"); 
+                pickInitialQuote(); 
+            });
+
+            peer.on('error', (err) => { 
+                if (err.type === 'unavailable-id' || err.type === 'id-taken') { 
+                    peer.destroy(); 
+                    joinAsGuest(hostId); 
+                } else {
+                    console.error("PeerJS error:", err);
+                }
+            });
+
+            peer.on('connection', (incoming) => { 
+                conn = incoming; 
+                setupConn(); 
+            });
         }
 
         function joinAsGuest(hostId) {
             isHost = false;
             peer = new Peer(); 
-            peer.on('open', () => { conn = peer.connect(hostId); setupConn(); });
+            peer.on('open', () => { 
+                conn = peer.connect(hostId); 
+                setupConn(); 
+            });
         }
 
         function setupConn() {
+            if(!conn) return;
             conn.on('open', () => {
                 updateStatus("Linked!", "status-linked");
                 if(!isHost) send('guest-ready', {});
@@ -202,14 +233,18 @@
                     cell.style.alignItems = (char === "'" || char === "’") ? 'flex-start' : 'flex-end';
                 } else {
                     cell.className = 'cell';
-                    cell.onclick = () => { selectCell(i); send('select', {idx: i}); };
+                    cell.onclick = (e) => { e.preventDefault(); selectCell(i); send('select', {idx: i}); };
                     bankLetters[i % 12].push(char);
                 }
                 grid.appendChild(cell);
             }
             bankLetters.forEach(col => col.sort());
-            const first = findFirstEmpty();
-            applySelection(first);
+            
+            // Wait a tiny bit for iOS DOM to catch up
+            setTimeout(() => {
+                const first = findFirstEmpty();
+                applySelection(first);
+            }, 50);
         }
 
         function getColState(colIdx) {
@@ -237,7 +272,7 @@
                         tempCounts[l]--;
                     }
                     tile.innerText = l;
-                    tile.onclick = () => handleInputFromCol(l, colIdx);
+                    tile.onclick = (e) => { e.preventDefault(); handleInputFromCol(l, colIdx); };
                     colDiv.appendChild(tile);
                 });
                 bank.appendChild(colDiv);
@@ -252,4 +287,151 @@
             if (selectedIdx === null) return;
             const colIdx = selectedIdx % 12;
             let state = getColState(colIdx);
-            let tempCounts = {...state.
+            let tempCounts = {...state.counts};
+            bankLetters[colIdx].forEach(l => {
+                const b = document.createElement('div');
+                b.className = 'fat-tile'; 
+                if (tempCounts[l] > 0) {
+                    b.className += (state.counts[l] > state.available[l]) ? ' overused' : ' used';
+                    tempCounts[l]--;
+                }
+                b.innerText = l;
+                b.onclick = (e) => { e.preventDefault(); handleInputFromCol(l, colIdx); };
+                bar.appendChild(b);
+            });
+        }
+
+        function handleInputFromCol(letter, colIdx) {
+            if (selectedIdx === null || (selectedIdx % 12 !== colIdx)) {
+                const target = findFirstEmptyInCol(colIdx);
+                if (target !== null) {
+                    applySelection(target);
+                    send('select', {idx: target});
+                    applyFill(letter, target, true);
+                }
+            } else {
+                applyFill(letter, selectedIdx, true);
+            }
+        }
+
+        function findFirstEmptyInCol(colIdx) {
+            for (let r = 0; r < 7; r++) {
+                let idx = r * 12 + colIdx;
+                const cell = document.getElementById(`cell-${idx}`);
+                if (cell && !cell.classList.contains('black') && !cell.classList.contains('is-hint') && cell.innerText === "") {
+                    return idx;
+                }
+            }
+            return null;
+        }
+
+        function selectCell(i) { applySelection(i); }
+        function applySelection(i) {
+            const cell = document.getElementById(`cell-${i}`);
+            if (!cell || cell.classList.contains('black') || cell.classList.contains('is-hint')) return;
+            document.querySelectorAll('.cell').forEach(c => c.classList.remove('selected'));
+            selectedIdx = i;
+            cell.classList.add('selected');
+            renderBank();
+        }
+
+        function applyFill(l, i, notify) {
+            if(i === null) return;
+            const cell = document.getElementById(`cell-${i}`);
+            if(!cell || cell.classList.contains('is-hint')) return;
+            cell.innerText = l;
+            if(notify) { send('fill', {letter: l, idx: i}); moveToNext(); }
+            renderBank(); checkWin();
+        }
+
+        function handleBackspaceSync() { if(selectedIdx !== null) applyBack(selectedIdx, true); }
+        function applyBack(i, notify) {
+            const cell = document.getElementById(`cell-${i}`);
+            if(!cell || cell.classList.contains('is-hint')) return;
+            cell.innerText = "";
+            if(notify) { send('back', {idx: i}); moveToPrev(); }
+            renderBank();
+        }
+
+        function handleHintSync() {
+            const empties = Array.from(document.querySelectorAll('.cell')).filter(c => !c.classList.contains('black') && c.innerText === "");
+            if(!empties.length) return;
+            const target = empties[Math.floor(Math.random() * empties.length)];
+            const idx = parseInt(target.id.split('-')[1]);
+            const char = currentQuote[idx];
+            applyHint(idx, char);
+            send('hint', {idx, char});
+        }
+        function applyHint(idx, char) { 
+            const c = document.getElementById(`cell-${idx}`); 
+            if(c) {
+                c.innerText = char;
+                c.classList.add('is-hint');
+                if(selectedIdx === idx) moveToNext();
+            }
+            renderBank(); checkWin(); 
+        }
+
+        function handleSkipSync() { applySkip(true); }
+        function applySkip(notify) {
+            Array.from(document.querySelectorAll('.cell')).forEach(c => {
+                const idx = parseInt(c.id.split('-')[1]);
+                if(!c.classList.contains('black')) {
+                    c.innerText = currentQuote[idx];
+                    c.classList.add('is-hint');
+                }
+            });
+            if(notify) send('skip', {});
+            checkWin();
+        }
+
+        function moveToNext() {
+            let n = selectedIdx + 1;
+            while(n < 84 && (!document.getElementById(`cell-${n}`) || document.getElementById(`cell-${n}`).classList.contains('black') || document.getElementById(`cell-${n}`).classList.contains('is-hint'))) n++;
+            if (n < 84) { applySelection(n); send('select', {idx: n}); }
+        }
+
+        function moveToPrev() {
+            let n = selectedIdx - 1;
+            while(n >= 0 && (!document.getElementById(`cell-${n}`) || document.getElementById(`cell-${n}`).classList.contains('black') || document.getElementById(`cell-${n}`).classList.contains('is-hint'))) n--;
+            if (n >= 0) { applySelection(n); send('select', {idx: n}); }
+        }
+
+        function findFirstEmpty() {
+            for(let i=0; i<84; i++) {
+                const c = document.getElementById(`cell-${i}`);
+                if(c && !c.classList.contains('black') && !c.classList.contains('is-hint')) return i;
+            }
+            return 0;
+        }
+
+        function checkWin() {
+            let s = "";
+            for(let i=0; i<currentQuote.length; i++) {
+                const c = document.getElementById(`cell-${i}`);
+                if(!c) continue;
+                s += c.classList.contains('black') ? currentQuote[i] : (c.innerText || "?");
+            }
+            if (s === currentQuote && currentQuote !== "") {
+                document.getElementById('full-quote-text').innerText = `"${currentQuote}"`;
+                document.getElementById('modal-author').innerText = `- ${currentAuthor}`;
+                document.getElementById('modal-overlay').style.display = 'flex';
+                saveToHistory();
+            }
+        }
+
+        function saveToHistory() {
+            let history = JSON.parse(localStorage.getItem('dq_history_v3') || '[]');
+            if(!history.find(h => h.id === currentQuoteId)) {
+                history.push({id: currentQuoteId, date: new Date().toISOString()});
+                localStorage.setItem('dq_history_v3', JSON.stringify(history));
+            }
+        }
+
+        function requestNewGame() {
+            if(isHost) pickInitialQuote(true);
+            else send('new-request', {});
+        }
+    </script>
+</body>
+</html>
