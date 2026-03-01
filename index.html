@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DropQuote - v5.6</title>
+    <title>DropQuote - v5.7</title>
     <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
     <style>
         :root {
@@ -72,7 +72,7 @@
 <body>
 
     <div id="room-panel">
-        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v5.6</h2>
+        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v5.7</h2>
         <input type="text" id="room-id-input" placeholder="Room Name" autocomplete="off">
         <button id="join-btn" class="btn-join" onclick="joinRoom()">Enter Game</button>
     </div>
@@ -87,7 +87,7 @@
         <div id="fatFingerBar" class="fat-finger-bar"></div>
         <div id="quoteGrid" class="quote-grid"></div>
         
-        <div class="version-row">VERSION 5.6</div>
+        <div class="version-row">VERSION 5.7</div>
         
         <div class="controls">
             <button class="btn btn-skip" onclick="handleSkipSync()">SKIP</button>
@@ -111,20 +111,22 @@
         let peer, conn, selectedIdx = null, currentQuote = "", currentAuthor = "", currentQuoteId = null;
         let bankLetters = Array.from({ length: 12 }, () => []);
         let isHost = false;
-
-        // Sleep/Wake Detection
         let lastTime = Date.now();
+
+        // Sleep/Wake & Connection Watchdog
         setInterval(() => {
             let currentTime = Date.now();
             if (currentTime > (lastTime + 5000)) { 
-                console.log("Wake detected. Re-establishing link...");
-                if (peer && peer.disconnected) {
-                    peer.reconnect();
-                } else if (!conn || !conn.open) {
-                    reconnectLogic();
-                }
+                console.log("Wake detected. Reconnecting...");
+                reconnectLogic();
             }
             lastTime = currentTime;
+            
+            // Watchdog: If joined but no quote after 4s, poke host
+            if (lastRoomName && !currentQuote && !isHost) {
+                console.log("Stuck. Retrying connection...");
+                reconnectLogic();
+            }
         }, 2000);
 
         async function loadQuotes() {
@@ -133,7 +135,6 @@
                 quotesPool = await response.json();
                 return true;
             } catch (e) {
-                quotesPool = [{"id":0, "author":"System", "quote":"Error loading quotes."}];
                 return false;
             }
         }
@@ -152,29 +153,40 @@
         }
 
         function initPeer(roomName) {
-            const hostId = `dq-v56-room-${roomName}`;
+            const hostId = `dq-v57-room-${roomName}`;
+            if (peer) peer.destroy();
+            
             peer = new Peer(hostId);
-            peer.on('open', () => { isHost = true; updateStatus("Waiting...", "status-online"); if(!currentQuote) pickInitialQuote(); });
-            peer.on('error', (err) => { if (err.type === 'unavailable-id' || err.type === 'id-taken') { peer.destroy(); joinAsGuest(hostId); } });
-            peer.on('connection', (incoming) => { conn = incoming; setupConn(); });
-            peer.on('disconnected', () => { peer.reconnect(); });
+            peer.on('open', () => { 
+                isHost = true; 
+                updateStatus("Waiting...", "status-online"); 
+                if(!currentQuote) pickInitialQuote(); 
+            });
+            peer.on('error', (err) => { 
+                if (err.type === 'unavailable-id' || err.type === 'id-taken') { 
+                    joinAsGuest(hostId); 
+                } 
+            });
+            peer.on('connection', (incoming) => { 
+                conn = incoming; 
+                setupConn(); 
+            });
         }
 
         function joinAsGuest(hostId) {
             isHost = false;
+            if (peer && !peer.destroyed) peer.destroy();
             peer = new Peer(); 
             peer.on('open', () => { 
-                conn = peer.connect(hostId); 
+                conn = peer.connect(hostId, { reliable: true }); 
                 setupConn(); 
             });
         }
 
         function reconnectLogic() {
-            if (lastRoomName) {
-                updateStatus("Syncing...", "status-online");
-                if (isHost) initPeer(lastRoomName);
-                else joinAsGuest(`dq-v56-room-${lastRoomName}`);
-            }
+            if (!lastRoomName) return;
+            if (isHost) initPeer(lastRoomName);
+            else joinAsGuest(`dq-v57-room-${lastRoomName}`);
         }
 
         function setupConn() {
@@ -183,7 +195,15 @@
                 if(!isHost) send('guest-ready', {});
             });
             conn.on('data', (data) => {
-                if(data.type === 'guest-ready' && isHost) send('init-game', {quote: currentQuote, author: currentAuthor, id: currentQuoteId});
+                if(data.type === 'guest-ready' && isHost) {
+                    // Send FULL STATE including current board
+                    const board = [];
+                    for(let i=0; i<84; i++) {
+                        const c = document.getElementById(`cell-${i}`);
+                        board.push({ text: c ? c.innerText : "", isHint: c ? c.classList.contains('is-hint') : false });
+                    }
+                    send('init-game', {quote: currentQuote, author: currentAuthor, id: currentQuoteId, board: board});
+                }
                 if(data.type === 'init-game') initGame(data.payload);
                 if(data.type === 'fill') applyFill(data.payload.letter, data.payload.idx, false);
                 if(data.type === 'back') applyBack(data.payload.idx, false);
@@ -193,8 +213,7 @@
                 if(data.type === 'new-request') { if(isHost) pickInitialQuote(true); }
             });
             conn.on('close', () => {
-                updateStatus("Lost Link", "status-online");
-                setTimeout(reconnectLogic, 1000);
+                updateStatus("Searching...", "status-online");
             });
         }
 
@@ -220,7 +239,8 @@
             currentAuthor = data.author;
             currentQuoteId = data.id;
             bankLetters = Array.from({ length: 12 }, () => []);
-            document.getElementById('quoteGrid').innerHTML = "";
+            const grid = document.getElementById('quoteGrid');
+            grid.innerHTML = "";
             document.getElementById('author-name').innerText = currentAuthor;
             document.getElementById('modal-overlay').style.display = 'none';
 
@@ -240,7 +260,14 @@
                     cell.onclick = () => { selectCell(i); send('select', {idx: i}); };
                     bankLetters[i % 12].push(char);
                 }
-                document.getElementById('quoteGrid').appendChild(cell);
+                
+                // If syncing mid-game, apply the board snapshot
+                if (data.board && data.board[i]) {
+                    if (data.board[i].text) cell.innerText = data.board[i].text;
+                    if (data.board[i].isHint) cell.classList.add('is-hint');
+                }
+
+                grid.appendChild(cell);
             }
             bankLetters.forEach(col => col.sort());
             renderBank();
@@ -341,7 +368,7 @@
 
         function applyFill(l, i, notify) {
             const cell = document.getElementById(`cell-${i}`);
-            if(!cell || cell.classList.contains('is-hint')) return;
+            if(!cell || !currentQuote) return;
             cell.innerText = l;
             if(notify) { send('fill', {letter: l, idx: i}); moveToNext(); }
             renderBank(); checkWin();
@@ -403,7 +430,7 @@
         function findFirstEmpty() {
             for(let i=0; i<84; i++) {
                 const c = document.getElementById(`cell-${i}`);
-                if(c && !c.classList.contains('black') && !c.classList.contains('is-hint')) return i;
+                if(c && !c.classList.contains('black') && !c.classList.contains('is-hint') && c.innerText === "") return i;
             }
             return 0;
         }
