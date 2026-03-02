@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DropQuote - v5.8</title>
+    <title>DropQuote - v6.0</title>
     <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
     <style>
         :root {
             --bg-color: #0b0b0b;
             --cell-size: 28px; 
-            --fat-cell-size: 50px;
+            --fat-cell-size: 45px;
             --highlight: #00aaff;
             --hint-color: #2ecc71;
             --error: #ff4444;
@@ -18,12 +18,13 @@
             --text-color: #eee;
         }
 
+        html, body { height: 100%; overflow: hidden; margin: 0; padding: 0; }
+
         body {
             background-color: var(--bg-color); color: var(--text-color);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            display: flex; flex-direction: column; 
-            align-items: center; padding: 2px; margin: 0; user-select: none;
-            -webkit-user-select: none; touch-action: manipulation;
+            display: flex; flex-direction: column; align-items: center; 
+            user-select: none; -webkit-user-select: none; touch-action: manipulation;
         }
 
         #room-panel {
@@ -33,34 +34,37 @@
         input { background: #000; color: #fff; border: 1px solid #555; padding: 12px; border-radius: 4px; font-size: 18px; width: 85%; margin-bottom: 15px; text-align: center; outline: none; -webkit-appearance: none; }
         .btn-join { background: var(--highlight); color: white; border: none; padding: 12px 24px; border-radius: 4px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }
 
-        #game-ui { display: none; width: 100%; flex-direction: column; align-items: center; }
+        #game-ui { display: none; width: 100%; height: 100%; flex-direction: column; align-items: center; }
+
+        .header-section { width: 100%; display: flex; flex-direction: column; align-items: center; padding: 5px 0; }
+
         .p2p-panel {
-            background: #1a1a1a; padding: 8px 10px; border-radius: 8px; margin-bottom: 5px;
-            border: 1px solid #333; width: 98%; max-width: 336px; display: flex; justify-content: space-between; align-items: center;
+            background: #1a1a1a; padding: 6px 12px; border-radius: 8px; border: 1px solid #333;
+            width: 95%; max-width: 336px; display: flex; justify-content: space-between; align-items: center;
         }
+        .v-badge { font-size: 10px; font-weight: 900; color: #555; border: 1px solid #333; padding: 1px 4px; border-radius: 3px; }
         .status-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; background: #555; }
         .status-linked { background: var(--highlight); box-shadow: 0 0 8px var(--highlight); }
 
-        .letters-bank { display: grid; grid-template-columns: repeat(12, 1fr); background: #1a1a1a; border: 1px solid #333; margin-bottom: 5px; width: 336px; }
+        .letters-bank { display: grid; grid-template-columns: repeat(12, 1fr); background: #1a1a1a; border: 1px solid #333; width: 336px; margin-top: 2px; }
         .column { display: flex; flex-direction: column; width: var(--cell-size); border-right: 1px solid #333; }
         .column.active-col { background: rgba(0, 170, 255, 0.15); }
-        .letter-tile { height: 38px; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1.2em; border-bottom: 1px solid #222; cursor: pointer; }
+        .letter-tile { height: 34px; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1.1em; border-bottom: 1px solid #222; cursor: pointer; }
         
         .used { color: var(--used-text) !important; background: var(--used-bg); }
         .overused { color: var(--error) !important; background: rgba(255,0,0,0.1); }
 
-        .fat-finger-bar { display: flex; justify-content: center; gap: 5px; background: #222; padding: 8px; width: 100%; min-height: 60px; border-top: 2px solid var(--highlight); flex-wrap: wrap; margin-bottom: 10px; box-sizing: border-box;}
-        .fat-tile { width: var(--fat-cell-size); height: var(--fat-cell-size); background: #eee; color: #000; display: flex; justify-content: center; align-items: center; font-size: 1.6em; font-weight: bold; border-radius: 6px; cursor: pointer; }
+        .fat-finger-bar { display: flex; justify-content: center; gap: 4px; background: #222; padding: 6px; width: 100%; min-height: 55px; border-top: 2px solid var(--highlight); border-bottom: 1px solid #444; flex-wrap: wrap; box-sizing: border-box; }
+        .fat-tile { width: var(--fat-cell-size); height: var(--fat-cell-size); background: #eee; color: #000; display: flex; justify-content: center; align-items: center; font-size: 1.4em; font-weight: bold; border-radius: 6px; cursor: pointer; }
 
-        .quote-grid { display: grid; grid-template-columns: repeat(12, var(--cell-size)); gap: 1px; background: #333; padding: 2px; border: 1px solid #444; width: 336px; box-sizing: border-box; }
+        .quote-grid { display: grid; grid-template-columns: repeat(12, var(--cell-size)); gap: 1px; background: #333; padding: 2px; border: 1px solid #444; width: 336px; box-sizing: border-box; margin-bottom: 10px; }
         .cell { width: var(--cell-size); height: var(--cell-size); background: #fff; color: #000; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1em; cursor: pointer; border-radius: 1px; }
         .cell.black { background: #000; color: #fff; cursor: default; }
         .cell.selected { background: var(--highlight) !important; color: white; }
         .cell.is-hint { color: var(--hint-color) !important; font-weight: 900; pointer-events: none; }
 
-        .version-row { width: 100%; text-align: center; padding: 15px 0 10px 0; color: #888; font-size: 14px; font-weight: 800; letter-spacing: 2px; border-top: 1px solid #222; margin-top: 10px; }
-        .controls { display: flex; gap: 10px; width: 100%; justify-content: center; margin-bottom: 30px; }
-        .btn { padding: 12px 20px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; color: white; font-size: 0.9em; min-width: 80px; }
+        .controls { display: flex; gap: 8px; width: 100%; justify-content: center; padding-bottom: 10px; }
+        .btn { padding: 12px 18px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; color: white; font-size: 0.95em; min-width: 85px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); }
         .btn-skip { background: #c0392b; }
         .btn-hint { background: #f39c12; }
         .btn-back { background: #555; }
@@ -72,22 +76,25 @@
 <body>
 
     <div id="room-panel">
-        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v5.8</h2>
+        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v6.0</h2>
         <input type="text" id="room-id-input" placeholder="Room Name" autocomplete="off">
         <button id="join-btn" class="btn-join" onclick="joinRoom()">Enter Game</button>
     </div>
 
     <div id="game-ui">
-        <div class="p2p-panel">
-            <div><span id="dot" class="status-dot"></span> <span id="p2p-status">Connecting...</span></div>
-            <div id="room-name-display" style="color:var(--highlight); font-weight: bold;">---</div>
+        <div class="header-section">
+            <div class="p2p-panel">
+                <div><span id="dot" class="status-dot"></span> <span id="p2p-status">Wait...</span></div>
+                <div class="v-badge">V6.0</div>
+                <div id="room-name-display" style="color:var(--highlight); font-weight: bold;">---</div>
+            </div>
+            <div id="author-name" style="color:var(--highlight); font-weight:bold; margin: 6px 0; font-size: 1.1em;">...</div>
         </div>
-        <div id="author-name" style="color:var(--highlight); font-weight:bold; margin-bottom:5px; font-size: 1.1em;">...</div>
+
         <div id="lettersBank" class="letters-bank"></div>
         <div id="fatFingerBar" class="fat-finger-bar"></div>
-        <div id="quoteGrid" class="quote-grid"></div>
         
-        <div class="version-row">VERSION 5.8</div>
+        <div id="quoteGrid" class="quote-grid"></div>
         
         <div class="controls">
             <button class="btn btn-skip" onclick="handleSkipSync()">SKIP</button>
@@ -106,27 +113,18 @@
 
     <script>
         const QUOTE_SOURCE_URL = 'https://raw.githubusercontent.com/Zachary-747/DQ/refs/heads/main/quotes.json?v=' + Date.now();
-        let lastRoomName = "";
-        let quotesPool = [];
-        let peer, conn, selectedIdx = null, currentQuote = "", currentAuthor = "", currentQuoteId = null;
-        let bankLetters = Array.from({ length: 12 }, () => []);
-        let isHost = false;
-        let lastTime = Date.now();
+        let lastRoomName = "", quotesPool = [], peer, conn, selectedIdx = null, currentQuote = "", currentAuthor = "", currentQuoteId = null;
+        let bankLetters = Array.from({ length: 12 }, () => []), isHost = false, lastTime = Date.now();
 
-        // Sleep/Wake & Connection Watchdog
         setInterval(() => {
             let currentTime = Date.now();
-            if (currentTime > (lastTime + 5000)) { reconnectLogic(); }
+            if (currentTime > (lastTime + 5000)) reconnectLogic();
             lastTime = currentTime;
-            if (lastRoomName && !currentQuote && !isHost) { reconnectLogic(); }
+            if (lastRoomName && !currentQuote && !isHost) reconnectLogic();
         }, 2000);
 
         async function loadQuotes() {
-            try {
-                const response = await fetch(QUOTE_SOURCE_URL);
-                quotesPool = await response.json();
-                return true;
-            } catch (e) { return false; }
+            try { const r = await fetch(QUOTE_SOURCE_URL); quotesPool = await r.json(); return true; } catch (e) { return false; }
         }
 
         function joinRoom() {
@@ -143,16 +141,12 @@
         }
 
         function initPeer(roomName) {
-            const hostId = `dq-v58-room-${roomName}`;
+            const hostId = `dq-v60-room-${roomName}`;
             if (peer) peer.destroy();
             peer = new Peer(hostId);
-            peer.on('open', () => { 
-                isHost = true; 
-                updateStatus("Waiting...", "status-online"); 
-                if(!currentQuote) pickInitialQuote(); 
-            });
-            peer.on('error', (err) => { if (err.type === 'unavailable-id' || err.type === 'id-taken') { joinAsGuest(hostId); } });
-            peer.on('connection', (incoming) => { conn = incoming; setupConn(); });
+            peer.on('open', () => { isHost = true; updateStatus("Wait...", "status-online"); if(!currentQuote) pickInitialQuote(); });
+            peer.on('error', (err) => { if (err.type === 'unavailable-id' || err.type === 'id-taken') joinAsGuest(hostId); });
+            peer.on('connection', (i) => { conn = i; setupConn(); });
         }
 
         function joinAsGuest(hostId) {
@@ -164,33 +158,29 @@
 
         function reconnectLogic() {
             if (!lastRoomName) return;
-            if (isHost) initPeer(lastRoomName);
-            else joinAsGuest(`dq-v58-room-${lastRoomName}`);
+            if (isHost) initPeer(lastRoomName); else joinAsGuest(`dq-v60-room-${lastRoomName}`);
         }
 
         function setupConn() {
-            conn.on('open', () => {
-                updateStatus("Linked!", "status-linked");
-                if(!isHost) send('guest-ready', {});
-            });
-            conn.on('data', (data) => {
-                if(data.type === 'guest-ready' && isHost) {
+            conn.on('open', () => { updateStatus("Linked!", "status-linked"); if(!isHost) send('guest-ready', {}); });
+            conn.on('data', (d) => {
+                if(d.type === 'guest-ready' && isHost) {
                     const board = [];
                     for(let i=0; i<84; i++) {
                         const c = document.getElementById(`cell-${i}`);
-                        board.push({ text: c ? c.innerText : "", isHint: c ? c.classList.contains('is-hint') : false });
+                        board.push({ text: c?c.innerText:"", isHint: c?c.classList.contains('is-hint'):false });
                     }
                     send('init-game', {quote: currentQuote, author: currentAuthor, id: currentQuoteId, board: board});
                 }
-                if(data.type === 'init-game') initGame(data.payload);
-                if(data.type === 'fill') applyFill(data.payload.letter, data.payload.idx, false);
-                if(data.type === 'back') applyBack(data.payload.idx, false);
-                if(data.type === 'hint') applyHint(data.payload.idx, data.payload.char);
-                if(data.type === 'skip') applySkip(false);
-                if(data.type === 'select') applySelection(data.payload.idx);
-                if(data.type === 'new-request') { if(isHost) pickInitialQuote(true); }
+                if(d.type === 'init-game') initGame(d.payload);
+                if(d.type === 'fill') applyFill(d.payload.letter, d.payload.idx, false);
+                if(d.type === 'back') applyBack(d.payload.idx, false);
+                if(d.type === 'hint') applyHint(d.payload.idx, d.payload.char);
+                if(d.type === 'skip') applySkip(false);
+                if(d.type === 'select') applySelection(d.payload.idx);
+                if(d.type === 'new-request') { if(isHost) pickInitialQuote(true); }
             });
-            conn.on('close', () => { updateStatus("Searching...", "status-online"); });
+            conn.on('close', () => updateStatus("Searching...", "status-online"));
         }
 
         function updateStatus(txt, cls) {
@@ -203,21 +193,17 @@
         function pickInitialQuote(broadcast = false) {
             const history = JSON.parse(localStorage.getItem('dq_history_v3') || '[]');
             const usedIds = history.map(h => h.id);
-            const available = quotesPool.filter(q => !usedIds.includes(q.id));
-            const selected = available.length > 0 ? available[Math.floor(Math.random()*available.length)] : quotesPool[Math.floor(Math.random()*quotesPool.length)];
-            
-            const gameData = {quote: selected.quote, author: selected.author, id: selected.id};
-            
-            // Critical: Ensure both ends reset UI before new quote
+            const avail = quotesPool.filter(q => !usedIds.includes(q.id));
+            const sel = avail.length > 0 ? avail[Math.floor(Math.random()*avail.length)] : quotesPool[Math.floor(Math.random()*quotesPool.length)];
+            const gd = {quote: sel.quote, author: sel.author, id: sel.id};
             document.getElementById('modal-overlay').style.display = 'none';
-            initGame(gameData);
-            if(broadcast) send('init-game', gameData);
+            initGame(gd);
+            if(broadcast) send('init-game', gd);
         }
 
         function initGame(data) {
-            currentQuote = data.quote.toUpperCase();
-            currentAuthor = data.author;
-            currentQuoteId = data.id;
+            window.scrollTo(0,0);
+            currentQuote = data.quote.toUpperCase(); currentAuthor = data.author; currentQuoteId = data.id;
             bankLetters = Array.from({ length: 12 }, () => []);
             const grid = document.getElementById('quoteGrid');
             grid.innerHTML = "";
@@ -228,19 +214,15 @@
                 const cell = document.createElement('div');
                 cell.id = `cell-${i}`;
                 const char = currentQuote[i] || ' ';
-                if (i >= currentQuote.length || char === ' ') {
-                    cell.className = 'cell black';
-                } else if (/[^A-Z]/.test(char)) {
-                    cell.className = 'cell black';
-                    cell.innerText = char;
-                    cell.style.display = 'flex'; 
+                if (i >= currentQuote.length || char === ' ') { cell.className = 'cell black'; }
+                else if (/[^A-Z]/.test(char)) {
+                    cell.className = 'cell black'; cell.innerText = char; cell.style.display = 'flex';
                     cell.style.alignItems = (char === "'" || char === "’") ? 'flex-start' : 'flex-end';
                 } else {
                     cell.className = 'cell';
                     cell.onclick = () => { selectCell(i); send('select', {idx: i}); };
                     bankLetters[i % 12].push(char);
                 }
-                
                 if (data.board && data.board[i]) {
                     if (data.board[i].text) cell.innerText = data.board[i].text;
                     if (data.board[i].isHint) cell.classList.add('is-hint');
@@ -271,10 +253,7 @@
                 col.forEach(l => {
                     const tile = document.createElement('div');
                     tile.className = 'letter-tile';
-                    if (tempCounts[l] > 0) {
-                        tile.className += (state.counts[l] > state.available[l]) ? ' overused' : ' used';
-                        tempCounts[l]--;
-                    }
+                    if (tempCounts[l] > 0) { tile.className += (state.counts[l] > state.available[l]) ? ' overused' : ' used'; tempCounts[l]--; }
                     tile.innerText = l;
                     tile.onclick = () => handleInputFromCol(l, colIdx);
                     colDiv.appendChild(tile);
@@ -294,10 +273,7 @@
             bankLetters[colIdx].forEach(l => {
                 const b = document.createElement('div');
                 b.className = 'fat-tile'; 
-                if (tempCounts[l] > 0) {
-                    b.className += (state.counts[l] > state.available[l]) ? ' overused' : ' used';
-                    tempCounts[l]--;
-                }
+                if (tempCounts[l] > 0) { b.className += (state.counts[l] > state.available[l]) ? ' overused' : ' used'; tempCounts[l]--; }
                 b.innerText = l;
                 b.onclick = () => handleInputFromCol(l, colIdx);
                 bar.appendChild(b);
@@ -312,17 +288,9 @@
                 const preferredCell = document.getElementById(`cell-${sameRowInTargetCol}`);
                 if (preferredCell && !preferredCell.classList.contains('black') && !preferredCell.classList.contains('is-hint') && preferredCell.innerText === "") {
                     targetIdx = sameRowInTargetCol;
-                } else {
-                    targetIdx = findFirstEmptyInCol(colIdx);
-                }
-            } else {
-                targetIdx = selectedIdx;
-            }
-            if (targetIdx !== null) {
-                applySelection(targetIdx);
-                send('select', {idx: targetIdx});
-                applyFill(letter, targetIdx, true);
-            }
+                } else { targetIdx = findFirstEmptyInCol(colIdx); }
+            } else { targetIdx = selectedIdx; }
+            if (targetIdx !== null) { applySelection(targetIdx); send('select', {idx: targetIdx}); applyFill(letter, targetIdx, true); }
         }
 
         function findFirstEmptyInCol(colIdx) {
@@ -339,9 +307,7 @@
             const cell = document.getElementById(`cell-${i}`);
             if (!cell || cell.classList.contains('black') || cell.classList.contains('is-hint')) return;
             document.querySelectorAll('.cell').forEach(c => c.classList.remove('selected'));
-            selectedIdx = i;
-            cell.classList.add('selected');
-            renderBank();
+            selectedIdx = i; cell.classList.add('selected'); renderBank();
         }
 
         function applyFill(l, i, notify) {
@@ -367,16 +333,11 @@
             const target = empties[Math.floor(Math.random() * empties.length)];
             const idx = parseInt(target.id.split('-')[1]);
             const char = currentQuote[idx];
-            applyHint(idx, char);
-            send('hint', {idx, char});
+            applyHint(idx, char); send('hint', {idx, char});
         }
         function applyHint(idx, char) { 
             const c = document.getElementById(`cell-${idx}`); 
-            if(c) {
-                c.innerText = char;
-                c.classList.add('is-hint');
-                if(selectedIdx === idx) moveToNext();
-            }
+            if(c) { c.innerText = char; c.classList.add('is-hint'); if(selectedIdx === idx) moveToNext(); }
             renderBank(); checkWin(); 
         }
 
@@ -384,13 +345,9 @@
         function applySkip(notify) {
             Array.from(document.querySelectorAll('.cell')).forEach(c => {
                 const idx = parseInt(c.id.split('-')[1]);
-                if(!c.classList.contains('black')) {
-                    c.innerText = currentQuote[idx];
-                    c.classList.add('is-hint');
-                }
+                if(!c.classList.contains('black')) { c.innerText = currentQuote[idx]; c.classList.add('is-hint'); }
             });
-            if(notify) send('skip', {});
-            checkWin();
+            if(notify) send('skip', {}); checkWin();
         }
 
         function moveToNext() {
@@ -417,8 +374,7 @@
             let s = "";
             for(let i=0; i<currentQuote.length; i++) {
                 const c = document.getElementById(`cell-${i}`);
-                if(!c) continue;
-                s += c.classList.contains('black') ? currentQuote[i] : (c.innerText || "?");
+                if(!c) continue; s += c.classList.contains('black') ? currentQuote[i] : (c.innerText || "?");
             }
             if (s === currentQuote && currentQuote !== "") {
                 document.getElementById('full-quote-text').innerText = `"${currentQuote}"`;
@@ -437,10 +393,8 @@
         }
 
         function requestNewGame() {
-            // Hide modal locally immediately to feel responsive
             document.getElementById('modal-overlay').style.display = 'none';
-            if(isHost) pickInitialQuote(true);
-            else send('new-request', {});
+            if(isHost) pickInitialQuote(true); else send('new-request', {});
         }
     </script>
 </body>
