@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DropQuote - v6.2</title>
+    <title>DropQuote - v6.3</title>
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DropQuote">
-    <meta name="mobile-web-app-capable" content="yes">
     
     <link rel="manifest" href="data:application/manifest+json,{%22name%22:%22DropQuote%22,%22short_name%22:%22DQ%22,%22display%22:%22standalone%22,%22start_url%22:%22.%22,%22background_color%22:%22%230b0b0b%22,%22theme_color%22:%22%2300aaff%22}">
 
@@ -24,6 +23,7 @@
             --used-text: #555;
             --used-bg: #222;
             --text-color: #eee;
+            --punct-bg: #ccc; /* Light grey for punctuation */
         }
 
         html, body { height: 100%; overflow: hidden; margin: 0; padding: 0; }
@@ -39,22 +39,19 @@
             background: #1a1a1a; padding: 25px; border-radius: 12px; margin-top: 50px;
             border: 2px solid var(--highlight); width: 90%; max-width: 350px; text-align: center;
         }
-        input { background: #000; color: #fff; border: 1px solid #555; padding: 12px; border-radius: 4px; font-size: 18px; width: 85%; margin-bottom: 15px; text-align: center; outline: none; -webkit-appearance: none; }
-        .btn-join { background: var(--highlight); color: white; border: none; padding: 12px 24px; border-radius: 4px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }
+        input { background: #000; color: #fff; border: 1px solid #555; padding: 12px; border-radius: 4px; font-size: 18px; width: 85%; margin-bottom: 15px; text-align: center; outline: none; }
+        .btn-join { background: var(--highlight); color: white; border: none; padding: 12px 24px; border-radius: 4px; font-weight: bold; cursor: pointer; width: 100%; }
 
         #game-ui { display: none; width: 100%; height: 100%; flex-direction: column; align-items: center; }
 
-        .header-section { width: 100%; display: flex; flex-direction: column; align-items: center; padding: 5px 0; }
-
         .p2p-panel {
             background: #1a1a1a; padding: 6px 12px; border-radius: 8px; border: 1px solid #333;
-            width: 336px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box;
+            width: 336px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; margin-top: 5px;
         }
-        .v-badge { font-size: 10px; font-weight: 900; color: #555; border: 1px solid #333; padding: 1px 4px; border-radius: 3px; }
         .status-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; background: #555; }
         .status-linked { background: var(--highlight); box-shadow: 0 0 8px var(--highlight); }
 
-        .letters-bank { display: grid; grid-template-columns: repeat(12, 1fr); background: #1a1a1a; border: 1px solid #333; width: 336px; margin-top: 2px; box-sizing: border-box; }
+        .letters-bank { display: grid; grid-template-columns: repeat(12, 1fr); background: #1a1a1a; border: 1px solid #333; width: 336px; margin-top: 2px; }
         .column { display: flex; flex-direction: column; width: var(--cell-size); border-right: 1px solid #333; }
         .column.active-col { background: rgba(0, 170, 255, 0.15); }
         .letter-tile { height: 34px; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1.1em; border-bottom: 1px solid #222; cursor: pointer; }
@@ -62,7 +59,6 @@
         .used { color: var(--used-text) !important; background: var(--used-bg); }
         .overused { color: var(--error) !important; background: rgba(255,0,0,0.1); }
 
-        /* FIXED: Constrained width to 336px to fix the blue line on iPad */
         .fat-finger-bar { 
             display: flex; justify-content: center; gap: 4px; background: #222; 
             padding: 6px; width: 336px; min-height: 55px; 
@@ -72,13 +68,14 @@
         .fat-tile { width: var(--fat-cell-size); height: var(--fat-cell-size); background: #eee; color: #000; display: flex; justify-content: center; align-items: center; font-size: 1.4em; font-weight: bold; border-radius: 6px; cursor: pointer; }
 
         .quote-grid { display: grid; grid-template-columns: repeat(12, var(--cell-size)); gap: 1px; background: #333; padding: 2px; border: 1px solid #444; width: 336px; box-sizing: border-box; margin-bottom: 10px; }
-        .cell { width: var(--cell-size); height: var(--cell-size); background: #fff; color: #000; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1em; cursor: pointer; border-radius: 1px; }
+        .cell { width: var(--cell-size); height: var(--cell-size); background: #fff; color: #000; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1em; cursor: pointer; }
         .cell.black { background: #000; color: #fff; cursor: default; }
+        .cell.static { background: var(--punct-bg); color: #000; cursor: default; pointer-events: none; }
         .cell.selected { background: var(--highlight) !important; color: white; }
         .cell.is-hint { color: var(--hint-color) !important; font-weight: 900; pointer-events: none; }
 
         .controls { display: flex; gap: 8px; width: 100%; justify-content: center; padding-bottom: 10px; }
-        .btn { padding: 12px 18px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; color: white; font-size: 0.95em; min-width: 85px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        .btn { padding: 12px 18px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; color: white; min-width: 85px; }
         .btn-skip { background: #c0392b; }
         .btn-hint { background: #f39c12; }
         .btn-back { background: #555; }
@@ -90,25 +87,21 @@
 <body>
 
     <div id="room-panel">
-        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v6.2</h2>
+        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v6.3</h2>
         <input type="text" id="room-id-input" placeholder="Room Name" autocomplete="off">
         <button id="join-btn" class="btn-join" onclick="joinRoom()">Enter Game</button>
         <p id="room-error" style="color:red; font-size:12px; display:none; margin-top:10px;">Connection failed. Try again.</p>
     </div>
 
     <div id="game-ui">
-        <div class="header-section">
-            <div class="p2p-panel">
-                <div><span id="dot" class="status-dot"></span> <span id="p2p-status">Wait...</span></div>
-                <div class="v-badge">V6.2</div>
-                <div id="room-name-display" style="color:var(--highlight); font-weight: bold;">---</div>
-            </div>
-            <div id="author-name" style="font-weight:bold; margin: 6px 0; font-size: 1.1em;">...</div>
+        <div class="p2p-panel">
+            <div><span id="dot" class="status-dot"></span> <span id="p2p-status">Wait...</span></div>
+            <div id="room-name-display" style="color:var(--highlight); font-weight: bold;">---</div>
         </div>
+        <div id="author-name" style="font-weight:bold; margin: 6px 0; font-size: 1.1em;">...</div>
 
         <div id="lettersBank" class="letters-bank"></div>
         <div id="fatFingerBar" class="fat-finger-bar"></div>
-        
         <div id="quoteGrid" class="quote-grid"></div>
         
         <div class="controls">
@@ -122,7 +115,7 @@
         <div class="modal-content">
             <p id="full-quote-text" style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px;"></p>
             <h3 id="modal-author" style="color:#666; margin-bottom: 20px;"></h3>
-            <button onclick="requestNewGame()" style="background:var(--highlight); padding:15px 30px; border:none; color:#fff; border-radius:8px; font-weight:bold; font-size: 1.1em;">Next Quote</button>
+            <button onclick="requestNewGame()" style="background:var(--highlight); padding:15px 30px; border:none; color:#fff; border-radius:8px; font-weight:bold;">Next Quote</button>
         </div>
     </div>
 
@@ -131,22 +124,16 @@
         let lastRoomName = "", quotesPool = [], peer, conn, selectedIdx = null, currentQuote = "", currentAuthor = "", currentQuoteId = null, currentLang = "en";
         let bankLetters = Array.from({ length: 12 }, () => []), isHost = false;
 
-        window.addEventListener('load', () => {
-            const params = new URLSearchParams(window.location.search);
-            const r = params.get('room');
-            if (r) document.getElementById('room-id-input').value = r;
-        });
-
         async function loadQuotes() {
             try { const r = await fetch(QUOTE_SOURCE_URL); quotesPool = await r.json(); return true; } 
-            catch (e) { console.error("Quote load failed"); return false; }
+            catch (e) { return false; }
         }
 
         function joinRoom() {
             const val = document.getElementById('room-id-input').value.trim().toLowerCase();
             if(!val) return;
             lastRoomName = val;
-            document.getElementById('join-btn').innerText = "Loading...";
+            document.getElementById('join-btn').innerText = "Connecting...";
             loadQuotes().then((success) => {
                 if(!success) { alert("Failed to load quotes."); return; }
                 document.getElementById('room-panel').style.display = 'none';
@@ -156,23 +143,47 @@
             });
         }
 
+        // IMPROVED PEER LOGIC: Collision Resolver for iOS
         function initPeer(roomName) {
             const hostId = `dq-v60-room-${roomName}`;
             if (peer) { try { peer.destroy(); } catch(e){} }
+            
             peer = new Peer(hostId);
-            peer.on('open', () => { isHost = true; updateStatus("Hosting", "status-online"); if(!currentQuote) pickInitialQuote(); });
-            peer.on('error', (err) => { if (err.type === 'unavailable-id' || err.type === 'id-taken') joinAsGuest(hostId); });
+            let hasOpened = false;
+
+            // iOS Fallback: If host ID isn't granted in 1.5s, assume taken and join as guest
+            const timeout = setTimeout(() => {
+                if (!hasOpened) { console.log("Host timeout - flipping to Guest"); joinAsGuest(hostId); }
+            }, 1500);
+
+            peer.on('open', () => { 
+                hasOpened = true; clearTimeout(timeout);
+                isHost = true; 
+                updateStatus("Hosting", "status-online"); 
+                if(!currentQuote) pickInitialQuote(); 
+            });
+
+            peer.on('error', (err) => { 
+                if (err.type === 'unavailable-id' || err.type === 'id-taken') {
+                    clearTimeout(timeout); joinAsGuest(hostId); 
+                }
+            });
+
             peer.on('connection', (i) => { conn = i; setupConn(); });
         }
 
         function joinAsGuest(hostId) {
             isHost = false;
+            if (peer && !peer.destroyed) { try { peer.destroy(); } catch(e){} }
             peer = new Peer();
             peer.on('open', () => { conn = peer.connect(hostId, { reliable: true }); setupConn(); });
         }
 
         function setupConn() {
-            conn.on('open', () => { updateStatus("Linked!", "status-linked"); if(!isHost) send('guest-ready', {}); });
+            conn.on('open', () => { 
+                updateStatus("Linked!", "status-linked"); 
+                if(!isHost) send('guest-ready', {}); 
+            });
             conn.on('data', (d) => {
                 if(d.type === 'guest-ready' && isHost) {
                     const board = [];
@@ -204,18 +215,13 @@
             const usedIds = history.map(h => h.id);
             const avail = quotesPool.filter(q => !usedIds.includes(q.id));
             const sel = avail.length > 0 ? avail[Math.floor(Math.random()*avail.length)] : quotesPool[Math.floor(Math.random()*quotesPool.length)];
-            const gd = {quote: sel.quote, author: sel.author, id: sel.id, lang: sel.language};
+            const gd = {quote: sel.quote.toUpperCase(), author: sel.author, id: sel.id, lang: sel.language};
             initGame(gd);
             if(broadcast) send('init-game', gd);
         }
 
         function initGame(data) {
-            currentQuote = data.quote.toUpperCase(); 
-            currentAuthor = data.author; 
-            currentQuoteId = data.id;
-            currentLang = data.lang || "en";
-            
-            // Set Author Color: Green for French, Blue for English
+            currentQuote = data.quote; currentAuthor = data.author; currentQuoteId = data.id; currentLang = data.lang || "en";
             const authEl = document.getElementById('author-name');
             authEl.innerText = currentAuthor;
             authEl.style.color = (currentLang === 'fr') ? 'var(--hint-color)' : 'var(--highlight)';
@@ -229,13 +235,16 @@
                 const cell = document.createElement('div');
                 cell.id = `cell-${i}`;
                 const char = currentQuote[i] || ' ';
-                if (i >= currentQuote.length || char === ' ') { cell.className = 'cell black'; }
-                else if (/[^A-Z]/.test(char)) {
-                    cell.className = 'cell black'; cell.innerText = char; cell.style.display = 'flex';
-                    cell.style.alignItems = (char === "'" || char === "’") ? 'flex-start' : 'flex-end';
+                
+                if (i >= currentQuote.length || char === ' ') {
+                    cell.className = 'cell black';
+                } else if (/[^A-Z]/.test(char)) {
+                    // PUNCTUATION FIX: Visible black text on light grey background
+                    cell.className = 'cell static';
+                    cell.innerText = char;
                 } else {
                     cell.className = 'cell';
-                    cell.onclick = () => { selectCell(i); send('select', {idx: i}); };
+                    cell.onclick = () => { applySelection(i); send('select', {idx: i}); };
                     bankLetters[i % 12].push(char);
                 }
                 if (data.board && data.board[i]) {
@@ -246,15 +255,9 @@
             }
             bankLetters.forEach(col => col.sort());
             renderBank();
-            selectCell(findFirstEmpty());
-        }
-
-        function getColState(colIdx) {
-            let cells = Array.from(document.querySelectorAll('.cell'));
-            let used = cells.filter(c => (parseInt(c.id.split('-')[1]) % 12 === colIdx) && !c.classList.contains('black') && c.innerText !== "").map(c => c.innerText);
-            let counts = {}; used.forEach(l => counts[l] = (counts[l] || 0) + 1);
-            let available = {}; bankLetters[colIdx].forEach(l => available[l] = (available[l] || 0) + 1);
-            return { counts, available };
+            // Start cursor on the first playable letter
+            let start = findNextPlayable(-1);
+            if(start !== null) applySelection(start);
         }
 
         function renderBank() {
@@ -278,6 +281,14 @@
             updateFatFinger();
         }
 
+        function getColState(colIdx) {
+            let cells = Array.from(document.querySelectorAll('.cell'));
+            let used = cells.filter(c => (parseInt(c.id.split('-')[1]) % 12 === colIdx) && c.className === 'cell' && c.innerText !== "").map(c => c.innerText);
+            let counts = {}; used.forEach(l => counts[l] = (counts[l] || 0) + 1);
+            let available = {}; bankLetters[colIdx].forEach(l => available[l] = (available[l] || 0) + 1);
+            return { counts, available };
+        }
+
         function updateFatFinger() {
             const bar = document.getElementById('fatFingerBar');
             bar.innerHTML = "";
@@ -296,15 +307,10 @@
         }
 
         function handleInputFromCol(letter, colIdx) {
-            let targetIdx = null;
+            let targetIdx = selectedIdx;
             if (selectedIdx === null || (selectedIdx % 12 !== colIdx)) {
-                let currentRow = Math.floor(selectedIdx / 12);
-                let sameRowInTargetCol = currentRow * 12 + colIdx;
-                const preferredCell = document.getElementById(`cell-${sameRowInTargetCol}`);
-                if (preferredCell && !preferredCell.classList.contains('black') && !preferredCell.classList.contains('is-hint') && preferredCell.innerText === "") {
-                    targetIdx = sameRowInTargetCol;
-                } else { targetIdx = findFirstEmptyInCol(colIdx); }
-            } else { targetIdx = selectedIdx; }
+                targetIdx = findFirstEmptyInCol(colIdx);
+            }
             if (targetIdx !== null) { applySelection(targetIdx); send('select', {idx: targetIdx}); applyFill(letter, targetIdx, true); }
         }
 
@@ -312,21 +318,21 @@
             for (let r = 0; r < 7; r++) {
                 let idx = r * 12 + colIdx;
                 const cell = document.getElementById(`cell-${idx}`);
-                if (cell && !cell.classList.contains('black') && !cell.classList.contains('is-hint') && cell.innerText === "") return idx;
+                if (cell && cell.className === 'cell' && !cell.classList.contains('is-hint') && cell.innerText === "") return idx;
             }
             return null;
         }
 
         function applySelection(i) {
             const cell = document.getElementById(`cell-${i}`);
-            if (!cell || cell.classList.contains('black') || cell.classList.contains('is-hint')) return;
+            if (!cell || cell.className !== 'cell' || cell.classList.contains('is-hint')) return;
             document.querySelectorAll('.cell').forEach(c => c.classList.remove('selected'));
             selectedIdx = i; cell.classList.add('selected'); renderBank();
         }
 
         function applyFill(l, i, notify) {
             const cell = document.getElementById(`cell-${i}`);
-            if(!cell || !currentQuote) return;
+            if(!cell) return;
             cell.innerText = l;
             if(notify) { send('fill', {letter: l, idx: i}); moveToNext(); }
             renderBank(); checkWin();
@@ -342,7 +348,7 @@
         }
 
         function handleHintSync() {
-            const empties = Array.from(document.querySelectorAll('.cell')).filter(c => !c.classList.contains('black') && c.innerText === "");
+            const empties = Array.from(document.querySelectorAll('.cell')).filter(c => c.className === 'cell' && c.innerText === "");
             if(!empties.length) return;
             const target = empties[Math.floor(Math.random() * empties.length)];
             const idx = parseInt(target.id.split('-')[1]);
@@ -359,36 +365,44 @@
         function applySkip(notify) {
             Array.from(document.querySelectorAll('.cell')).forEach(c => {
                 const idx = parseInt(c.id.split('-')[1]);
-                if(!c.classList.contains('black')) { c.innerText = currentQuote[idx]; c.classList.add('is-hint'); }
+                if(c.className === 'cell') { c.innerText = currentQuote[idx]; c.classList.add('is-hint'); }
             });
             if(notify) send('skip', {}); checkWin();
         }
 
+        function findNextPlayable(curr) {
+            for(let i=curr+1; i<84; i++) {
+                const c = document.getElementById(`cell-${i}`);
+                if(c && c.className === 'cell' && !c.classList.contains('is-hint')) return i;
+            }
+            return null;
+        }
+
+        function findPrevPlayable(curr) {
+            for(let i=curr-1; i>=0; i--) {
+                const c = document.getElementById(`cell-${i}`);
+                if(c && c.className === 'cell' && !c.classList.contains('is-hint')) return i;
+            }
+            return null;
+        }
+
         function moveToNext() {
-            let n = selectedIdx + 1;
-            while(n < 84 && (!document.getElementById(`cell-${n}`) || document.getElementById(`cell-${n}`).classList.contains('black') || document.getElementById(`cell-${n}`).classList.contains('is-hint'))) n++;
-            if (n < 84) { applySelection(n); send('select', {idx: n}); }
+            let n = findNextPlayable(selectedIdx);
+            if (n !== null) { applySelection(n); send('select', {idx: n}); }
         }
 
         function moveToPrev() {
-            let n = selectedIdx - 1;
-            while(n >= 0 && (!document.getElementById(`cell-${n}`) || document.getElementById(`cell-${n}`).classList.contains('black') || document.getElementById(`cell-${n}`).classList.contains('is-hint'))) n--;
-            if (n >= 0) { applySelection(n); send('select', {idx: n}); }
-        }
-
-        function findFirstEmpty() {
-            for(let i=0; i<84; i++) {
-                const c = document.getElementById(`cell-${i}`);
-                if(c && !c.classList.contains('black') && !c.classList.contains('is-hint') && c.innerText === "") return i;
-            }
-            return 0;
+            let n = findPrevPlayable(selectedIdx);
+            if (n !== null) { applySelection(n); send('select', {idx: n}); }
         }
 
         function checkWin() {
             let s = "";
             for(let i=0; i<currentQuote.length; i++) {
                 const c = document.getElementById(`cell-${i}`);
-                if(!c) continue; s += c.classList.contains('black') ? currentQuote[i] : (c.innerText || "?");
+                if(!c) continue; 
+                if(c.className === 'cell') s += (c.innerText || "?");
+                else s += c.innerText || " ";
             }
             if (s === currentQuote && currentQuote !== "") {
                 document.getElementById('full-quote-text').innerText = `"${currentQuote}"`;
