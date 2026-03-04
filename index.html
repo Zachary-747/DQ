@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DropQuote - v6.0</title>
+    <title>DropQuote - v6.1</title>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="DropQuote">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <link rel="manifest" href="data:application/manifest+json,{%22name%22:%22DropQuote%22,%22short_name%22:%22DQ%22,%22display%22:%22standalone%22,%22start_url%22:%22.%22,%22background_color%22:%22%230b0b0b%22,%22theme_color%22:%22%2300aaff%22}">
+
     <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
     <style>
         :root {
@@ -27,6 +35,7 @@
             user-select: none; -webkit-user-select: none; touch-action: manipulation;
         }
 
+        /* Initial Room Entry Panel */
         #room-panel {
             background: #1a1a1a; padding: 25px; border-radius: 12px; margin-top: 50px;
             border: 2px solid var(--highlight); width: 90%; max-width: 350px; text-align: center;
@@ -46,6 +55,7 @@
         .status-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; background: #555; }
         .status-linked { background: var(--highlight); box-shadow: 0 0 8px var(--highlight); }
 
+        /* Original Letters Bank Layout */
         .letters-bank { display: grid; grid-template-columns: repeat(12, 1fr); background: #1a1a1a; border: 1px solid #333; width: 336px; margin-top: 2px; }
         .column { display: flex; flex-direction: column; width: var(--cell-size); border-right: 1px solid #333; }
         .column.active-col { background: rgba(0, 170, 255, 0.15); }
@@ -57,6 +67,7 @@
         .fat-finger-bar { display: flex; justify-content: center; gap: 4px; background: #222; padding: 6px; width: 100%; min-height: 55px; border-top: 2px solid var(--highlight); border-bottom: 1px solid #444; flex-wrap: wrap; box-sizing: border-box; }
         .fat-tile { width: var(--fat-cell-size); height: var(--fat-cell-size); background: #eee; color: #000; display: flex; justify-content: center; align-items: center; font-size: 1.4em; font-weight: bold; border-radius: 6px; cursor: pointer; }
 
+        /* Grid Layout */
         .quote-grid { display: grid; grid-template-columns: repeat(12, var(--cell-size)); gap: 1px; background: #333; padding: 2px; border: 1px solid #444; width: 336px; box-sizing: border-box; margin-bottom: 10px; }
         .cell { width: var(--cell-size); height: var(--cell-size); background: #fff; color: #000; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1em; cursor: pointer; border-radius: 1px; }
         .cell.black { background: #000; color: #fff; cursor: default; }
@@ -76,16 +87,17 @@
 <body>
 
     <div id="room-panel">
-        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v6.0</h2>
+        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v6.1</h2>
         <input type="text" id="room-id-input" placeholder="Room Name" autocomplete="off">
         <button id="join-btn" class="btn-join" onclick="joinRoom()">Enter Game</button>
+        <p id="room-error" style="color:red; font-size:12px; display:none; margin-top:10px;">Connection failed. Try again.</p>
     </div>
 
     <div id="game-ui">
         <div class="header-section">
             <div class="p2p-panel">
                 <div><span id="dot" class="status-dot"></span> <span id="p2p-status">Wait...</span></div>
-                <div class="v-badge">V6.0</div>
+                <div class="v-badge">V6.1</div>
                 <div id="room-name-display" style="color:var(--highlight); font-weight: bold;">---</div>
             </div>
             <div id="author-name" style="color:var(--highlight); font-weight:bold; margin: 6px 0; font-size: 1.1em;">...</div>
@@ -116,15 +128,18 @@
         let lastRoomName = "", quotesPool = [], peer, conn, selectedIdx = null, currentQuote = "", currentAuthor = "", currentQuoteId = null;
         let bankLetters = Array.from({ length: 12 }, () => []), isHost = false, lastTime = Date.now();
 
-        setInterval(() => {
-            let currentTime = Date.now();
-            if (currentTime > (lastTime + 5000)) reconnectLogic();
-            lastTime = currentTime;
-            if (lastRoomName && !currentQuote && !isHost) reconnectLogic();
-        }, 2000);
+        // Ease-of-use: Auto-fill room name if in URL (e.g., ?room=family)
+        window.addEventListener('load', () => {
+            const params = new URLSearchParams(window.location.search);
+            const r = params.get('room');
+            if (r) {
+                document.getElementById('room-id-input').value = r;
+            }
+        });
 
         async function loadQuotes() {
-            try { const r = await fetch(QUOTE_SOURCE_URL); quotesPool = await r.json(); return true; } catch (e) { return false; }
+            try { const r = await fetch(QUOTE_SOURCE_URL); quotesPool = await r.json(); return true; } 
+            catch (e) { console.error("Quote load failed"); return false; }
         }
 
         function joinRoom() {
@@ -132,7 +147,10 @@
             if(!val) return;
             lastRoomName = val;
             document.getElementById('join-btn').innerText = "Loading...";
-            loadQuotes().then(() => {
+            document.getElementById('room-error').style.display = 'none';
+            
+            loadQuotes().then((success) => {
+                if(!success) { alert("Failed to load quotes. Check connection."); document.getElementById('join-btn').innerText = "Enter Game"; return; }
                 document.getElementById('room-panel').style.display = 'none';
                 document.getElementById('game-ui').style.display = 'flex';
                 document.getElementById('room-name-display').innerText = val.toUpperCase();
@@ -140,29 +158,58 @@
             });
         }
 
+        // IMPROVED PEER LOGIC FOR IOS
         function initPeer(roomName) {
             const hostId = `dq-v60-room-${roomName}`;
-            if (peer) peer.destroy();
+            if (peer) { try { peer.destroy(); } catch(e){} }
+            
+            // Try to be host first
             peer = new Peer(hostId);
-            peer.on('open', () => { isHost = true; updateStatus("Wait...", "status-online"); if(!currentQuote) pickInitialQuote(); });
-            peer.on('error', (err) => { if (err.type === 'unavailable-id' || err.type === 'id-taken') joinAsGuest(hostId); });
-            peer.on('connection', (i) => { conn = i; setupConn(); });
+            
+            peer.on('open', () => { 
+                isHost = true; 
+                updateStatus("Hosting", "status-online"); 
+                if(!currentQuote) pickInitialQuote(); 
+            });
+            
+            peer.on('error', (err) => { 
+                // If ID is taken, we are the second session (Guest)
+                if (err.type === 'unavailable-id' || err.type === 'id-taken') {
+                    joinAsGuest(hostId); 
+                } else {
+                    console.error("Peer Error:", err.type);
+                    document.getElementById('room-error').style.display = 'block';
+                }
+            });
+            
+            peer.on('connection', (i) => { 
+                conn = i; 
+                setupConn(); 
+            });
         }
 
         function joinAsGuest(hostId) {
             isHost = false;
-            if (peer && !peer.destroyed) peer.destroy();
-            peer = new Peer(); 
-            peer.on('open', () => { conn = peer.connect(hostId, { reliable: true }); setupConn(); });
-        }
-
-        function reconnectLogic() {
-            if (!lastRoomName) return;
-            if (isHost) initPeer(lastRoomName); else joinAsGuest(`dq-v60-room-${lastRoomName}`);
+            if (peer && !peer.destroyed) { try { peer.destroy(); } catch(e){} }
+            
+            peer = new Peer(); // Random ID for guest
+            peer.on('open', () => { 
+                updateStatus("Connecting...", "status-online");
+                conn = peer.connect(hostId, { reliable: true }); 
+                setupConn(); 
+            });
+            peer.on('error', (e) => {
+                console.error("Guest Peer Error", e);
+                updateStatus("Retrying...", "status-online");
+            });
         }
 
         function setupConn() {
-            conn.on('open', () => { updateStatus("Linked!", "status-linked"); if(!isHost) send('guest-ready', {}); });
+            conn.on('open', () => { 
+                updateStatus("Linked!", "status-linked"); 
+                if(!isHost) send('guest-ready', {}); 
+            });
+            
             conn.on('data', (d) => {
                 if(d.type === 'guest-ready' && isHost) {
                     const board = [];
@@ -180,7 +227,16 @@
                 if(d.type === 'select') applySelection(d.payload.idx);
                 if(d.type === 'new-request') { if(isHost) pickInitialQuote(true); }
             });
-            conn.on('close', () => updateStatus("Searching...", "status-online"));
+
+            conn.on('close', () => {
+                updateStatus("Lost Connection", "status-online");
+                setTimeout(reconnectLogic, 2000);
+            });
+        }
+
+        function reconnectLogic() {
+            if (!lastRoomName) return;
+            if (isHost) initPeer(lastRoomName); else joinAsGuest(`dq-v60-room-${lastRoomName}`);
         }
 
         function updateStatus(txt, cls) {
