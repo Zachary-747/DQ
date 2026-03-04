@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DropQuote - v6.3</title>
+    <title>DropQuote - v6.4</title>
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -23,7 +23,7 @@
             --used-text: #555;
             --used-bg: #222;
             --text-color: #eee;
-            --punct-bg: #ccc; /* Light grey for punctuation */
+            --punct-bg: #bbb; /* Distinct grey for punctuation */
         }
 
         html, body { height: 100%; overflow: hidden; margin: 0; padding: 0; }
@@ -69,8 +69,8 @@
 
         .quote-grid { display: grid; grid-template-columns: repeat(12, var(--cell-size)); gap: 1px; background: #333; padding: 2px; border: 1px solid #444; width: 336px; box-sizing: border-box; margin-bottom: 10px; }
         .cell { width: var(--cell-size); height: var(--cell-size); background: #fff; color: #000; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1em; cursor: pointer; }
-        .cell.black { background: #000; color: #fff; cursor: default; }
-        .cell.static { background: var(--punct-bg); color: #000; cursor: default; pointer-events: none; }
+        .cell.black { background: #000; color: #fff; cursor: pointer; }
+        .cell.static { background: var(--punct-bg); color: #000; cursor: pointer; }
         .cell.selected { background: var(--highlight) !important; color: white; }
         .cell.is-hint { color: var(--hint-color) !important; font-weight: 900; pointer-events: none; }
 
@@ -87,10 +87,9 @@
 <body>
 
     <div id="room-panel">
-        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v6.3</h2>
+        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v6.4</h2>
         <input type="text" id="room-id-input" placeholder="Room Name" autocomplete="off">
         <button id="join-btn" class="btn-join" onclick="joinRoom()">Enter Game</button>
-        <p id="room-error" style="color:red; font-size:12px; display:none; margin-top:10px;">Connection failed. Try again.</p>
     </div>
 
     <div id="game-ui">
@@ -115,7 +114,7 @@
         <div class="modal-content">
             <p id="full-quote-text" style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px;"></p>
             <h3 id="modal-author" style="color:#666; margin-bottom: 20px;"></h3>
-            <button onclick="requestNewGame()" style="background:var(--highlight); padding:15px 30px; border:none; color:#fff; border-radius:8px; font-weight:bold;">Next Quote</button>
+            <button onclick="requestNewGame()" style="background:var(--highlight); padding:15px 30px; border:none; color:#fff; border-radius:8px; font-weight:bold; font-size: 1.1em;">Next Quote</button>
         </div>
     </div>
 
@@ -135,7 +134,7 @@
             lastRoomName = val;
             document.getElementById('join-btn').innerText = "Connecting...";
             loadQuotes().then((success) => {
-                if(!success) { alert("Failed to load quotes."); return; }
+                if(!success) { alert("Failed to load quotes. Ensure quotes.json is on GitHub."); return; }
                 document.getElementById('room-panel').style.display = 'none';
                 document.getElementById('game-ui').style.display = 'flex';
                 document.getElementById('room-name-display').innerText = val.toUpperCase();
@@ -143,32 +142,19 @@
             });
         }
 
-        // IMPROVED PEER LOGIC: Collision Resolver for iOS
         function initPeer(roomName) {
             const hostId = `dq-v60-room-${roomName}`;
             if (peer) { try { peer.destroy(); } catch(e){} }
-            
             peer = new Peer(hostId);
             let hasOpened = false;
-
-            // iOS Fallback: If host ID isn't granted in 1.5s, assume taken and join as guest
-            const timeout = setTimeout(() => {
-                if (!hasOpened) { console.log("Host timeout - flipping to Guest"); joinAsGuest(hostId); }
-            }, 1500);
+            const timeout = setTimeout(() => { if (!hasOpened) joinAsGuest(hostId); }, 1500);
 
             peer.on('open', () => { 
                 hasOpened = true; clearTimeout(timeout);
-                isHost = true; 
-                updateStatus("Hosting", "status-online"); 
+                isHost = true; updateStatus("Hosting", "status-online"); 
                 if(!currentQuote) pickInitialQuote(); 
             });
-
-            peer.on('error', (err) => { 
-                if (err.type === 'unavailable-id' || err.type === 'id-taken') {
-                    clearTimeout(timeout); joinAsGuest(hostId); 
-                }
-            });
-
+            peer.on('error', (err) => { if (err.type === 'unavailable-id' || err.type === 'id-taken') { clearTimeout(timeout); joinAsGuest(hostId); } });
             peer.on('connection', (i) => { conn = i; setupConn(); });
         }
 
@@ -180,10 +166,7 @@
         }
 
         function setupConn() {
-            conn.on('open', () => { 
-                updateStatus("Linked!", "status-linked"); 
-                if(!isHost) send('guest-ready', {}); 
-            });
+            conn.on('open', () => { updateStatus("Linked!", "status-linked"); if(!isHost) send('guest-ready', {}); });
             conn.on('data', (d) => {
                 if(d.type === 'guest-ready' && isHost) {
                     const board = [];
@@ -238,10 +221,11 @@
                 
                 if (i >= currentQuote.length || char === ' ') {
                     cell.className = 'cell black';
+                    cell.onclick = () => jumpToPlayable(i);
                 } else if (/[^A-Z]/.test(char)) {
-                    // PUNCTUATION FIX: Visible black text on light grey background
                     cell.className = 'cell static';
                     cell.innerText = char;
+                    cell.onclick = () => jumpToPlayable(i);
                 } else {
                     cell.className = 'cell';
                     cell.onclick = () => { applySelection(i); send('select', {idx: i}); };
@@ -255,9 +239,13 @@
             }
             bankLetters.forEach(col => col.sort());
             renderBank();
-            // Start cursor on the first playable letter
             let start = findNextPlayable(-1);
             if(start !== null) applySelection(start);
+        }
+
+        function jumpToPlayable(i) {
+            let n = findNextPlayable(i - 1);
+            if (n !== null) { applySelection(n); send('select', {idx: n}); }
         }
 
         function renderBank() {
@@ -308,9 +296,7 @@
 
         function handleInputFromCol(letter, colIdx) {
             let targetIdx = selectedIdx;
-            if (selectedIdx === null || (selectedIdx % 12 !== colIdx)) {
-                targetIdx = findFirstEmptyInCol(colIdx);
-            }
+            if (selectedIdx === null || (selectedIdx % 12 !== colIdx)) targetIdx = findFirstEmptyInCol(colIdx);
             if (targetIdx !== null) { applySelection(targetIdx); send('select', {idx: targetIdx}); applyFill(letter, targetIdx, true); }
         }
 
@@ -367,7 +353,9 @@
                 const idx = parseInt(c.id.split('-')[1]);
                 if(c.className === 'cell') { c.innerText = currentQuote[idx]; c.classList.add('is-hint'); }
             });
-            if(notify) send('skip', {}); checkWin();
+            if(notify) send('skip', {}); 
+            // WAIT 500ms THEN SHOW MODAL
+            setTimeout(checkWin, 500);
         }
 
         function findNextPlayable(curr) {
