@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DropQuote - v6.4</title>
+    <title>DropQuote - v6.5</title>
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -23,7 +23,7 @@
             --used-text: #555;
             --used-bg: #222;
             --text-color: #eee;
-            --punct-bg: #bbb; /* Distinct grey for punctuation */
+            --punct-bg: #bbb;
         }
 
         html, body { height: 100%; overflow: hidden; margin: 0; padding: 0; }
@@ -72,7 +72,7 @@
         .cell.black { background: #000; color: #fff; cursor: pointer; }
         .cell.static { background: var(--punct-bg); color: #000; cursor: pointer; }
         .cell.selected { background: var(--highlight) !important; color: white; }
-        .cell.is-hint { color: var(--hint-color) !important; font-weight: 900; pointer-events: none; }
+        .cell.is-hint { color: var(--hint-color) !important; font-weight: 900; }
 
         .controls { display: flex; gap: 8px; width: 100%; justify-content: center; padding-bottom: 10px; }
         .btn { padding: 12px 18px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; color: white; min-width: 85px; }
@@ -87,7 +87,7 @@
 <body>
 
     <div id="room-panel">
-        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v6.4</h2>
+        <h2 style="color:var(--highlight); margin:0 0 10px 0;">DROPQUOTE v6.5</h2>
         <input type="text" id="room-id-input" placeholder="Room Name" autocomplete="off">
         <button id="join-btn" class="btn-join" onclick="joinRoom()">Enter Game</button>
     </div>
@@ -259,7 +259,10 @@
                 col.forEach(l => {
                     const tile = document.createElement('div');
                     tile.className = 'letter-tile';
-                    if (tempCounts[l] > 0) { tile.className += (state.counts[l] > state.available[l]) ? ' overused' : ' used'; tempCounts[l]--; }
+                    if (tempCounts[l] > 0) { 
+                        tile.className += (state.counts[l] > state.available[l]) ? ' overused' : ' used'; 
+                        tempCounts[l]--; 
+                    }
                     tile.innerText = l;
                     tile.onclick = () => handleInputFromCol(l, colIdx);
                     colDiv.appendChild(tile);
@@ -269,9 +272,10 @@
             updateFatFinger();
         }
 
+        // HINT FIX: Modified selector to include cells that have "is-hint"
         function getColState(colIdx) {
-            let cells = Array.from(document.querySelectorAll('.cell'));
-            let used = cells.filter(c => (parseInt(c.id.split('-')[1]) % 12 === colIdx) && c.className === 'cell' && c.innerText !== "").map(c => c.innerText);
+            let cells = Array.from(document.querySelectorAll('.cell:not(.black):not(.static)'));
+            let used = cells.filter(c => (parseInt(c.id.split('-')[1]) % 12 === colIdx) && c.innerText !== "").map(c => c.innerText);
             let counts = {}; used.forEach(l => counts[l] = (counts[l] || 0) + 1);
             let available = {}; bankLetters[colIdx].forEach(l => available[l] = (available[l] || 0) + 1);
             return { counts, available };
@@ -311,7 +315,7 @@
 
         function applySelection(i) {
             const cell = document.getElementById(`cell-${i}`);
-            if (!cell || cell.className !== 'cell' || cell.classList.contains('is-hint')) return;
+            if (!cell || cell.classList.contains('black') || cell.classList.contains('static') || cell.classList.contains('is-hint')) return;
             document.querySelectorAll('.cell').forEach(c => c.classList.remove('selected'));
             selectedIdx = i; cell.classList.add('selected'); renderBank();
         }
@@ -354,8 +358,8 @@
                 if(c.className === 'cell') { c.innerText = currentQuote[idx]; c.classList.add('is-hint'); }
             });
             if(notify) send('skip', {}); 
-            // WAIT 500ms THEN SHOW MODAL
-            setTimeout(checkWin, 500);
+            // SKIP FIX: Call win screen immediately
+            showWinScreen();
         }
 
         function findNextPlayable(curr) {
@@ -386,18 +390,22 @@
 
         function checkWin() {
             let s = "";
-            for(let i=0; i<currentQuote.length; i++) {
+            for(let i=0; i<84; i++) {
                 const c = document.getElementById(`cell-${i}`);
                 if(!c) continue; 
-                if(c.className === 'cell') s += (c.innerText || "?");
-                else s += c.innerText || " ";
+                if(i >= currentQuote.length) break;
+                if(c.classList.contains('black')) s += " ";
+                else if(c.innerText === "") s += "?";
+                else s += c.innerText;
             }
-            if (s === currentQuote && currentQuote !== "") {
-                document.getElementById('full-quote-text').innerText = `"${currentQuote}"`;
-                document.getElementById('modal-author').innerText = `- ${currentAuthor}`;
-                document.getElementById('modal-overlay').style.display = 'flex';
-                saveToHistory();
-            }
+            if (s === currentQuote && currentQuote !== "") showWinScreen();
+        }
+
+        function showWinScreen() {
+            document.getElementById('full-quote-text').innerText = `"${currentQuote}"`;
+            document.getElementById('modal-author').innerText = `- ${currentAuthor}`;
+            document.getElementById('modal-overlay').style.display = 'flex';
+            saveToHistory();
         }
 
         function saveToHistory() {
