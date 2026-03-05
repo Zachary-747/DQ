@@ -1,0 +1,5846 @@
+[
+  {
+    "id": 101,
+    "language": "en",
+    "author": "Abraham Lincoln",
+    "quote": "I AM A SLOW WALKER, BUT I NEVER WALK BACK."
+  },
+  {
+    "id": 102,
+    "language": "en",
+    "author": "Ralph Waldo Emerson",
+    "quote": "LIFE IS A JOURNEY, NOT A DESTINATION."
+  },
+  {
+    "id": 103,
+    "language": "en",
+    "author": "Mark Twain",
+    "quote": "WHENEVER YOU FIND YOURSELF ON THE SIDE OF THE MAJORITY, IT IS TIME TO PAUSE."
+  },
+  {
+    "id": 104,
+    "language": "en",
+    "author": "Charles Dickens",
+    "quote": "HAVE A HEART THAT NEVER HARDENS, AND A TEMPER THAT NEVER TIRES."
+  },
+  {
+    "id": 105,
+    "language": "en",
+    "author": "Dr. Seuss",
+    "quote": "WHY FIT IN WHEN YOU WERE BORN TO STAND OUT?"
+  },
+  {
+    "id": 106,
+    "language": "en",
+    "author": "Helen Keller",
+    "quote": "KEEP YOUR FACE TO THE SUNSHINE AND YOU CANNOT SEE A SHADOW."
+  },
+  {
+    "id": 107,
+    "language": "en",
+    "author": "Vince Lombardi",
+    "quote": "IT IS NOT WHETHER YOU GET KNOCKED DOWN, IT IS WHETHER YOU GET UP."
+  },
+  {
+    "id": 108,
+    "language": "en",
+    "author": "Eleanor Roosevelt",
+    "quote": "NO ONE CAN MAKE YOU FEEL INFERIOR WITHOUT YOUR CONSENT."
+  },
+  {
+    "id": 109,
+    "language": "en",
+    "author": "Benjamin Franklin",
+    "quote": "AN INVESTMENT IN KNOWLEDGE PAYS THE BEST INTEREST."
+  },
+  {
+    "id": 110,
+    "language": "en",
+    "author": "Henry David Thoreau",
+    "quote": "GO CONFIDENTLY IN THE DIRECTION OF YOUR DREAMS. LIVE THE LIFE YOU IMAGINED."
+  },
+  {
+    "id": 111,
+    "language": "en",
+    "author": "Maya Angelou",
+    "quote": "IF YOU DON'T LIKE SOMETHING, CHANGE IT. IF YOU CAN'T CHANGE IT, CHANGE YOUR ATTITUDE."
+  },
+  {
+    "id": 112,
+    "language": "en",
+    "author": "Theodore Roosevelt",
+    "quote": "DO WHAT YOU CAN, WITH WHAT YOU HAVE, WHERE YOU ARE."
+  },
+  {
+    "id": 113,
+    "language": "en",
+    "author": "George Bernard Shaw",
+    "quote": "LIFE ISN'T ABOUT FINDING YOURSELF. LIFE IS ABOUT CREATING YOURSELF."
+  },
+  {
+    "id": 114,
+    "language": "en",
+    "author": "Aristotle",
+    "quote": "PATIENCE IS BITTER, BUT ITS FRUIT IS SWEET."
+  },
+  {
+    "id": 115,
+    "language": "en",
+    "author": "Steve Jobs",
+    "quote": "YOUR TIME IS LIMITED, SO DON'T WASTE IT LIVING SOMEONE ELSE'S LIFE."
+  },
+  {
+    "id": 116,
+    "language": "en",
+    "author": "Audrey Hepburn",
+    "quote": "NOTHING IS IMPOSSIBLE, THE WORD ITSELF SAYS 'I'M POSSIBLE'!"
+  },
+  {
+    "id": 117,
+    "language": "en",
+    "author": "Wayne Gretzky",
+    "quote": "YOU MISS ONE HUNDRED PERCENT OF THE SHOTS YOU DON'T TAKE."
+  },
+  {
+    "id": 118,
+    "language": "en",
+    "author": "John Wooden",
+    "quote": "DO NOT LET WHAT YOU CANNOT DO INTERFERE WITH WHAT YOU CAN DO."
+  },
+  {
+    "id": 119,
+    "language": "en",
+    "author": "Amelia Earhart",
+    "quote": "THE MOST DIFFICULT THING IS THE DECISION TO ACT, THE REST IS MERELY TENACITY."
+  },
+  {
+    "id": 120,
+    "language": "en",
+    "author": "George Eliot",
+    "quote": "IT IS NEVER TOO LATE TO BE WHAT YOU MIGHT HAVE BEEN."
+  },
+  {
+    "id": 121,
+    "language": "en",
+    "author": "Bruce Lee",
+    "quote": "MISTAKES ARE ALWAYS FORGIVABLE, IF ONE HAS THE COURAGE TO ADMIT THEM."
+  },
+  {
+    "id": 122,
+    "language": "en",
+    "author": "Muhammad Ali",
+    "quote": "DON'T COUNT THE DAYS, MAKE THE DAYS COUNT."
+  },
+  {
+    "id": 123,
+    "language": "en",
+    "author": "Pablo Picasso",
+    "quote": "ACTION IS THE FOUNDATIONAL KEY TO ALL SUCCESS."
+  },
+  {
+    "id": 124,
+    "language": "en",
+    "author": "Anne Frank",
+    "quote": "NO ONE HAS EVER BECOME POOR BY GIVING."
+  },
+  {
+    "id": 125,
+    "language": "en",
+    "author": "Thomas Jefferson",
+    "quote": "I FIND THAT THE HARDER I WORK, THE MORE LUCK I SEEM TO HAVE."
+  },
+  {
+    "id": 126,
+    "language": "en",
+    "author": "Winston Churchill",
+    "quote": "IF YOU ARE GOING THROUGH HELL, KEEP GOING."
+  },
+  {
+    "id": 127,
+    "language": "en",
+    "author": "Charles Darwin",
+    "quote": "A MAN WHO DARES TO WASTE ONE HOUR OF TIME HAS NOT DISCOVERED THE VALUE OF LIFE."
+  },
+  {
+    "id": 128,
+    "language": "en",
+    "author": "Martin Luther King Jr.",
+    "quote": "THE TIME IS ALWAYS RIGHT TO DO WHAT IS RIGHT."
+  },
+  {
+    "id": 129,
+    "language": "en",
+    "author": "Plato",
+    "quote": "THINKING: THE SOUL TALKING TO ITSELF."
+  },
+  {
+    "id": 130,
+    "language": "en",
+    "author": "Friedrich Nietzsche",
+    "quote": "THAT WHICH DOES NOT KILL US MAKES US STRONGER."
+  },
+  {
+    "id": 131,
+    "language": "en",
+    "author": "William James",
+    "quote": "ACT AS IF WHAT YOU DO MAKES A DIFFERENCE. IT DOES."
+  },
+  {
+    "id": 132,
+    "language": "en",
+    "author": "Khalil Gibran",
+    "quote": "PROGRESS LIES NOT IN ENHANCING WHAT IS, BUT IN ADVANCING TOWARD WHAT WILL BE."
+  },
+  {
+    "id": 133,
+    "language": "en",
+    "author": "Seneca",
+    "quote": "IF A MAN KNOWS NOT TO WHICH PORT HE SAILS, NO WIND IS FAVORABLE."
+  },
+  {
+    "id": 134,
+    "language": "en",
+    "author": "Leonardo da Vinci",
+    "quote": "SIMPLICITY IS THE ULTIMATE SOPHISTICATION."
+  },
+  {
+    "id": 135,
+    "language": "en",
+    "author": "William Hazlitt",
+    "quote": "ZEAL IS A VOLCANO, THE PEAK OF WHICH THE GRASS OF INDECISION DOES NOT GROW."
+  },
+  {
+    "id": 136,
+    "language": "en",
+    "author": "Marcus Aurelius",
+    "quote": "VERY LITTLE IS NEEDED TO MAKE A HAPPY LIFE."
+  },
+  {
+    "id": 137,
+    "language": "en",
+    "author": "William Arthur Ward",
+    "quote": "OPPORTUNITIES ARE LIKE SUNRISES. IF YOU WAIT TOO LONG, YOU MISS THEM."
+  },
+  {
+    "id": 138,
+    "language": "en",
+    "author": "Robert Collier",
+    "quote": "SUCCESS IS THE SUM OF SMALL EFFORTS, REPEATED DAY IN AND DAY OUT."
+  },
+  {
+    "id": 139,
+    "language": "en",
+    "author": "Francis Bacon",
+    "quote": "A PRUDENT QUESTION IS ONE HALF OF WISDOM."
+  },
+  {
+    "id": 140,
+    "language": "en",
+    "author": "Dale Carnegie",
+    "quote": "INACTION BREEDS DOUBT AND FEAR. ACTION BREEDS CONFIDENCE AND COURAGE."
+  },
+  {
+    "id": 141,
+    "language": "en",
+    "author": "Charles Kettering",
+    "quote": "HIGH ACHIEVEMENT ALWAYS TAKES PLACE IN THE FRAMEWORK OF HIGH EXPECTATION."
+  },
+  {
+    "id": 142,
+    "language": "en",
+    "author": "Elbert Hubbard",
+    "quote": "TO AVOID CRITICISM DO NOTHING, SAY NOTHING, BE NOTHING."
+  },
+  {
+    "id": 143,
+    "language": "en",
+    "author": "Henry Ward Beecher",
+    "quote": "THE ART OF BEING HAPPY LIES IN THE POWER OF EXTRACTING HAPPINESS FROM COMMON THINGS."
+  },
+  {
+    "id": 144,
+    "language": "en",
+    "author": "Norman Vincent Peale",
+    "quote": "CHANGE YOUR THOUGHTS AND YOU CHANGE YOUR WORLD."
+  },
+  {
+    "id": 145,
+    "language": "en",
+    "author": "Booker T. Washington",
+    "quote": "SUCCESS IS TO BE MEASURED NOT SO MUCH BY THE POSITION THAT ONE HAS REACHED IN LIFE."
+  },
+  {
+    "id": 146,
+    "language": "en",
+    "author": "Sam Levenson",
+    "quote": "DON'T WATCH THE CLOCK; DO WHAT IT DOES. KEEP GOING."
+  },
+  {
+    "id": 147,
+    "language": "en",
+    "author": "Beverly Sills",
+    "quote": "YOU MAY BE DISAPPOINTED IF YOU FAIL, BUT YOU ARE DOOMED IF YOU DON'T TRY."
+  },
+  {
+    "id": 148,
+    "language": "en",
+    "author": "Roy T. Bennett",
+    "quote": "DON'T BE PUSHED AROUND BY THE FEARS IN YOUR MIND. BE LED BY THE DREAMS IN YOUR HEART."
+  },
+  {
+    "id": 149,
+    "language": "en",
+    "author": "William Ernest Henley",
+    "quote": "I AM THE MASTER OF MY FATE, I AM THE CAPTAIN OF MY SOUL."
+  },
+  {
+    "id": 150,
+    "language": "en",
+    "author": "Robert Frost",
+    "quote": "EDUCATION IS THE ABILITY TO LISTEN TO ALMOST ANYTHING WITHOUT LOSING YOUR TEMPER."
+  },
+  {
+    "id": 151,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "MOURIR N'EST RIEN, C'EST NE PAS VIVRE QUI EST EFFRAYANT."
+  },
+  {
+    "id": 152,
+    "language": "fr",
+    "author": "Jean Cocteau",
+    "quote": "PUISQUE CES MYSTERES NOUS DEPASSENT, FEIGNONS D'EN ETRE L'ORGANISATEUR."
+  },
+  {
+    "id": 153,
+    "language": "fr",
+    "author": "Gustave Flaubert",
+    "quote": "IL N'Y A PAS DE VERITE, IL N'Y A QUE DES PERCEPTIONS."
+  },
+  {
+    "id": 154,
+    "language": "fr",
+    "author": "Montesquieu",
+    "quote": "LA LIBERTE EST LE DROIT DE FAIRE TOUT CE QUE LES LOIS PERMETTENT."
+  },
+  {
+    "id": 155,
+    "language": "fr",
+    "author": "Jules Renard",
+    "quote": "ON N'EST PAS HEUREUX : NOTRE BONHEUR, C'EST LE SILENCE DU MALHEUR."
+  },
+  {
+    "id": 156,
+    "language": "fr",
+    "author": "Anatole France",
+    "quote": "POUR ACCOMPLIR DE GRANDES CHOSES, IL FAUT NON SEULEMENT AGIR, MAIS AUSSI REVER."
+  },
+  {
+    "id": 157,
+    "language": "fr",
+    "author": "Marcel Proust",
+    "quote": "SOYONS RECONNAISSANTS AUX PERSONNES QUI NOUS DONNENT DU BONHEUR."
+  },
+  {
+    "id": 158,
+    "language": "fr",
+    "author": "Andre Malraux",
+    "quote": "LA CULTURE NE S'HERITE PAS, ELLE SE CONQUIERT."
+  },
+  {
+    "id": 159,
+    "language": "fr",
+    "author": "Antoine de Saint-Exupery",
+    "quote": "FAITES QUE LE REVE DEVORE VOTRE VIE AFIN QUE LA VIE NE DEVORE PAS VOTRE REVE."
+  },
+  {
+    "id": 160,
+    "language": "fr",
+    "author": "Jean Gabin",
+    "quote": "MAINTENANT JE SAIS, JE SAIS QU'ON NE SAIT JAMAIS."
+  },
+  {
+    "id": 161,
+    "language": "fr",
+    "author": "Jacques Brel",
+    "quote": "IL NOUS FAUT REGARDER CE QU'IL Y A DE BEAU."
+  },
+  {
+    "id": 162,
+    "language": "fr",
+    "author": "Charles Baudelaire",
+    "quote": "LA PLUS BELLE DES RUSES DU DIABLE EST DE VOUS PERSUADER QU'IL N'EXISTE PAS."
+  },
+  {
+    "id": 163,
+    "language": "fr",
+    "author": "Pierre Corneille",
+    "quote": "A VAINCRE SANS PERIL, ON TRIOMPHE SANS GLOIRE."
+  },
+  {
+    "id": 164,
+    "language": "fr",
+    "author": "Nicolas Boileau",
+    "quote": "CE QUE L'ON CONCOIT BIEN S'ENONCE CLAIREMENT."
+  },
+  {
+    "id": 165,
+    "language": "fr",
+    "author": "Jean de La Bruyere",
+    "quote": "IL FAUT RIRE AVANT QUE D'ETRE HEUREUX, DE PEUR DE MOURIR SANS AVOIR RI."
+  },
+  {
+    "id": 166,
+    "language": "fr",
+    "author": "Denis Diderot",
+    "quote": "IL N'Y A QUE LES PASSIONS, ET LES GRANDES PASSIONS, QUI PUISSENT ELEVER L'AME."
+  },
+  {
+    "id": 167,
+    "language": "fr",
+    "author": "Paul Valery",
+    "quote": "QUE SERIONS-NOUS SANS LE SECOURS DE CE QUI N'EXISTE PAS?"
+  },
+  {
+    "id": 168,
+    "language": "fr",
+    "author": "Francois de La Rochefoucauld",
+    "quote": "L'ESPRIT EST TOUJOURS LA DUPE DU COEUR."
+  },
+  {
+    "id": 169,
+    "language": "fr",
+    "author": "Simone Weil",
+    "quote": "L'ATTENTION EST LA FORME LA PLUS RARE ET LA PLUS PURE DE LA GENEROSITE."
+  },
+  {
+    "id": 170,
+    "language": "fr",
+    "author": "Gaston Bachelard",
+    "quote": "ON NE PEUT BIEN VOIR QUE CE QU'ON REGARDE AVEC AMOUR."
+  },
+  {
+    "id": 171,
+    "language": "fr",
+    "author": "Emile Chartier Alain",
+    "quote": "RIEN N'EST PLUS DANGEREUX QU'UNE IDEE, QUAND ON N'EN A QU'UNE."
+  },
+  {
+    "id": 172,
+    "language": "fr",
+    "author": "Françoise Sagan",
+    "quote": "LE BONHEUR, JE NE SAIS PAS CE QUE C'EST."
+  },
+  {
+    "id": 173,
+    "language": "fr",
+    "author": "Georges Clemenceau",
+    "quote": "IL FAUT SAVOIR CE QUE L'ON VEUT. QUAND ON LE SAIT, IL FAUT AVOIR LE COURAGE DE LE DIRE."
+  },
+  {
+    "id": 174,
+    "language": "fr",
+    "author": "Jean Anouilh",
+    "quote": "IL EST TRES DANGEREUX DE COMMENCER A ETRE VICTIME."
+  },
+  {
+    "id": 175,
+    "language": "fr",
+    "author": "Marguerite Yourcenar",
+    "quote": "ON NE CONNAIT PERSONNE, MAIS ON CROIT PARFOIS CONNAITRE."
+  },
+  {
+    "id": 176,
+    "language": "fr",
+    "author": "Michel de Montaigne",
+    "quote": "LE PROFIT DE L'UN EST LE DOMMAGE DE L'AUTRE."
+  },
+  {
+    "id": 177,
+    "language": "fr",
+    "author": "Jean-Jacques Rousseau",
+    "quote": "L'HOMME EST NE LIBRE, ET PARTOUT IL EST DANS LES FERS."
+  },
+  {
+    "id": 178,
+    "language": "fr",
+    "author": "Marquis de Sade",
+    "quote": "LA CONSCIENCE EST LE MIROIR DE NOTRE AME."
+  },
+  {
+    "id": 179,
+    "language": "fr",
+    "author": "Francois Rabelais",
+    "quote": "SCIENCE SANS CONSCIENCE N'EST QUE RUINE DE L'AME."
+  },
+  {
+    "id": 180,
+    "language": "fr",
+    "author": "Paul Claudel",
+    "quote": "LE BONHEUR N'EST PAS LE BUT, MAIS LE MOYEN DE LA VIE."
+  },
+  {
+    "id": 181,
+    "language": "fr",
+    "author": "Christian Bobin",
+    "quote": "LE MONDE EST UN GRAND MIROIR DANS LEQUEL CHACUN SE REGARDE."
+  },
+  {
+    "id": 182,
+    "language": "fr",
+    "author": "Guillaume Musso",
+    "quote": "LA VIE EST UN SOMMEIL, L'AMOUR EN EST LE REVE."
+  },
+  {
+    "id": 183,
+    "language": "fr",
+    "author": "Frederic Beigbeder",
+    "quote": "L'AMOUR DURE TROIS ANS, LE TEMPS DE SE DETRUIRE."
+  },
+  {
+    "id": 184,
+    "language": "fr",
+    "author": "Anna Gavalda",
+    "quote": "LA VIE, C'EST COMME UNE BICYCLETTE, IL FAUT AVANCER POUR NE PAS PERDRE L'EQUILIBRE."
+  },
+  {
+    "id": 185,
+    "language": "fr",
+    "author": "Amelie Nothomb",
+    "quote": "ON NE CHOISIT PAS SON DESTIN, ON LE SUBIT OU ON LE CREE."
+  },
+  {
+    "id": 186,
+    "language": "fr",
+    "author": "Daniel Pennac",
+    "quote": "LE TEMPS DE LIRE, COMME LE TEMPS D'AIMER, DILATE LE TEMPS DE VIVRE."
+  },
+  {
+    "id": 187,
+    "language": "fr",
+    "author": "Eric-Emmanuel Schmitt",
+    "quote": "LE PARDON EST LA SEULE FACON DE SE LIBERER DU PASSE."
+  },
+  {
+    "id": 188,
+    "language": "fr",
+    "author": "Muriel Barbery",
+    "quote": "NOUS DEVONS FAIRE DE NOTRE VIE UN CHEF-D'OEUVRE."
+  },
+  {
+    "id": 189,
+    "language": "fr",
+    "author": "Delphine de Vigan",
+    "quote": "LES MOTS NE DISENT JAMAIS TOUT CE QU'ON VOUDRAIT."
+  },
+  {
+    "id": 190,
+    "language": "fr",
+    "author": "Jean d'Ormesson",
+    "quote": "LA VIE EST UNE FETE DONT ON PART TOUJOURS TROP TOT."
+  },
+  {
+    "id": 191,
+    "language": "fr",
+    "author": "Philippe Besson",
+    "quote": "L'ABSENCE EST A L'AMOUR CE QU'EST AU FEU LE VENT."
+  },
+  {
+    "id": 192,
+    "language": "fr",
+    "author": "Marguerite Duras",
+    "quote": "ECRIRE, C'EST AUSSI NE PAS PARLER. C'EST SE TAIRE."
+  },
+  {
+    "id": 193,
+    "language": "fr",
+    "author": "Colette",
+    "quote": "LE VOYAGE EST NECESSAIRE A CEUX QUI VEULENT APPRENDRE."
+  },
+  {
+    "id": 194,
+    "language": "fr",
+    "author": "Georges Sand",
+    "quote": "GARDEZ BIEN EN VOUS CE TRESOR, LA BONTE."
+  },
+  {
+    "id": 195,
+    "language": "fr",
+    "author": "Arthur Rimbaud",
+    "quote": "L'ETERNITE. C'EST LA MER MELEE AU SOLEIL."
+  },
+  {
+    "id": 196,
+    "language": "fr",
+    "author": "Stephane Mallarme",
+    "quote": "LE MONDE EST FAIT POUR ABOUTIR A UN BEAU LIVRE."
+  },
+  {
+    "id": 197,
+    "language": "fr",
+    "author": "Alfred de Vigny",
+    "quote": "SEUL LE SILENCE EST GRAND; TOUT LE RESTE EST FAIBLESSE."
+  },
+  {
+    "id": 198,
+    "language": "fr",
+    "author": "Paul Verlaine",
+    "quote": "IL PLEURE DANS MON COEUR COMME IL PLEUT SUR LA VILLE."
+  },
+  {
+    "id": 199,
+    "language": "fr",
+    "author": "Gerard de Nerval",
+    "quote": "CHAQUE FLEUR EST UNE AME EPANOUIE DANS LA NATURE."
+  },
+  {
+    "id": 201,
+    "language": "en",
+    "author": "Martin Luther King Jr.",
+    "quote": "I HAVE A DREAM THAT MY FOUR LITTLE CHILDREN WILL ONE DAY LIVE IN A NATION."
+  },
+  {
+    "id": 202,
+    "language": "en",
+    "author": "John F. Kennedy",
+    "quote": "ASK NOT WHAT YOUR COUNTRY CAN DO FOR YOU, ASK WHAT YOU CAN DO FOR YOUR COUNTRY."
+  },
+  {
+    "id": 203,
+    "language": "en",
+    "author": "Bob Marley",
+    "quote": "THE GREATNESS OF A MAN IS NOT IN HOW MUCH WEALTH HE ACQUIRES."
+  },
+  {
+    "id": 204,
+    "language": "en",
+    "author": "Thomas Paine",
+    "quote": "THESE ARE THE TIMES THAT TRY MEN'S SOULS."
+  },
+  {
+    "id": 205,
+    "language": "en",
+    "author": "Benjamin Disraeli",
+    "quote": "I AM PREPARED FOR THE WORST, BUT HOPE FOR THE BEST."
+  },
+  {
+    "id": 206,
+    "language": "en",
+    "author": "Robert Louis Stevenson",
+    "quote": "DON'T JUDGE EACH DAY BY THE HARVEST YOU REAP BUT BY THE SEEDS THAT YOU PLANT."
+  },
+  {
+    "id": 207,
+    "language": "en",
+    "author": "Henry Ford",
+    "quote": "FAILURE IS SIMPLY THE OPPORTUNITY TO BEGIN AGAIN, THIS TIME MORE INTELLIGENTLY."
+  },
+  {
+    "id": 208,
+    "language": "en",
+    "author": "Alexander the Great",
+    "quote": "THERE IS NOTHING IMPOSSIBLE TO HIM WHO WILL TRY."
+  },
+  {
+    "id": 209,
+    "language": "en",
+    "author": "Lao Tzu",
+    "quote": "BEING DEEPLY LOVED BY SOMEONE GIVES YOU STRENGTH."
+  },
+  {
+    "id": 210,
+    "language": "en",
+    "author": "Mother Teresa",
+    "quote": "SPREAD LOVE EVERYWHERE YOU GO. LET NO ONE EVER COME TO YOU WITHOUT LEAVING HAPPIER."
+  },
+  {
+    "id": 211,
+    "language": "en",
+    "author": "Henry David Thoreau",
+    "quote": "THIS WORLD IS BUT A CANVAS TO OUR IMAGINATION."
+  },
+  {
+    "id": 212,
+    "language": "en",
+    "author": "Albert Einstein",
+    "quote": "A PERSON WHO NEVER MADE A MISTAKE NEVER TRIED ANYTHING NEW."
+  },
+  {
+    "id": 213,
+    "language": "en",
+    "author": "Margaret Mead",
+    "quote": "ALWAYS REMEMBER THAT YOU ARE ABSOLUTELY UNIQUE. JUST LIKE EVERYONE ELSE."
+  },
+  {
+    "id": 214,
+    "language": "en",
+    "author": "Socrates",
+    "quote": "THE UNEXAMINED LIFE IS NOT WORTH LIVING."
+  },
+  {
+    "id": 215,
+    "language": "en",
+    "author": "Confucius",
+    "quote": "LIFE IS REALLY SIMPLE, BUT WE INSIST ON MAKING IT COMPLICATED."
+  },
+  {
+    "id": 216,
+    "language": "en",
+    "author": "Emily Dickinson",
+    "quote": "HOPE IS THE THING WITH FEATHERS THAT PERCHES IN THE SOUL."
+  },
+  {
+    "id": 217,
+    "language": "en",
+    "author": "Victor Hugo",
+    "quote": "TO LOVE ANOTHER PERSON IS TO SEE THE FACE OF GOD."
+  },
+  {
+    "id": 218,
+    "language": "en",
+    "author": "Edgar Allan Poe",
+    "quote": "ALL THAT WE SEE OR SEEM IS BUT A DREAM WITHIN A DREAM."
+  },
+  {
+    "id": 219,
+    "language": "en",
+    "author": "Robert Browning",
+    "quote": "AH, BUT A MAN'S REACH SHOULD EXCEED HIS GRASP."
+  },
+  {
+    "id": 220,
+    "language": "en",
+    "author": "Walt Whitman",
+    "quote": "KEEP YOUR FACE ALWAYS TOWARD THE SUNSHINE AND SHADOWS WILL FALL BEHIND YOU."
+  },
+  {
+    "id": 221,
+    "language": "en",
+    "author": "J.K. Rowling",
+    "quote": "IT IS OUR CHOICES THAT SHOW WHAT WE TRULY ARE, FAR MORE THAN OUR ABILITIES."
+  },
+  {
+    "id": 222,
+    "language": "en",
+    "author": "Bill Gates",
+    "quote": "IT'S FINE TO CELEBRATE SUCCESS BUT IT IS MORE IMPORTANT TO HEED THE LESSONS."
+  },
+  {
+    "id": 223,
+    "language": "en",
+    "author": "Warren Buffett",
+    "quote": "PRICE IS WHAT YOU PAY. VALUE IS WHAT YOU GET."
+  },
+  {
+    "id": 224,
+    "language": "en",
+    "author": "Michael Jordan",
+    "quote": "I CAN ACCEPT FAILURE, EVERYONE FAILS AT SOMETHING. BUT I CAN'T ACCEPT NOT TRYING."
+  },
+  {
+    "id": 225,
+    "language": "en",
+    "author": "George Lucas",
+    "quote": "ALWAYS REMEMBER, YOUR FOCUS DETERMINES YOUR REALITY."
+  },
+  {
+    "id": 226,
+    "language": "en",
+    "author": "Bruce Lee",
+    "quote": "KNOWING IS NOT ENOUGH, WE MUST APPLY. WILLING IS NOT ENOUGH, WE MUST DO."
+  },
+  {
+    "id": 227,
+    "language": "en",
+    "author": "Muhammad Ali",
+    "quote": "HE WHO IS NOT COURAGEOUS ENOUGH TO TAKE RISKS WILL ACCOMPLISH NOTHING IN LIFE."
+  },
+  {
+    "id": 228,
+    "language": "en",
+    "author": "Jim Rohn",
+    "quote": "EITHER YOU RUN THE DAY OR THE DAY RUNS YOU."
+  },
+  {
+    "id": 229,
+    "language": "en",
+    "author": "Zig Ziglar",
+    "quote": "YOU DON'T HAVE TO BE GREAT TO START, BUT YOU HAVE TO START TO BE GREAT."
+  },
+  {
+    "id": 230,
+    "language": "en",
+    "author": "Les Brown",
+    "quote": "SHOOT FOR THE MOON. EVEN IF YOU MISS, YOU'LL LAND AMONG THE STARS."
+  },
+  {
+    "id": 231,
+    "language": "en",
+    "author": "Robin Williams",
+    "quote": "NO MATTER WHAT PEOPLE TELL YOU, WORDS AND IDEAS CAN CHANGE THE WORLD."
+  },
+  {
+    "id": 232,
+    "language": "en",
+    "author": "Dalai Lama",
+    "quote": "BE KIND WHENEVER POSSIBLE. IT IS ALWAYS POSSIBLE."
+  },
+  {
+    "id": 233,
+    "language": "en",
+    "author": "Michelle Obama",
+    "quote": "SUCCESS ISN'T ABOUT HOW MUCH MONEY YOU MAKE. IT'S ABOUT THE DIFFERENCE YOU MAKE."
+  },
+  {
+    "id": 234,
+    "language": "en",
+    "author": "Taylor Swift",
+    "quote": "NO MATTER WHAT HAPPENS IN LIFE, BE GOOD TO PEOPLE."
+  },
+  {
+    "id": 235,
+    "language": "en",
+    "author": "Lady Gaga",
+    "quote": "TRUST IS LIKE A MIRROR, YOU CAN FIX IT IF IT'S BROKEN."
+  },
+  {
+    "id": 236,
+    "language": "en",
+    "author": "Elon Musk",
+    "quote": "WHEN SOMETHING IS IMPORTANT ENOUGH, YOU DO IT EVEN IF THE ODDS ARE NOT IN YOUR FAVOR."
+  },
+  {
+    "id": 237,
+    "language": "en",
+    "author": "Jeff Bezos",
+    "quote": "A BRAND FOR A COMPANY IS LIKE A REPUTATION FOR A PERSON."
+  },
+  {
+    "id": 238,
+    "language": "en",
+    "author": "Steve Harvey",
+    "quote": "YOUR SET BACK IS JUST A SETUP FOR YOUR COMEBACK."
+  },
+  {
+    "id": 239,
+    "language": "en",
+    "author": "Denzel Washington",
+    "quote": "WITHOUT COMMITMENT, YOU'LL NEVER START. WITHOUT CONSISTENCY, YOU'LL NEVER FINISH."
+  },
+  {
+    "id": 240,
+    "language": "en",
+    "author": "Will Smith",
+    "quote": "MONEY AND SUCCESS DON'T CHANGE PEOPLE; THEY MERELY AMPLIFY WHAT IS ALREADY THERE."
+  },
+  {
+    "id": 241,
+    "language": "en",
+    "author": "Morgan Freeman",
+    "quote": "CHALLENGE YOURSELF; IT'S THE ONLY PATH WHICH LEADS TO GROWTH."
+  },
+  {
+    "id": 242,
+    "language": "en",
+    "author": "Oprah Winfrey",
+    "quote": "THE BIGGEST ADVENTURE YOU CAN TAKE IS TO LIVE THE LIFE OF YOUR DREAMS."
+  },
+  {
+    "id": 243,
+    "language": "en",
+    "author": "Malala Yousafzai",
+    "quote": "I RAISE UP MY VOICE NOT SO THAT I CAN SHOUT, BUT SO THAT THOSE WITHOUT A VOICE."
+  },
+  {
+    "id": 244,
+    "language": "en",
+    "author": "Greta Thunberg",
+    "quote": "YOU ARE NEVER TOO SMALL TO MAKE A DIFFERENCE."
+  },
+  {
+    "id": 245,
+    "language": "en",
+    "author": "Paulo Coelho",
+    "quote": "IT'S THE POSSIBILITY OF HAVING A DREAM COME TRUE THAT MAKES LIFE INTERESTING."
+  },
+  {
+    "id": 246,
+    "language": "en",
+    "author": "Gabriel Garcia Marquez",
+    "quote": "IT IS NOT TRUE THAT PEOPLE STOP PURSUING DREAMS BECAUSE THEY GROW OLD."
+  },
+  {
+    "id": 247,
+    "language": "en",
+    "author": "Haruki Murakami",
+    "quote": "AND ONCE THE STORM IS OVER, YOU WON'T REMEMBER HOW YOU MADE IT THROUGH."
+  },
+  {
+    "id": 248,
+    "language": "en",
+    "author": "Ernest Hemingway",
+    "quote": "MY ONLY REGRET IN LIFE IS THAT I DID NOT DRINK MORE WINE."
+  },
+  {
+    "id": 249,
+    "language": "en",
+    "author": "Mark Twain",
+    "quote": "THE TWO MOST IMPORTANT DAYS IN YOUR LIFE ARE THE DAY YOU ARE BORN AND THE DAY YOU FIND WHY."
+  },
+  {
+    "id": 250,
+    "language": "en",
+    "author": "Winston Churchill",
+    "quote": "A PESSIMIST SEES THE DIFFICULTY IN EVERY OPPORTUNITY."
+  },
+  {
+    "id": 251,
+    "language": "fr",
+    "author": "Rene Descartes",
+    "quote": "LA LECTURE DE TOUS LES BONS LIVRES EST COMME UNE CONVERSATION."
+  },
+  {
+    "id": 252,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "LA LIBERTE COMMENCE OU L'IGNORANCE FINIT."
+  },
+  {
+    "id": 253,
+    "language": "fr",
+    "author": "Jean Gabin",
+    "quote": "ON NE SAIT JAMAIS TOUT CE QUE L'ON SAIT."
+  },
+  {
+    "id": 254,
+    "language": "fr",
+    "author": "Charles de Gaulle",
+    "quote": "LA FIN DE L'ESPOIR EST LE COMMENCEMENT DE LA MORT."
+  },
+  {
+    "id": 255,
+    "language": "fr",
+    "author": "Emile Zola",
+    "quote": "UNE OEUVRE D'ART EST UN COIN DE LA CREATION VU A TRAVERS UN TEMPERAMENT."
+  },
+  {
+    "id": 256,
+    "language": "fr",
+    "author": "Paul Cezanne",
+    "quote": "ON N'EST PAS PEINTRE TANT QU'ON N'A PAS PEINT UN CHAT."
+  },
+  {
+    "id": 257,
+    "language": "fr",
+    "author": "Claude Monet",
+    "quote": "MON JARDIN EST MON PLUS BEAU CHEF-D'OEUVRE."
+  },
+  {
+    "id": 258,
+    "language": "fr",
+    "author": "Auguste Rodin",
+    "quote": "L'ART, C'EST LA CONTEMPLATION. C'EST LE PLAISIR DE L'ESPRIT."
+  },
+  {
+    "id": 259,
+    "language": "fr",
+    "author": "Jean Renoir",
+    "quote": "UN PEINTRE PEINT AVEC SES YEUX MAIS FINIT PAR PEINDRE AVEC SON COEUR."
+  },
+  {
+    "id": 260,
+    "language": "fr",
+    "author": "Francois Truffaut",
+    "quote": "LE CINEMA, C'EST L'ART DE FAIRE FAIRE DE JOLIES CHOSES A DE JOLIES FEMMES."
+  },
+  {
+    "id": 261,
+    "language": "fr",
+    "author": "Jean-Luc Godard",
+    "quote": "LA PHOTOGRAPHIE, C'EST LA VERITE. LE CINEMA, C'EST VINGT-QUATRE FOIS LA VERITE."
+  },
+  {
+    "id": 262,
+    "language": "fr",
+    "author": "Brigitte Bardot",
+    "quote": "ON NE PEUT PAS PLAIRE A TOUT LE MONDE."
+  },
+  {
+    "id": 263,
+    "language": "fr",
+    "author": "Alain Delon",
+    "quote": "JE NE SUIS PAS UNE STAR. JE SUIS UN ACTEUR."
+  },
+  {
+    "id": 264,
+    "language": "fr",
+    "author": "Catherine Deneuve",
+    "quote": "LE CINEMA EST UN MIROIR QUI NOUS AIDE A NOUS VOIR."
+  },
+  {
+    "id": 265,
+    "language": "fr",
+    "author": "Marion Cotillard",
+    "quote": "ON NE PEUT PAS TOUT CONTROLER DANS LA VIE."
+  },
+  {
+    "id": 266,
+    "language": "fr",
+    "author": "Omar Sy",
+    "quote": "LE RIRE EST LE MEILLEUR REMEDE A TOUS LES MAUX."
+  },
+  {
+    "id": 267,
+    "language": "fr",
+    "author": "Zinedine Zidane",
+    "quote": "ON PEUT CHANGER DE FEMME, MAIS ON NE CHANGE PAS D'EQUIPE DE FOOT."
+  },
+  {
+    "id": 268,
+    "language": "fr",
+    "author": "Kylian Mbappe",
+    "quote": "JE NE JOUE PAS POUR ETRE LE MEILLEUR, JE JOUE POUR GAGNER."
+  },
+  {
+    "id": 269,
+    "language": "fr",
+    "author": "Yannick Noah",
+    "quote": "LE PLUS DUR N'EST PAS DE MONTER, C'EST DE RESTER EN HAUT."
+  },
+  {
+    "id": 270,
+    "language": "fr",
+    "author": "Jean d'Ormesson",
+    "quote": "IL Y A DES JOURS, DES MOIS, DES ANNEES SANS IMPORTANCE."
+  },
+  {
+    "id": 271,
+    "language": "fr",
+    "author": "Simone Veil",
+    "quote": "MA REVENDICATION EN TANT QUE FEMME EST QUE MA DIFFERENCE SOIT PRISE EN COMPTE."
+  },
+  {
+    "id": 272,
+    "language": "fr",
+    "author": "Coluche",
+    "quote": "C'EST PAS PARCE QU'ILS SONT NOMBREUX A AVOIR TORT QU'ILS ONT RAISON."
+  },
+  {
+    "id": 273,
+    "language": "fr",
+    "author": "Guy Bedos",
+    "quote": "L'HUMOUR EST UNE TENTATIVE DE DECAPER LES GRANDS SENTIMENTS."
+  },
+  {
+    "id": 274,
+    "language": "fr",
+    "author": "Pierre Desproges",
+    "quote": "ON PEUT RIRE DE TOUT, MAIS PAS AVEC N'IMPORTE QUI."
+  },
+  {
+    "id": 275,
+    "language": "fr",
+    "author": "Raymond Devos",
+    "quote": "SI VOUS N'AVEZ RIEN A DIRE, NE VOUS GENEZ PAS POUR LE FAIRE SAVOIR."
+  },
+  {
+    "id": 276,
+    "language": "fr",
+    "author": "Stromae",
+    "quote": "ALORS ON DANSE, ALORS ON CHANTE, ALORS ON RIT."
+  },
+  {
+    "id": 277,
+    "language": "fr",
+    "author": "Edith Piaf",
+    "quote": "JE NE REGRETTE RIEN DE CE QUE J'AI VECU."
+  },
+  {
+    "id": 278,
+    "language": "fr",
+    "author": "Charles Aznavour",
+    "quote": "J'AI AU MOINS APPRIS A NE JAMAIS DIRE JAMAIS."
+  },
+  {
+    "id": 279,
+    "language": "fr",
+    "author": "Serge Gainsbourg",
+    "quote": "JE CONNAIS MES LIMITES. C'EST POURQUOI JE VAIS AU-DELA."
+  },
+  {
+    "id": 280,
+    "language": "fr",
+    "author": "Johnny Hallyday",
+    "quote": "ON A TOUS EN NOUS QUELQUE CHOSE DE TENNESSEE."
+  },
+  {
+    "id": 281,
+    "language": "fr",
+    "author": "Mylene Farmer",
+    "quote": "ON NE CHOISIT PAS D'ETRE DIFFERENT, ON L'EST."
+  },
+  {
+    "id": 282,
+    "language": "fr",
+    "author": "Daft Punk",
+    "quote": "TRAVAILLE PLUS DUR, FAIS MIEUX, FAIS PLUS VITE, RENDS-NOUS PLUS FORTS."
+  },
+  {
+    "id": 283,
+    "language": "fr",
+    "author": "Jean de La Fontaine",
+    "quote": "LA PATIENCE ET LE TEMPS FONT PLUS QUE FORCE NI QUE RAGE."
+  },
+  {
+    "id": 301,
+    "language": "en",
+    "author": "Thomas Carlyle",
+    "quote": "SILENCE IS THE ELEMENT IN WHICH GREAT THINGS FASHION THEMSELVES TOGETHER."
+  },
+  {
+    "id": 302,
+    "language": "en",
+    "author": "John Ruskin",
+    "quote": "QUALITY IS NEVER AN ACCIDENT; IT IS ALWAYS THE RESULT OF INTELLIGENT EFFORT."
+  },
+  {
+    "id": 303,
+    "language": "en",
+    "author": "Henry Drummond",
+    "quote": "HAPPINESS IS A GREAT LOVE AND MUCH SERVICE."
+  },
+  {
+    "id": 304,
+    "language": "en",
+    "author": "William Butler Yeats",
+    "quote": "EDUCATION IS NOT THE FILLING OF A PAIL, BUT THE LIGHTING OF A FIRE."
+  },
+  {
+    "id": 305,
+    "language": "en",
+    "author": "Rabindranath Tagore",
+    "quote": "CLOUDS COME FLOATING INTO MY LIFE, NO LONGER TO CARRY RAIN OR USHER STORM."
+  },
+  {
+    "id": 306,
+    "language": "en",
+    "author": "Khalil Gibran",
+    "quote": "YESTERDAY IS BUT TODAY'S MEMORY, AND TOMORROW IS TODAY'S DREAM."
+  },
+  {
+    "id": 307,
+    "language": "en",
+    "author": "George Sand",
+    "quote": "THERE IS ONLY ONE HAPPINESS IN THIS LIFE, TO LOVE AND BE LOVED."
+  },
+  {
+    "id": 308,
+    "language": "en",
+    "author": "Victor Hugo",
+    "quote": "LAUGHTER IS THE SUN THAT DRIVES WINTER FROM THE HUMAN FACE."
+  },
+  {
+    "id": 309,
+    "language": "en",
+    "author": "Johann Wolfgang von Goethe",
+    "quote": "KNOWING IS NOT ENOUGH; WE MUST APPLY. WILLING IS NOT ENOUGH; WE MUST DO."
+  },
+  {
+    "id": 310,
+    "language": "en",
+    "author": "Friedrich Schiller",
+    "quote": "KEEP TRUE TO THE DREAMS OF THY YOUTH."
+  },
+  {
+    "id": 311,
+    "language": "en",
+    "author": "Blaise Pascal",
+    "quote": "KIND WORDS DO NOT COST MUCH. YET THEY ACCOMPLISH MUCH."
+  },
+  {
+    "id": 312,
+    "language": "en",
+    "author": "Henri Matisse",
+    "quote": "CREATIVITY TAKES COURAGE. IT IS THE ABILITY TO CREATE."
+  },
+  {
+    "id": 313,
+    "language": "en",
+    "author": "Pablo Picasso",
+    "quote": "EVERYTHING YOU CAN IMAGINE IS REAL."
+  },
+  {
+    "id": 314,
+    "language": "en",
+    "author": "Salvador Dali",
+    "quote": "HAVE NO FEAR OF PERFECTION - YOU'LL NEVER REACH IT."
+  },
+  {
+    "id": 315,
+    "language": "en",
+    "author": "Andy Warhol",
+    "quote": "THEY SAY TIME CHANGES THINGS, BUT YOU ACTUALLY HAVE TO CHANGE THEM YOURSELF."
+  },
+  {
+    "id": 316,
+    "language": "en",
+    "author": "Ansel Adams",
+    "quote": "YOU DON'T TAKE A PHOTOGRAPH, YOU MAKE IT."
+  },
+  {
+    "id": 317,
+    "language": "en",
+    "author": "Georgia O'Keeffe",
+    "quote": "TO CREATE ONE'S WORLD IN ANY OF THE ARTS TAKES COURAGE."
+  },
+  {
+    "id": 318,
+    "language": "en",
+    "author": "Frank Lloyd Wright",
+    "quote": "THE LONGER I LIVE, THE MORE BEAUTIFUL LIFE BECOMES."
+  },
+  {
+    "id": 319,
+    "language": "en",
+    "author": "Le Corbusier",
+    "quote": "SPACE AND LIGHT AND ORDER. THOSE ARE THE THINGS THAT MEN NEED."
+  },
+  {
+    "id": 320,
+    "language": "en",
+    "author": "Charles Eames",
+    "quote": "THE DETAILS ARE NOT THE DETAILS. THEY MAKE THE DESIGN."
+  },
+  {
+    "id": 321,
+    "language": "en",
+    "author": "Coco Chanel",
+    "quote": "BEAUTY BEGINS THE MOMENT YOU DECIDE TO BE YOURSELF."
+  },
+  {
+    "id": 322,
+    "language": "en",
+    "author": "Christian Dior",
+    "quote": "ZEST IS THE SECRET OF ALL BEAUTY. THERE IS NO BEAUTY WITHOUT ZEST."
+  },
+  {
+    "id": 323,
+    "language": "en",
+    "author": "Gianni Versace",
+    "quote": "DON'T BE INTO TRENDS. DON'T MAKE FASHION OWN YOU."
+  },
+  {
+    "id": 324,
+    "language": "en",
+    "author": "Alexander McQueen",
+    "quote": "FASHION SHOULD BE A FORM OF ESCAPISM, AND NOT A FORM OF IMPRISONMENT."
+  },
+  {
+    "id": 325,
+    "language": "en",
+    "author": "Vivienne Westwood",
+    "quote": "BUY LESS. CHOOSE WELL. MAKE IT LAST."
+  },
+  {
+    "id": 326,
+    "language": "en",
+    "author": "Karl Lagerfeld",
+    "quote": "ONE IS NEVER OVER-DRESSED OR UNDER-DRESSED WITH A LITTLE BLACK DRESS."
+  },
+  {
+    "id": 327,
+    "language": "en",
+    "author": "Ralph Lauren",
+    "quote": "I DON'T DESIGN CLOTHES. I DESIGN DREAMS."
+  },
+  {
+    "id": 328,
+    "language": "en",
+    "author": "Giorgio Armani",
+    "quote": "ELEGANCE IS NOT STANDING OUT, BUT BEING REMEMBERED."
+  },
+  {
+    "id": 329,
+    "language": "en",
+    "author": "Miuccia Prada",
+    "quote": "WHAT YOU WEAR IS HOW YOU PRESENT YOURSELF TO THE WORLD."
+  },
+  {
+    "id": 330,
+    "language": "en",
+    "author": "Tom Ford",
+    "quote": "DRESSING WELL IS A FORM OF GOOD MANNERS."
+  },
+  {
+    "id": 331,
+    "language": "en",
+    "author": "Diane von Furstenberg",
+    "quote": "THE MOST IMPORTANT RELATIONSHIP IS THE ONE YOU HAVE WITH YOURSELF."
+  },
+  {
+    "id": 332,
+    "language": "en",
+    "author": "Vera Wang",
+    "quote": "SUCCESS ISN'T ABOUT THE RESULT, IT'S ABOUT WHAT YOU LEARN ALONG THE WAY."
+  },
+  {
+    "id": 333,
+    "language": "en",
+    "author": "Marc Jacobs",
+    "quote": "CLOTHES MEAN NOTHING UNTIL SOMEONE LIVES IN THEM."
+  },
+  {
+    "id": 334,
+    "language": "en",
+    "author": "Oscar de la Renta",
+    "quote": "THE QUALITIES I MOST ADMIRE IN WOMEN ARE CONFIDENCE AND KINDNESS."
+  },
+  {
+    "id": 335,
+    "language": "en",
+    "author": "Hubert de Givenchy",
+    "quote": "THE DRESS MUST FOLLOW THE BODY OF A WOMAN."
+  },
+  {
+    "id": 336,
+    "language": "en",
+    "author": "Yves Saint Laurent",
+    "quote": "FASHIONS FADE, STYLE IS ETERNAL. THE MOST BEAUTIFUL MAKEUP IS PASSION."
+  },
+  {
+    "id": 337,
+    "language": "en",
+    "author": "Manolo Blahnik",
+    "quote": "SHOES ARE THE QUICKEST WAY TO ACHIEVE INSTANT METAMORPHOSIS."
+  },
+  {
+    "id": 338,
+    "language": "en",
+    "author": "Christian Louboutin",
+    "quote": "A SHOE IS NOT ONLY A DESIGN, BUT IT'S A PART OF YOUR BODY LANGUAGE."
+  },
+  {
+    "id": 339,
+    "language": "en",
+    "author": "Jimmy Choo",
+    "quote": "THE RIGHT SHOE CAN MAKE EVERYTHING DIFFERENT."
+  },
+  {
+    "id": 340,
+    "language": "en",
+    "author": "Victoria Beckham",
+    "quote": "I DON'T BELIEVE IN LUCK. I BELIEVE IN PREPARATION."
+  },
+  {
+    "id": 341,
+    "language": "en",
+    "author": "Kate Spade",
+    "quote": "SHE LEAVES A LITTLE SPARKLE WHEREVER SHE GOES."
+  },
+  {
+    "id": 342,
+    "language": "en",
+    "author": "Alexander Wang",
+    "quote": "IT IS HOW PEOPLE DRESS IN THEIR OFF DAYS THAT IS MOST INTRIGUING."
+  },
+  {
+    "id": 343,
+    "language": "en",
+    "author": "Stella McCartney",
+    "quote": "I THINK THAT STYLE IS MORE ABOUT CONFIDENCE THAN ANYTHING ELSE."
+  },
+  {
+    "id": 344,
+    "language": "en",
+    "author": "Phoebe Philo",
+    "quote": "THE CHICEST THING IS WHEN YOU DON'T CARE ABOUT WHAT OTHERS THINK."
+  },
+  {
+    "id": 345,
+    "language": "en",
+    "author": "Rei Kawakubo",
+    "quote": "FOR SOMETHING TO BE BEAUTIFUL, IT DOESN'T HAVE TO BE PRETTY."
+  },
+  {
+    "id": 346,
+    "language": "en",
+    "author": "Yohji Yamamoto",
+    "quote": "BLACK IS MODEST AND ARROGANT AT THE SAME TIME."
+  },
+  {
+    "id": 347,
+    "language": "en",
+    "author": "Issey Miyake",
+    "quote": "DESIGN IS NOT FOR PHILOSOPHY IT'S FOR LIFE."
+  },
+  {
+    "id": 348,
+    "language": "en",
+    "author": "Kenzo Takada",
+    "quote": "FASHION IS LIKE EATING, YOU SHOULDN'T STICK TO THE SAME MENU."
+  },
+  {
+    "id": 349,
+    "language": "en",
+    "author": "Hedi Slimane",
+    "quote": "I LIKE THE IDEA OF THE UNIFORM. I LIKE THE IDEA OF SOMETHING THAT IS FIXED."
+  },
+  {
+    "id": 350,
+    "language": "en",
+    "author": "Virgil Abloh",
+    "quote": "EVERYTHING I DO IS FOR THE SEVENTEEN-YEAR-OLD VERSION OF MYSELF."
+  },
+  {
+    "id": 351,
+    "language": "fr",
+    "author": "Montesquieu",
+    "quote": "POUR FAIRE DE GRANDES CHOSES, IL NE FAUT PAS ETRE UN PLUS GRAND GENIE."
+  },
+  {
+    "id": 352,
+    "language": "fr",
+    "author": "Pierre de Ronsard",
+    "quote": "CUEILLEZ DES AUJOURD'HUI LES ROSES DE LA VIE."
+  },
+  {
+    "id": 353,
+    "language": "fr",
+    "author": "Malherbe",
+    "quote": "ET ROSE ELLE A VECU CE QUE VIVENT LES ROSES, L'ESPACE D'UN MATIN."
+  },
+  {
+    "id": 354,
+    "language": "fr",
+    "author": "La Fontaine",
+    "quote": "ON RENCONTRE SOUVENT SON DESTIN PAR LES CHEMINS QU'ON PREND."
+  },
+  {
+    "id": 355,
+    "language": "fr",
+    "author": "Blaise Pascal",
+    "quote": "LE NEZ DE CLEOPATRE, S'IL EUT ETE PLUS COURT, LA FACE DU MONDE AURAIT CHANGE."
+  },
+  {
+    "id": 356,
+    "language": "fr",
+    "author": "Madame de Sevigne",
+    "quote": "LE COEUR N'A PAS DE RIDES. IL N'A QUE DES CICATRICES."
+  },
+  {
+    "id": 357,
+    "language": "fr",
+    "author": "Voltaire",
+    "quote": "LE TRAVAIL ELOIGNE DE NOUS TROIS GRANDS MAUX : L'ENNUI, LE VICE, ET LE BESOIN."
+  },
+  {
+    "id": 358,
+    "language": "fr",
+    "author": "Denis Diderot",
+    "quote": "LE CONSENTEMENT DES HOMMES REUNIS EST LE FONDEMENT DU POUVOIR."
+  },
+  {
+    "id": 359,
+    "language": "fr",
+    "author": "Nicolas de Chamfort",
+    "quote": "LA PLUS PERDUE DES JOURNEES EST CELLE OU L'ON N'A PAS RI."
+  },
+  {
+    "id": 360,
+    "language": "fr",
+    "author": "Marquis de Condorcet",
+    "quote": "L'AMI DE LA LIBERTE EST CELUI QUI VEUT LA DONNER AUX AUTRES."
+  },
+  {
+    "id": 361,
+    "language": "fr",
+    "author": "Madame de Stael",
+    "quote": "L'ENTHOUSIASME EST LE DIEU QUI EST EN NOUS."
+  },
+  {
+    "id": 362,
+    "language": "fr",
+    "author": "Benjamin Constant",
+    "quote": "LA LIBERTE N'EST RIEN D'AUTRE QU'UNE OCCASION D'ETRE MEILLEUR."
+  },
+  {
+    "id": 363,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "RIEN N'EST PLUS PUISSANT QU'UNE IDEE DONT L'HEURE EST VENUE."
+  },
+  {
+    "id": 364,
+    "language": "fr",
+    "author": "Honore de Balzac",
+    "quote": "LE TEMPS EST LE SEUL CAPITAL DE CEUX QUI N'ONT QUE LEUR INTELLIGENCE."
+  },
+  {
+    "id": 365,
+    "language": "fr",
+    "author": "Alexandre Dumas",
+    "quote": "L'ATTENTE EST UNE CHAINE QUI LIE TOUS NOS PLAISIRS."
+  },
+  {
+    "id": 366,
+    "language": "fr",
+    "author": "George Sand",
+    "quote": "LE BONHEUR EST UNE FLEUR QU'IL NE FAUT PAS CUEILLIR."
+  },
+  {
+    "id": 367,
+    "language": "fr",
+    "author": "Theophile Gautier",
+    "quote": "TOUT PASSE. L'ART ROBUSTE SEUL A L'ETERNITE."
+  },
+  {
+    "id": 368,
+    "language": "fr",
+    "author": "Gustave Flaubert",
+    "quote": "SOYEZ REGLE DANS VOTRE VIE AFIN D'ETRE VIOLENT DANS VOTRE OEUVRE."
+  },
+  {
+    "id": 369,
+    "language": "fr",
+    "author": "Charles Baudelaire",
+    "quote": "IL FAUT ETRE TOUJOURS IVRE. DE VIN, DE POESIE OU DE VERTU."
+  },
+  {
+    "id": 370,
+    "language": "fr",
+    "author": "Jules Verne",
+    "quote": "TOUT CE QUI EST DANS LA LIMITE DU POSSIBLE DOIT ETRE ACCOMPLI."
+  },
+  {
+    "id": 371,
+    "language": "fr",
+    "author": "Emile Zola",
+    "quote": "L'AVENIR APPARTIENT A CEUX QUI LUTTENT."
+  },
+  {
+    "id": 372,
+    "language": "fr",
+    "author": "Guy de Maupassant",
+    "quote": "UNE RENCONTRE N'EST QUE DU TEMPS QUI S'ARRETE."
+  },
+  {
+    "id": 373,
+    "language": "fr",
+    "author": "Arthur Rimbaud",
+    "quote": "TROUVER UNE LANGUE QUI SOIT DE L'AME POUR L'AME."
+  },
+  {
+    "id": 374,
+    "language": "fr",
+    "author": "Paul Verlaine",
+    "quote": "VOICI DES FRUITS, DES FLEURS, DES FEUILLES ET DES BRANCHES."
+  },
+  {
+    "id": 375,
+    "language": "fr",
+    "author": "Stephane Mallarme",
+    "quote": "DONNER UN SENS PLUS PUR AUX MOTS DE LA TRIBU."
+  },
+  {
+    "id": 376,
+    "language": "fr",
+    "author": "Anatole France",
+    "quote": "L'IRONIE EST LA DERNIERE PHASE DE LA DESILLUSION."
+  },
+  {
+    "id": 377,
+    "language": "fr",
+    "author": "Marcel Proust",
+    "quote": "UNE HEURE N'EST PAS QU'UNE HEURE, C'EST UN VASE REMPLI DE PARFUMS."
+  },
+  {
+    "id": 378,
+    "language": "fr",
+    "author": "Paul Valery",
+    "quote": "LE BUT DU MONDE EST DE FINIR PAR UN BEAU LIVRE."
+  },
+  {
+    "id": 379,
+    "language": "fr",
+    "author": "Guillaume Apollinaire",
+    "quote": "VIENNE LA NUIT SONNE L'HEURE, LES JOURS S'EN VONT JE DEMEURE."
+  },
+  {
+    "id": 380,
+    "language": "fr",
+    "author": "Andre Gide",
+    "quote": "L'HOMME NE PEUT DECOUVRIR D'OCEANS SANS PERDRE DE VUE LE RIVAGE."
+  },
+  {
+    "id": 381,
+    "language": "fr",
+    "author": "Paul Claudel",
+    "quote": "MEME POUR ETRE HEUREUX, IL FAUT LE VOULOIR."
+  },
+  {
+    "id": 382,
+    "language": "fr",
+    "author": "Marcel Proust",
+    "quote": "LE DESIR FLEURIT, LA POSSESSION FLETIT TOUTES CHOSES."
+  },
+  {
+    "id": 383,
+    "language": "fr",
+    "author": "Colette",
+    "quote": "IL FAUT VOIR, ET NON PAS SEULEMENT REGARDER."
+  },
+  {
+    "id": 384,
+    "language": "fr",
+    "author": "Jean Giraudoux",
+    "quote": "LE BONHEUR EST UNE PETITE CHOSE QUE L'ON GRIGNOTE, ASSIS PAR TERRE."
+  },
+  {
+    "id": 385,
+    "language": "fr",
+    "author": "Jean Cocteau",
+    "quote": "CE QUE LE PUBLIC TE REPROCHE, CULTIVE-LE, C'EST TOI."
+  },
+  {
+    "id": 386,
+    "language": "fr",
+    "author": "Andre Breton",
+    "quote": "L'IMAGINATION N'EST PAS UN DON MAIS UN OBJET DE CONQUETE."
+  },
+  {
+    "id": 387,
+    "language": "fr",
+    "author": "Louis-Ferdinand Celine",
+    "quote": "VOYAGER, C'EST BIEN UTILE, CA FAIT TRAVAILLER L'IMAGINATION."
+  },
+  {
+    "id": 388,
+    "language": "fr",
+    "author": "Raymond Queneau",
+    "quote": "L'HISTOIRE EST UNE SCIENCE QUI A POUR OBJET LES CHOSES UNIQUES."
+  },
+  {
+    "id": 389,
+    "language": "fr",
+    "author": "Jean-Paul Sartre",
+    "quote": "CHAQUE MOT A DES RETENTISSEMENTS. CHAQUE SILENCE AUSSI."
+  },
+  {
+    "id": 390,
+    "language": "fr",
+    "author": "Simone de Beauvoir",
+    "quote": "TOUTE VICTOIRE SE CHANGE EN DEFAITE UN JOUR OU L'AUTRE."
+  },
+  {
+    "id": 391,
+    "language": "fr",
+    "author": "Albert Camus",
+    "quote": "C'EST CELA LA LIBERTE : UNE OCCASION D'ETRE MEILLEUR."
+  },
+  {
+    "id": 392,
+    "language": "fr",
+    "author": "Rene Char",
+    "quote": "LE POEME EST L'AMOUR REALISE DU DESIR DEMEURE DESIR."
+  },
+  {
+    "id": 393,
+    "language": "fr",
+    "author": "Roland Barthes",
+    "quote": "LE LANGAGE EST UNE PEAU : JE FROTTE MON LANGAGE CONTRE L'AUTRE."
+  },
+  {
+    "id": 394,
+    "language": "fr",
+    "author": "Michel Foucault",
+    "quote": "LA LIBERTE DE CONSCIENCE IMPLIQUE CELLE DE SE TROMPER."
+  },
+  {
+    "id": 395,
+    "language": "fr",
+    "author": "Gilles Deleuze",
+    "quote": "IL N'Y A PAS DE CREATION SANS RESISTANCE."
+  },
+  {
+    "id": 396,
+    "language": "fr",
+    "author": "Jacques Derrida",
+    "quote": "L'AVENIR NE PEUT S'ANTICIPER QUE DANS LA FORME DU DANGER."
+  },
+  {
+    "id": 397,
+    "language": "fr",
+    "author": "Francoise Sagan",
+    "quote": "LE BONHEUR EST UNE CHOSE QUI VIENT ET QUI S'EN VA."
+  },
+  {
+    "id": 398,
+    "language": "fr",
+    "author": "Patrick Modiano",
+    "quote": "C'EST DANS L'OUBLI QUE L'ON TROUVE LA VRAIE PAIX."
+  },
+  {
+    "id": 399,
+    "language": "fr",
+    "author": "Annie Ernaux",
+    "quote": "ECRIRE, C'EST CHERCHER A COMPRENDRE CE QUI NOUS ARRIVE."
+  },
+  {
+    "id": 400,
+    "language": "fr",
+    "author": "Christian Bobin",
+    "quote": "LE MALHEUR EST LE PERE DU BONHEUR DE DEMAIN."
+  },
+  {
+    "id": 401,
+    "language": "en",
+    "author": "Alan Turing",
+    "quote": "THOSE WHO CAN IMAGINE ANYTHING, CAN CREATE THE IMPOSSIBLE."
+  },
+  {
+    "id": 402,
+    "language": "en",
+    "author": "Marie Curie",
+    "quote": "NOTHING IN LIFE IS TO BE FEARED, IT IS ONLY TO BE UNDERSTOOD."
+  },
+  {
+    "id": 403,
+    "language": "en",
+    "author": "Carl Sagan",
+    "quote": "SOMEWHERE, SOMETHING INCREDIBLE IS WAITING TO BE KNOWN."
+  },
+  {
+    "id": 404,
+    "language": "en",
+    "author": "Richard Feynman",
+    "quote": "THE FIRST PRINCIPLE IS THAT YOU MUST NOT FOOL YOURSELF."
+  },
+  {
+    "id": 405,
+    "language": "en",
+    "author": "Nikola Tesla",
+    "quote": "IF YOU WANT TO FIND THE SECRETS OF THE UNIVERSE, THINK IN TERMS OF ENERGY."
+  },
+  {
+    "id": 406,
+    "language": "en",
+    "author": "Stephen Hawking",
+    "quote": "HOWEVER DIFFICULT LIFE MAY SEEM, THERE IS ALWAYS SOMETHING YOU CAN DO."
+  },
+  {
+    "id": 407,
+    "language": "en",
+    "author": "Ada Lovelace",
+    "quote": "THAT BRAIN OF MINE IS SOMETHING MORE THAN MERELY MORTAL."
+  },
+  {
+    "id": 408,
+    "language": "en",
+    "author": "Isaac Newton",
+    "quote": "IF I HAVE SEEN FURTHER IT IS BY STANDING ON THE SHOULDERS OF GIANTS."
+  },
+  {
+    "id": 409,
+    "language": "en",
+    "author": "Galileo Galilei",
+    "quote": "ALL TRUTHS ARE EASY TO UNDERSTAND ONCE THEY ARE DISCOVERED."
+  },
+  {
+    "id": 410,
+    "language": "en",
+    "author": "Charles Darwin",
+    "quote": "IT IS NOT THE STRONGEST OF THE SPECIES THAT SURVIVES."
+  },
+  {
+    "id": 411,
+    "language": "en",
+    "author": "Jane Goodall",
+    "quote": "WHAT YOU DO MAKES A DIFFERENCE, AND YOU HAVE TO DECIDE WHAT KIND."
+  },
+  {
+    "id": 412,
+    "language": "en",
+    "author": "Rosalind Franklin",
+    "quote": "SCIENCE AND EVERYDAY LIFE CANNOT AND SHOULD NOT BE SEPARATED."
+  },
+  {
+    "id": 413,
+    "language": "en",
+    "author": "Neil deGrasse Tyson",
+    "quote": "THE UNIVERSE IS UNDER NO OBLIGATION TO MAKE SENSE TO YOU."
+  },
+  {
+    "id": 414,
+    "language": "en",
+    "author": "Thomas Edison",
+    "quote": "I HAVE NOT FAILED. I'VE JUST FOUND 10,000 WAYS THAT WON'T WORK."
+  },
+  {
+    "id": 415,
+    "language": "en",
+    "author": "Alexander Graham Bell",
+    "quote": "WHEN ONE DOOR CLOSES, ANOTHER OPENS; BUT WE OFTEN LOOK SO LONG."
+  },
+  {
+    "id": 416,
+    "language": "en",
+    "author": "Louis Pasteur",
+    "quote": "CHANCE FAVORS ONLY THE PREPARED MIND."
+  },
+  {
+    "id": 417,
+    "language": "en",
+    "author": "Rachel Carson",
+    "quote": "THE MORE CLEARLY WE CAN FOCUS OUR ATTENTION ON THE WONDERS."
+  },
+  {
+    "id": 418,
+    "language": "en",
+    "author": "Sylvia Earle",
+    "quote": "FAR AND AWAY THE GREATEST THREAT TO THE OCEAN IS IGNORANCE."
+  },
+  {
+    "id": 419,
+    "language": "en",
+    "author": "Margaret Hamilton",
+    "quote": "THERE WAS NO CHOICE BUT TO BE PIONEERS."
+  },
+  {
+    "id": 420,
+    "language": "en",
+    "author": "Katherine Johnson",
+    "quote": "I COUNTED EVERYTHING. I COUNTED THE STEPS TO THE ROAD."
+  },
+  {
+    "id": 421,
+    "language": "en",
+    "author": "Grace Hopper",
+    "quote": "THE MOST DANGEROUS PHRASE IN THE LANGUAGE IS, WE'VE ALWAYS DONE IT THIS WAY."
+  },
+  {
+    "id": 422,
+    "language": "en",
+    "author": "Hedy Lamarr",
+    "quote": "ALL CREATIVE PEOPLE WANT TO DO THE UNEXPECTED."
+  },
+  {
+    "id": 423,
+    "language": "en",
+    "author": "Maya Angelou",
+    "quote": "YOU MAY ENCOUNTER MANY DEFEATS, BUT YOU MUST NOT BE DEFEATED."
+  },
+  {
+    "id": 424,
+    "language": "en",
+    "author": "James Baldwin",
+    "quote": "NOT EVERYTHING THAT IS FACED CAN BE CHANGED, BUT NOTHING CAN BE CHANGED."
+  },
+  {
+    "id": 425,
+    "language": "en",
+    "author": "Toni Morrison",
+    "quote": "IF THERE'S A BOOK THAT YOU WANT TO READ, BUT IT HASN'T BEEN WRITTEN YET."
+  },
+  {
+    "id": 426,
+    "language": "en",
+    "author": "Zora Neale Hurston",
+    "quote": "THERE ARE YEARS THAT ASK QUESTIONS AND YEARS THAT ANSWER."
+  },
+  {
+    "id": 427,
+    "language": "en",
+    "author": "Langston Hughes",
+    "quote": "HOLD FAST TO DREAMS, FOR IF DREAMS DIE, LIFE IS A BROKEN-WINGED BIRD."
+  },
+  {
+    "id": 428,
+    "language": "en",
+    "author": "Ralph Ellison",
+    "quote": "I AM AN INVISIBLE MAN. NO, I AM NOT A SPOOK."
+  },
+  {
+    "id": 429,
+    "language": "en",
+    "author": "Chinua Achebe",
+    "quote": "WHILE WE DO OUR GOOD WORKS LET US NOT FORGET THAT THE REAL SOLUTION."
+  },
+  {
+    "id": 430,
+    "language": "en",
+    "author": "Chimamanda Ngozi Adichie",
+    "quote": "THE SINGLE STORY CREATES STEREOTYPES, AND THE PROBLEM WITH STEREOTYPES."
+  },
+  {
+    "id": 431,
+    "language": "en",
+    "author": "Kazuo Ishiguro",
+    "quote": "MEMORIES, EVEN YOUR MOST PRECIOUS ONES, FADE SURPRISINGLY QUICKLY."
+  },
+  {
+    "id": 432,
+    "language": "en",
+    "author": "Zadie Smith",
+    "quote": "THE PAST IS ALWAYS WITH US, AND ALL YOU HAVE TO DO IS YIELD TO IT."
+  },
+  {
+    "id": 433,
+    "language": "en",
+    "author": "Salman Rushdie",
+    "quote": "A POET'S WORK IS TO NAME THE UNNAMABLE, TO POINT AT FRAUDS."
+  },
+  {
+    "id": 434,
+    "language": "en",
+    "author": "Arundhati Roy",
+    "quote": "TO LOVE. TO BE LOVED. TO NEVER FORGET YOUR OWN INSIGNIFICANCE."
+  },
+  {
+    "id": 435,
+    "language": "en",
+    "author": "Vikram Seth",
+    "quote": "ALL YOU WHO SLEEP TONIGHT, FAR FROM THE ONES YOU LOVE."
+  },
+  {
+    "id": 436,
+    "language": "en",
+    "author": "Jorge Luis Borges",
+    "quote": "I HAVE ALWAYS IMAGINED THAT PARADISE WILL BE A KIND OF LIBRARY."
+  },
+  {
+    "id": 437,
+    "language": "en",
+    "author": "Isabel Allende",
+    "quote": "YOU ARE THE STORYTELLER OF YOUR OWN LIFE, AND YOU CAN CREATE YOUR OWN LEGEND."
+  },
+  {
+    "id": 438,
+    "language": "en",
+    "author": "Pablo Neruda",
+    "quote": "TO FEEL THE LOVE OF PEOPLE WHOM WE LOVE IS A FIRE THAT FEEDS OUR LIFE."
+  },
+  {
+    "id": 439,
+    "language": "en",
+    "author": "Octavio Paz",
+    "quote": "SOLITUDE IS THE PROFOUNDEST FACT OF THE HUMAN CONDITION."
+  },
+  {
+    "id": 440,
+    "language": "en",
+    "author": "Carlos Fuentes",
+    "quote": "WHAT THE UNITED STATES DOES BEST IS TO UNDERSTAND ITSELF."
+  },
+  {
+    "id": 441,
+    "language": "en",
+    "author": "Rumi",
+    "quote": "RAISE YOUR WORDS, NOT VOICE. IT IS RAIN THAT GROWS FLOWERS, NOT THUNDER."
+  },
+  {
+    "id": 442,
+    "language": "en",
+    "author": "Omar Khayyam",
+    "quote": "BE HAPPY FOR THIS MOMENT. THIS MOMENT IS YOUR LIFE."
+  },
+  {
+    "id": 443,
+    "language": "en",
+    "author": "Hafiz",
+    "quote": "EVEN AFTER ALL THIS TIME THE SUN NEVER SAYS TO THE EARTH, YOU OWE ME."
+  },
+  {
+    "id": 444,
+    "language": "en",
+    "author": "Kahlil Gibran",
+    "quote": "BEAUTY IS ETERNITY GAZING AT ITSELF IN A MIRROR."
+  },
+  {
+    "id": 445,
+    "language": "en",
+    "author": "Naguib Mahfouz",
+    "quote": "FEAR DOES NOT PREVENT DEATH. IT PREVENTS LIFE."
+  },
+  {
+    "id": 446,
+    "language": "en",
+    "author": "Orhan Pamuk",
+    "quote": "HAPPINESS IS HOLDING SOMEONE IN YOUR ARMS AND KNOWING YOU'RE IN THE WORLD."
+  },
+  {
+    "id": 447,
+    "language": "en",
+    "author": "Wole Soyinka",
+    "quote": "THE GREATEST THREAT TO FREEDOM IS THE ABSENCE OF CRITICISM."
+  },
+  {
+    "id": 448,
+    "language": "en",
+    "author": "Desmond Tutu",
+    "quote": "MY HUMANITY IS BOUND UP IN YOURS, FOR WE CAN ONLY BE HUMAN TOGETHER."
+  },
+  {
+    "id": 449,
+    "language": "en",
+    "author": "Nelson Mandela",
+    "quote": "IT ALWAYS SEEMS IMPOSSIBLE UNTIL IT'S DONE."
+  },
+  {
+    "id": 450,
+    "language": "en",
+    "author": "Malala Yousafzai",
+    "quote": "ONE CHILD, ONE TEACHER, ONE BOOK AND ONE PEN CAN CHANGE THE WORLD."
+  },
+  {
+    "id": 451,
+    "language": "fr",
+    "author": "Voltaire",
+    "quote": "J'AI DECIDE D'ETRE HEUREUX PARCE QUE C'EST BON POUR LA SANTE."
+  },
+  {
+    "id": 452,
+    "language": "fr",
+    "author": "Blaise Pascal",
+    "quote": "LE COEUR A SES RAISONS QUE LA RAISON NE CONNAIT POINT."
+  },
+  {
+    "id": 453,
+    "language": "fr",
+    "author": "Moliere",
+    "quote": "IL FAUT MANGER POUR VIVRE, ET NON PAS VIVRE POUR MANGER."
+  },
+  {
+    "id": 454,
+    "language": "fr",
+    "author": "Jean de La Fontaine",
+    "quote": "RIEN NE SERT DE COURIR ; IL FAUT PARTIR A POINT."
+  },
+  {
+    "id": 455,
+    "language": "fr",
+    "author": "Pierre Corneille",
+    "quote": "LA VALEUR N'ATTEND POINT LE NOMBRE DES ANNEES."
+  },
+  {
+    "id": 456,
+    "language": "fr",
+    "author": "Jean Racine",
+    "quote": "MA VENGEANCE EST PERDUE S'IL IGNORE EN MOURANT QUE C'EST MOI QUI LE TUE."
+  },
+  {
+    "id": 457,
+    "language": "fr",
+    "author": "Montesquieu",
+    "quote": "C'EST UNE EXPERIENCE ETERNELLE QUE TOUT HOMME QUI A DU POUVOIR EST PORTE."
+  },
+  {
+    "id": 458,
+    "language": "fr",
+    "author": "Jean-Jacques Rousseau",
+    "quote": "L'HOMME EST NE LIBRE, ET PARTOUT IL EST DANS LES FERS."
+  },
+  {
+    "id": 459,
+    "language": "fr",
+    "author": "Denis Diderot",
+    "quote": "L'INCREDULITE EST QUELQUEFOIS LE VICE D'UN SOT."
+  },
+  {
+    "id": 460,
+    "language": "fr",
+    "author": "Nicolas de Chamfort",
+    "quote": "LA PLUS PERDUE DE TOUTES LES JOURNEES EST CELLE OU L'ON N'A PAS RI."
+  },
+  {
+    "id": 461,
+    "language": "fr",
+    "author": "Marquis de Sade",
+    "quote": "IL N'Y A PAS DE REEL PLAISIR SANS UNE CERTAINE DOSE DE FOLIE."
+  },
+  {
+    "id": 462,
+    "language": "fr",
+    "author": "Madame de Stael",
+    "quote": "VOYAGER EST, QUOI QU'ON EN PUISSE DIRE, UN DES PLUS TRISTES PLAISIRS."
+  },
+  {
+    "id": 463,
+    "language": "fr",
+    "author": "Francois de Chateaubriand",
+    "quote": "L'HOMME NE FAIT QUE PASSER, IL N'EST PAS FAIT POUR S'ARRETER."
+  },
+  {
+    "id": 464,
+    "language": "fr",
+    "author": "Alphonse de Lamartine",
+    "quote": "UN SEUL ETRE VOUS MANQUE ET TOUT EST DEPEUPLE."
+  },
+  {
+    "id": 465,
+    "language": "fr",
+    "author": "Alfred de Musset",
+    "quote": "IL FAUT TOUT VOIR, TOUT SAVOIR, TOUT GOUTER, TOUT SENTIR."
+  },
+  {
+    "id": 466,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "LIRE, C'EST BOIRE ET MANGER. L'ESPRIT QUI NE LIT PAS MAIGRIT."
+  },
+  {
+    "id": 467,
+    "language": "fr",
+    "author": "Honore de Balzac",
+    "quote": "LA GLOIRE EST UN POISON QU'IL FAUT ABSORBER PAR PETITES DOSES."
+  },
+  {
+    "id": 468,
+    "language": "fr",
+    "author": "Stendhal",
+    "quote": "UN ROMAN EST UN MIROIR QUI SE PROMENE SUR UNE GRANDE ROUTE."
+  },
+  {
+    "id": 469,
+    "language": "fr",
+    "author": "Prosper Merimee",
+    "quote": "ON N'AIME JAMAIS TANT QUE LORSQU'ON A PEUR DE PERDRE CE QU'ON AIME."
+  },
+  {
+    "id": 470,
+    "language": "fr",
+    "author": "Theophile Gautier",
+    "quote": "L'ART POUR L'ART. L'ART DOIT SE SUFFIRE A LUI-MEME."
+  },
+  {
+    "id": 471,
+    "language": "fr",
+    "author": "Gerard de Nerval",
+    "quote": "DANS CHAQUE FLEUR, IL Y A UNE AME QUI S'EVEILLE."
+  },
+  {
+    "id": 472,
+    "language": "fr",
+    "author": "Charles Baudelaire",
+    "quote": "SOIS SAGE, O MA DOULEUR, ET TIENS-TOI PLUS TRANQUILLE."
+  },
+  {
+    "id": 473,
+    "language": "fr",
+    "author": "Gustave Flaubert",
+    "quote": "LE COEUR EST UNE RICHESSE QUI NE SE VEND PAS, MAIS QUI SE DONNE."
+  },
+  {
+    "id": 474,
+    "language": "fr",
+    "author": "Emile Zola",
+    "quote": "LA VERITE EST EN MARCHE ET RIEN NE L'ARRETERA."
+  },
+  {
+    "id": 475,
+    "language": "fr",
+    "author": "Guy de Maupassant",
+    "quote": "LE BAISER EST LA PLUS SURE FACON DE SE TAIRE EN DISANT TOUT."
+  },
+  {
+    "id": 476,
+    "language": "fr",
+    "author": "Stephane Mallarme",
+    "quote": "LA CHAIR EST TRISTE, HELAS ! ET J'AI LU TOUS LES LIVRES."
+  },
+  {
+    "id": 477,
+    "language": "fr",
+    "author": "Paul Verlaine",
+    "quote": "IL PLEURE DANS MON COEUR COMME IL PLEUT SUR LA VILLE."
+  },
+  {
+    "id": 478,
+    "language": "fr",
+    "author": "Arthur Rimbaud",
+    "quote": "ON N'EST PAS SERIEUX QUAND ON A DIX-SEPT ANS."
+  },
+  {
+    "id": 479,
+    "language": "fr",
+    "author": "Edmond Rostand",
+    "quote": "C'EST A LA FIN DE L'ENVOI QUE JE TOUCHE."
+  },
+  {
+    "id": 480,
+    "language": "fr",
+    "author": "Anatole France",
+    "quote": "POUR ACCOMPLIR DE GRANDES CHOSES, IL FAUT REVER AUSSI BIEN QU'AGIR."
+  },
+  {
+    "id": 481,
+    "language": "fr",
+    "author": "Marcel Proust",
+    "quote": "LE VOYAGE N'EST PAS DE CHERCHER DE NOUVEAUX PAYSAGES, MAIS D'AVOIR."
+  },
+  {
+    "id": 482,
+    "language": "fr",
+    "author": "Andre Gide",
+    "quote": "LE POSSIBLE EST UN LOINTAIN QUI NE FINIT JAMAIS."
+  },
+  {
+    "id": 483,
+    "language": "fr",
+    "author": "Paul Valery",
+    "quote": "LE VENT SE LEVE !... IL FAUT TENTER DE VIVRE !"
+  },
+  {
+    "id": 484,
+    "language": "fr",
+    "author": "Guillaume Apollinaire",
+    "quote": "PASSENT LES JOURS ET PASSENT LES SEMAINES."
+  },
+  {
+    "id": 485,
+    "language": "fr",
+    "author": "Jean Cocteau",
+    "quote": "SI LE FEU BRULAIT MA MAISON, J'EMPORTERAIS LE FEU."
+  },
+  {
+    "id": 486,
+    "language": "fr",
+    "author": "Louis Aragon",
+    "quote": "LE TEMPS D'APPRENDRE A VIVRE, IL EST DEJA TROP TARD."
+  },
+  {
+    "id": 487,
+    "language": "fr",
+    "author": "Andre Malraux",
+    "quote": "LA CULTURE EST CE QUI A FAIT DE L'HOMME AUTRE CHOSE QU'UN ACCIDENT."
+  },
+  {
+    "id": 488,
+    "language": "fr",
+    "author": "Samuel Beckett",
+    "quote": "VOUS ETES SUR LA TERRE, IL N'Y A PAS DE REMEDE A CELA."
+  },
+  {
+    "id": 489,
+    "language": "fr",
+    "author": "Jean-Paul Sartre",
+    "quote": "DANS LA VIE ON NE FAIT PAS CE QUE L'ON VEUT MAIS ON EST RESPONSABLE."
+  },
+  {
+    "id": 490,
+    "language": "fr",
+    "author": "Simone de Beauvoir",
+    "quote": "LA FATALITE NE TRIOMPHE QUE SI L'ON Y CROIT."
+  },
+  {
+    "id": 491,
+    "language": "fr",
+    "author": "Albert Camus",
+    "quote": "AU MILIEU DE L'HIVER, J'APPRENAIS ENFIN QU'IL Y AVAIT EN MOI UN ETE."
+  },
+  {
+    "id": 492,
+    "language": "fr",
+    "author": "Marguerite Yourcenar",
+    "quote": "IL EST DIFFICILE DE RESTER PUR DANS UN MONDE QUI NE L'EST PAS."
+  },
+  {
+    "id": 493,
+    "language": "fr",
+    "author": "Rene Char",
+    "quote": "CE QUI VIENT AU MONDE POUR NE RIEN TROUBLER NE MERITE NI EGARDS NI PATIENCE."
+  },
+  {
+    "id": 494,
+    "language": "fr",
+    "author": "Roland Barthes",
+    "quote": "L'ECRIVAIN EST CELUI QUI NE PEUT PAS NE PAS ECRIRE."
+  },
+  {
+    "id": 495,
+    "language": "fr",
+    "author": "Michel Foucault",
+    "quote": "OU IL Y A POUVOIR, IL Y A RESISTANCE."
+  },
+  {
+    "id": 496,
+    "language": "fr",
+    "author": "Jacques Derrida",
+    "quote": "JE N'AI QU'UNE LANGUE, CE N'EST PAS LA MIENNE."
+  },
+  {
+    "id": 497,
+    "language": "fr",
+    "author": "Patrick Modiano",
+    "quote": "LA MEMOIRE EST UN PAYS OU L'ON SE PERD."
+  },
+  {
+    "id": 498,
+    "language": "fr",
+    "author": "Annie Ernaux",
+    "quote": "LA VRAIE VIE, C'EST D'ABORD D'ETRE SOI-MEME."
+  },
+  {
+    "id": 499,
+    "language": "fr",
+    "author": "Pierre Bourdieu",
+    "quote": "LA SOCIOLOGIE EST UN SPORT DE COMBAT."
+  },
+  {
+    "id": 500,
+    "language": "fr",
+    "author": "Le Corbusier",
+    "quote": "L'ARCHITECTURE EST LE JEU SAVANT, CORRECT ET MAGNIFIQUE DES VOLUMES."
+  },
+  {
+    "id": 501,
+    "language": "en",
+    "author": "Franklin D. Roosevelt",
+    "quote": "THE ONLY THING WE HAVE TO FEAR IS FEAR ITSELF."
+  },
+  {
+    "id": 502,
+    "language": "en",
+    "author": "Theodore Roosevelt",
+    "quote": "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
+  },
+  {
+    "id": 503,
+    "language": "en",
+    "author": "Robert Frost",
+    "quote": "IN THREE WORDS I CAN SUM UP EVERYTHING I'VE LEARNED: IT GOES ON."
+  },
+  {
+    "id": 504,
+    "language": "en",
+    "author": "Ralph Waldo Emerson",
+    "quote": "TO BE YOURSELF IN A WORLD TRYING TO MAKE YOU SOMETHING ELSE."
+  },
+  {
+    "id": 505,
+    "language": "en",
+    "author": "Eleanor Roosevelt",
+    "quote": "THE FUTURE BELONGS TO THOSE WHO BELIEVE IN THEIR DREAMS."
+  },
+  {
+    "id": 506,
+    "language": "en",
+    "author": "Benjamin Franklin",
+    "quote": "TELL ME AND I FORGET. TEACH ME AND I REMEMBER. INVOLVE ME AND I LEARN."
+  },
+  {
+    "id": 507,
+    "language": "en",
+    "author": "John Lennon",
+    "quote": "LIFE IS WHAT HAPPENS WHEN YOU'RE BUSY MAKING OTHER PLANS."
+  },
+  {
+    "id": 508,
+    "language": "en",
+    "author": "Stephen King",
+    "quote": "GET BUSY LIVING OR GET BUSY DYING. THAT IS THE TRUTH."
+  },
+  {
+    "id": 509,
+    "language": "en",
+    "author": "Mae West",
+    "quote": "YOU ONLY LIVE ONCE, BUT IF YOU DO IT RIGHT, ONCE IS ENOUGH."
+  },
+  {
+    "id": 510,
+    "language": "en",
+    "author": "Babe Ruth",
+    "quote": "NEVER LET THE FEAR OF STRIKING OUT KEEP YOU FROM THE GAME."
+  },
+  {
+    "id": 511,
+    "language": "en",
+    "author": "Ralph Waldo Emerson",
+    "quote": "THE ONLY WAY TO HAVE A FRIEND IS TO BE ONE."
+  },
+  {
+    "id": 512,
+    "language": "en",
+    "author": "James M. Barrie",
+    "quote": "LIFE IS A LONG LESSON IN HUMILITY."
+  },
+  {
+    "id": 513,
+    "language": "en",
+    "author": "Abraham Lincoln",
+    "quote": "THE BEST WAY TO PREDICT YOUR FUTURE IS TO CREATE IT."
+  },
+  {
+    "id": 514,
+    "language": "en",
+    "author": "Mark Twain",
+    "quote": "KINDNESS IS THE LANGUAGE THE DEAF CAN HEAR AND THE BLIND SEE."
+  },
+  {
+    "id": 515,
+    "language": "en",
+    "author": "Cicero",
+    "quote": "A ROOM WITHOUT BOOKS IS LIKE A BODY WITHOUT A SOUL."
+  },
+  {
+    "id": 516,
+    "language": "en",
+    "author": "J.R.R. Tolkien",
+    "quote": "NOT ALL THOSE WHO WANDER ARE LOST."
+  },
+  {
+    "id": 517,
+    "language": "en",
+    "author": "Lewis Carroll",
+    "quote": "IMAGINATION IS THE ONLY WEAPON IN THE WAR AGAINST REALITY."
+  },
+  {
+    "id": 518,
+    "language": "en",
+    "author": "Confucius",
+    "quote": "SILENCE IS A TRUE FRIEND WHO NEVER BETRAYS."
+  },
+  {
+    "id": 519,
+    "language": "en",
+    "author": "James Dean",
+    "quote": "DREAM AS IF YOU'LL LIVE FOREVER. LIVE AS IF YOU'LL DIE TODAY."
+  },
+  {
+    "id": 520,
+    "language": "en",
+    "author": "Theodore Roosevelt",
+    "quote": "DO WHAT YOU CAN, WITH WHAT YOU HAVE, WHERE YOU ARE."
+  },
+  {
+    "id": 521,
+    "language": "en",
+    "author": "Abraham Lincoln",
+    "quote": "WHATEVER YOU ARE IN THIS WORLD, BE A GOOD ONE."
+  },
+  {
+    "id": 522,
+    "language": "en",
+    "author": "Albert Einstein",
+    "quote": "IN THE MIDDLE OF EVERY DIFFICULTY LIES OPPORTUNITY."
+  },
+  {
+    "id": 523,
+    "language": "en",
+    "author": "Winston Churchill",
+    "quote": "SUCCESS IS WALKING FROM FAILURE TO FAILURE WITH NO LOSS."
+  },
+  {
+    "id": 524,
+    "language": "en",
+    "author": "Albert Einstein",
+    "quote": "CREATIVITY IS INTELLIGENCE HAVING FUN."
+  },
+  {
+    "id": 525,
+    "language": "en",
+    "author": "Pablo Picasso",
+    "quote": "ACTION IS THE FOUNDATIONAL KEY TO ALL SUCCESS."
+  },
+  {
+    "id": 526,
+    "language": "en",
+    "author": "Leonardo da Vinci",
+    "quote": "SIMPLICITY IS THE ULTIMATE SOPHISTICATION."
+  },
+  {
+    "id": 527,
+    "language": "en",
+    "author": "Albert Einstein",
+    "quote": "STRIVE NOT TO BE A SUCCESS, BUT RATHER TO BE OF VALUE."
+  },
+  {
+    "id": 528,
+    "language": "en",
+    "author": "Albert Einstein",
+    "quote": "THE ONLY SOURCE OF KNOWLEDGE IS EXPERIENCE."
+  },
+  {
+    "id": 529,
+    "language": "en",
+    "author": "Pablo Picasso",
+    "quote": "LEARN THE RULES LIKE A PRO, SO YOU CAN BREAK THEM LIKE AN ARTIST."
+  },
+  {
+    "id": 530,
+    "language": "en",
+    "author": "Vincent Van Gogh",
+    "quote": "GREAT THINGS ARE DONE BY A SERIES OF SMALL THINGS."
+  },
+  {
+    "id": 531,
+    "language": "en",
+    "author": "Vincent Van Gogh",
+    "quote": "I WOULD RATHER DIE OF PASSION THAN OF BOREDOM."
+  },
+  {
+    "id": 532,
+    "language": "en",
+    "author": "Vincent Van Gogh",
+    "quote": "NORMALITY IS A PAVED ROAD: IT IS COMFORTABLE, BUT NO FLOWERS GROW."
+  },
+  {
+    "id": 533,
+    "language": "en",
+    "author": "Twyla Tharp",
+    "quote": "ART IS THE ONLY WAY TO RUN AWAY WITHOUT LEAVING HOME."
+  },
+  {
+    "id": 534,
+    "language": "en",
+    "author": "Dorothy Parker",
+    "quote": "CREATIVITY IS A WILD MIND AND A DISCIPLINED EYE."
+  },
+  {
+    "id": 535,
+    "language": "en",
+    "author": "Jack Kerouac",
+    "quote": "ONE DAY I WILL FIND THE RIGHT WORDS, AND THEY WILL BE SIMPLE."
+  },
+  {
+    "id": 536,
+    "language": "en",
+    "author": "Bob Marley",
+    "quote": "LOVE THE LIFE YOU LIVE. LIVE THE LIFE YOU LOVE."
+  },
+  {
+    "id": 537,
+    "language": "en",
+    "author": "Mark Twain",
+    "quote": "THE SECRET OF GETTING AHEAD IS GETTING STARTED."
+  },
+  {
+    "id": 538,
+    "language": "en",
+    "author": "Albert Einstein",
+    "quote": "I HAVE NO SPECIAL TALENT. I AM ONLY PASSIONATELY CURIOUS."
+  },
+  {
+    "id": 539,
+    "language": "en",
+    "author": "Lao Tzu",
+    "quote": "THE JOURNEY OF A THOUSAND MILES BEGINS WITH ONE STEP."
+  },
+  {
+    "id": 540,
+    "language": "en",
+    "author": "Henry David Thoreau",
+    "quote": "OUR LIFE IS FRITTERED AWAY BY DETAIL. SIMPLIFY, SIMPLIFY."
+  },
+  {
+    "id": 541,
+    "language": "en",
+    "author": "Emily Dickinson",
+    "quote": "THE SOUL SHOULD ALWAYS STAND AJAR, READY TO WELCOME THE ECSTATIC."
+  },
+  {
+    "id": 542,
+    "language": "en",
+    "author": "Muhammad Ali",
+    "quote": "DON'T COUNT THE DAYS, MAKE THE DAYS COUNT."
+  },
+  {
+    "id": 543,
+    "language": "en",
+    "author": "Toni Morrison",
+    "quote": "IF YOU WANT TO FLY, YOU HAVE TO GIVE UP THE THINGS THAT WEIGH YOU DOWN."
+  },
+  {
+    "id": 544,
+    "language": "en",
+    "author": "Judy Garland",
+    "quote": "ALWAYS BE A FIRST-RATE VERSION OF YOURSELF."
+  },
+  {
+    "id": 545,
+    "language": "en",
+    "author": "John Muir",
+    "quote": "THE POWER OF IMAGINATION MAKES US INFINITE."
+  },
+  {
+    "id": 546,
+    "language": "en",
+    "author": "Oprah Winfrey",
+    "quote": "YOU MUST ALWAYS TURN YOUR WOUNDS INTO WISDOM."
+  },
+  {
+    "id": 547,
+    "language": "en",
+    "author": "Buddha",
+    "quote": "THE MIND IS EVERYTHING. WHAT YOU THINK YOU BECOME."
+  },
+  {
+    "id": 548,
+    "language": "en",
+    "author": "Buddha",
+    "quote": "WITH OUR THOUGHTS, WE MAKE THE WORLD."
+  },
+  {
+    "id": 549,
+    "language": "en",
+    "author": "Mother Teresa",
+    "quote": "EVERY TIME YOU SMILE AT SOMEONE, IT IS AN ACTION OF LOVE."
+  },
+  {
+    "id": 550,
+    "language": "en",
+    "author": "Clark Gable",
+    "quote": "FRANKLY, MY DEAR, I DON'T GIVE A DAMN."
+  },
+  {
+    "id": 551,
+    "language": "fr",
+    "author": "Antoine de Saint-Exupery",
+    "quote": "ON NE VOIT BIEN QU'AVEC LE COEUR. LESSENTIEL EST INVISIBLE."
+  },
+  {
+    "id": 552,
+    "language": "fr",
+    "author": "Winston Churchill",
+    "quote": "AGIS COMME S'IL ETAIT IMPOSSIBLE D'ECHOUER."
+  },
+  {
+    "id": 553,
+    "language": "fr",
+    "author": "Mother Teresa",
+    "quote": "LA VIE EST UN DEFI A RELEVER, UN BONHEUR A MERITER."
+  },
+  {
+    "id": 554,
+    "language": "fr",
+    "author": "Francois de La Rochefoucauld",
+    "quote": "RIEN N'EST SI CONTAGIEUX QUE L'EXEMPLE."
+  },
+  {
+    "id": 555,
+    "language": "fr",
+    "author": "Marcel Proust",
+    "quote": "IL N'Y A PAS DE REUSSITE FACILE NI D'ECHECS DEFINITIFS."
+  },
+  {
+    "id": 556,
+    "language": "fr",
+    "author": "Anonyme",
+    "quote": "L'ART DE VIVRE, C'EST DE SAVOIR PROFITER DE CHAQUE PETIT INSTANT."
+  },
+  {
+    "id": 557,
+    "language": "fr",
+    "author": "Lao Tseu",
+    "quote": "UN VOYAGE DE MILLE LIEUES COMMENCE TOUJOURS PAR UN PREMIER PAS."
+  },
+  {
+    "id": 558,
+    "language": "fr",
+    "author": "Jean-Jacques Rousseau",
+    "quote": "VIVRE, CE N'EST PAS RESPIRER, C'EST AGIR."
+  },
+  {
+    "id": 559,
+    "language": "fr",
+    "author": "Jean-Jacques Rousseau",
+    "quote": "LA PATIENCE EST AMERE, MAIS SON FRUIT EST DOUX."
+  },
+  {
+    "id": 560,
+    "language": "fr",
+    "author": "Jean-Paul Sartre",
+    "quote": "L'HOMME N'EST RIEN D'AUTRE QUE CE QU'IL SE FAIT."
+  },
+  {
+    "id": 561,
+    "language": "fr",
+    "author": "Carmen Sylva",
+    "quote": "LE BONHEUR EST SOUVENT LA SEULE CHOSE QU'ON PUISSE DONNER."
+  },
+  {
+    "id": 562,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "LA VIE EST UNE FLEUR DONT L'AMOUR EST LE MIEL."
+  },
+  {
+    "id": 563,
+    "language": "fr",
+    "author": "Rene Descartes",
+    "quote": "L'INTELLIGENCE, C'EST LA CHOSE LA MIEUX PARTAGEE AU MONDE."
+  },
+  {
+    "id": 564,
+    "language": "fr",
+    "author": "Francis Bacon",
+    "quote": "SAVOIR CE QUE L'ON VEUT, C'EST LA PREMIERE ETAPE DU SUCCES."
+  },
+  {
+    "id": 565,
+    "language": "fr",
+    "author": "Pericles",
+    "quote": "LE SECRET DU BONHEUR EST LA LIBERTE ET LE COURAGE."
+  },
+  {
+    "id": 566,
+    "language": "fr",
+    "author": "Jean de La Fontaine",
+    "quote": "LA RAISON DU PLUS FORT EST TOUJOURS LA MEILLEURE."
+  },
+  {
+    "id": 567,
+    "language": "fr",
+    "author": "Voltaire",
+    "quote": "QUI N'A PAS L'ESPRIT DE SON AGE, DE SON AGE A TOUT LE MALHEUR."
+  },
+  {
+    "id": 568,
+    "language": "fr",
+    "author": "Voltaire",
+    "quote": "LOREILLE EST LE CHEMIN DU COEUR, ET L'ESPRIT CELUI DE LA RAISON."
+  },
+  {
+    "id": 569,
+    "language": "fr",
+    "author": "Plaute",
+    "quote": "ON DIT QUE L'HOMME EST UN LOUP POUR L'HOMME."
+  },
+  {
+    "id": 570,
+    "language": "fr",
+    "author": "Friedrich Nietzsche",
+    "quote": "TOUT CE QUI NE NOUS TUE PAS NOUS REND PLUS FORTS."
+  },
+  {
+    "id": 571,
+    "language": "fr",
+    "author": "Friedrich Nietzsche",
+    "quote": "DEVIENS CE QUE TU ES. FAIS CE QUE TOI SEUL PEUX FAIRE."
+  },
+  {
+    "id": 572,
+    "language": "fr",
+    "author": "Friedrich Nietzsche",
+    "quote": "SANS LA MUSIQUE, LA VIE SERAIT UNE ERREUR."
+  },
+  {
+    "id": 573,
+    "language": "fr",
+    "author": "Fiodor Dostoievski",
+    "quote": "C'EST PAR LA BEAUTE QUE NOUS SAUVERONS PEUT-ETRE CE MONDE."
+  },
+  {
+    "id": 574,
+    "language": "fr",
+    "author": "Seneque",
+    "quote": "LE PLUS GRAND OBSTACLE A LA VIE EST L'ATTENTE."
+  },
+  {
+    "id": 575,
+    "language": "fr",
+    "author": "Seneque",
+    "quote": "HATE-TOI DE BIEN VIVRE ET SONGE QUE CHAQUE JOUR EST UNE VIE."
+  },
+  {
+    "id": 576,
+    "language": "fr",
+    "author": "Samuel Beckett",
+    "quote": "RIEN N'EST PLUS REEL QUE RIEN, MAIS IL FAUT QUAND MEME ESSAYER."
+  },
+  {
+    "id": 577,
+    "language": "fr",
+    "author": "Buffon",
+    "quote": "LE STYLE, C'EST L'HOMME MEME, ET LA CLARTE EST SA POLITESSE."
+  },
+  {
+    "id": 578,
+    "language": "fr",
+    "author": "Ernest Hemingway",
+    "quote": "SI VOUS AVEZ DE LA CHANCE, ALORS PARIS EST UNE FETE."
+  },
+  {
+    "id": 579,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "LA MUSIQUE EXPRIME CE QUI NE PEUT ETRE DIT."
+  },
+  {
+    "id": 580,
+    "language": "fr",
+    "author": "Antoine de Saint-Exupery",
+    "quote": "AIMER, C'EST REGARDER ENSEMBLE DANS LA MEME DIRECTION."
+  },
+  {
+    "id": 581,
+    "language": "fr",
+    "author": "Georges Bernanos",
+    "quote": "LESPERANCE EST UN RISQUE A COURIR, C'EST LE PLUS BEAU DE TOUS."
+  },
+  {
+    "id": 582,
+    "language": "fr",
+    "author": "Alphonse de Lamartine",
+    "quote": "LE MONDE EST UN LIVRE DONT CHAQUE PAS NOUS OUVRE UNE PAGE."
+  },
+  {
+    "id": 583,
+    "language": "fr",
+    "author": "Aristote",
+    "quote": "LE DOUTE EST LE COMMENCEMENT DE LA SAGESSE."
+  },
+  {
+    "id": 584,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "LA VERITE EST COMME LE SOLEIL. ELLE FAIT TOUT VOIR."
+  },
+  {
+    "id": 585,
+    "language": "fr",
+    "author": "Pablo Picasso",
+    "quote": "CHAQUE ENFANT EST UN ARTISTE. LE PROBLEME EST DE LE RESTER."
+  },
+  {
+    "id": 586,
+    "language": "fr",
+    "author": "Pablo Picasso",
+    "quote": "JE NE CHERCHE PAS, JE TROUVE, CAR L'ACTION EST LA CLE DU SUCCES."
+  },
+  {
+    "id": 587,
+    "language": "fr",
+    "author": "Leonard de Vinci",
+    "quote": "LA SIMPLICITE EST LA SOPHISTICATION SUPREME."
+  },
+  {
+    "id": 588,
+    "language": "fr",
+    "author": "Henri Bergson",
+    "quote": "LOEIL VOIT CE QUE L'ESPRIT EST PRET A COMPRENDRE."
+  },
+  {
+    "id": 589,
+    "language": "fr",
+    "author": "Seneque",
+    "quote": "IL N'Y A PAS DE VENT FAVORABLE POUR CELUI QUI NE SAIT PAS OU IL VA."
+  },
+  {
+    "id": 590,
+    "language": "fr",
+    "author": "Amelia Earhart",
+    "quote": "LE PLUS DIFFICILE, C'EST DE SE DECIDER A AGIR."
+  },
+  {
+    "id": 591,
+    "language": "fr",
+    "author": "Andre Malraux",
+    "quote": "L'ART, C'EST LE PLUS COURT CHEMIN DE L'HOMME A L'HOMME."
+  },
+  {
+    "id": 592,
+    "language": "fr",
+    "author": "Jean Giono",
+    "quote": "IMAGINER, C'EST CHOISIR, ET CHOISIR, C'EST COMMENCER A VIVRE."
+  },
+  {
+    "id": 593,
+    "language": "fr",
+    "author": "Georg Hegel",
+    "quote": "TOUT CE QUI EST GRAND EST L'OEUVRE DE LA PASSION."
+  },
+  {
+    "id": 594,
+    "language": "fr",
+    "author": "Oscar Wilde",
+    "quote": "LA BEAUTE EST DANS LE REGARD DE CELUI QUI REGARDE."
+  },
+  {
+    "id": 595,
+    "language": "fr",
+    "author": "C.S. Lewis",
+    "quote": "ON N'EST JAMAIS TROP VIEUX POUR SE FIXER UN NOUVEAU BUT."
+  },
+  {
+    "id": 596,
+    "language": "fr",
+    "author": "Johann Goethe",
+    "quote": "L'AUDACE A DU GENIE, DE LA PUISSANCE ET DE LA MAGIE."
+  },
+  {
+    "id": 597,
+    "language": "fr",
+    "author": "Margaret Runbeck",
+    "quote": "LE BONHEUR N'EST PAS UNE DESTINATION, C'EST UNE FACON DE VOYAGER."
+  },
+  {
+    "id": 598,
+    "language": "fr",
+    "author": "Antoine de Saint-Exupery",
+    "quote": "FAIS DE TA VIE UN REVE, ET D'UN REVE, UNE REALITE."
+  },
+  {
+    "id": 599,
+    "language": "fr",
+    "author": "Paul Valery",
+    "quote": "UN HOMME SEUL EST TOUJOURS EN MAUVAISE COMPAGNIE."
+  },
+  {
+    "id": 600,
+    "language": "fr",
+    "author": "Lao Tseu",
+    "quote": "LE SILENCE EST LE CRI LE PLUS FORT, IL PARLE AU COEUR."
+  },
+  {
+    "id": 601,
+    "language": "en",
+    "author": "Oscar Wilde",
+    "quote": "EXPERIENCE IS SIMPLY THE NAME WE GIVE OUR MISTAKES."
+  },
+  {
+    "id": 602,
+    "language": "en",
+    "author": "Mark Twain",
+    "quote": "THE LACK OF MONEY IS THE ROOT OF ALL EVIL."
+  },
+  {
+    "id": 603,
+    "language": "en",
+    "author": "Helen Keller",
+    "quote": "KEEP YOUR FACE TO THE SUNSHINE AND YOU CANNOT SEE A SHADOW."
+  },
+  {
+    "id": 604,
+    "language": "en",
+    "author": "Walt Whitman",
+    "quote": "KEEP YOUR FACE ALWAYS TOWARD THE SUNSHINE - AND SHADOWS WILL FALL."
+  },
+  {
+    "id": 605,
+    "language": "en",
+    "author": "Audrey Hepburn",
+    "quote": "THE MOST IMPORTANT THING IS TO ENJOY YOUR LIFE."
+  },
+  {
+    "id": 606,
+    "language": "en",
+    "author": "Maya Angelou",
+    "quote": "IF YOU DON'T LIKE SOMETHING, CHANGE IT."
+  },
+  {
+    "id": 607,
+    "language": "en",
+    "author": "Emily Dickinson",
+    "quote": "THAT IT WILL NEVER COME AGAIN IS WHAT MAKES LIFE SO SWEET."
+  },
+  {
+    "id": 608,
+    "language": "en",
+    "author": "F. Scott Fitzgerald",
+    "quote": "SO WE BEAT ON, BOATS AGAINST THE CURRENT."
+  },
+  {
+    "id": 609,
+    "language": "en",
+    "author": "Ernest Hemingway",
+    "quote": "THE WORLD BREAKS EVERYONE AND AFTERWARD MANY ARE STRONG."
+  },
+  {
+    "id": 610,
+    "language": "en",
+    "author": "George Orwell",
+    "quote": "IN A TIME OF DECEIT TELLING THE TRUTH IS A REVOLUTIONARY ACT."
+  },
+  {
+    "id": 611,
+    "language": "en",
+    "author": "Aldous Huxley",
+    "quote": "FACTS DO NOT CEASE TO EXIST BECAUSE THEY ARE IGNORED."
+  },
+  {
+    "id": 612,
+    "language": "en",
+    "author": "William Faulkner",
+    "quote": "ALWAYS DREAM AND SHOOT HIGHER THAN YOU KNOW YOU CAN DO."
+  },
+  {
+    "id": 613,
+    "language": "en",
+    "author": "Herman Melville",
+    "quote": "IT IS BETTER TO FAIL IN ORIGINALITY THAN TO SUCCEED IN IMITATION."
+  },
+  {
+    "id": 614,
+    "language": "en",
+    "author": "Henry James",
+    "quote": "IT IS TIME TO START LIVING THE LIFE YOU'VE IMAGINED."
+  },
+  {
+    "id": 615,
+    "language": "en",
+    "author": "Edith Wharton",
+    "quote": "THERE ARE TWO WAYS OF SPREADING LIGHT: BE THE CANDLE OR THE MIRROR."
+  },
+  {
+    "id": 616,
+    "language": "en",
+    "author": "T.S. Eliot",
+    "quote": "ONLY THOSE WHO WILL RISK GOING TOO FAR CAN FIND OUT HOW FAR."
+  },
+  {
+    "id": 617,
+    "language": "en",
+    "author": "Sylvia Plath",
+    "quote": "I TOOK A DEEP BREATH AND LISTENED TO THE OLD BRAG OF MY HEART."
+  },
+  {
+    "id": 618,
+    "language": "en",
+    "author": "Virginia Woolf",
+    "quote": "NO NEED TO HURRY. NO NEED TO SPARKLE. NO NEED TO BE ANYBODY."
+  },
+  {
+    "id": 619,
+    "language": "en",
+    "author": "James Joyce",
+    "quote": "MISTAKES ARE THE PORTALS OF DISCOVERY."
+  },
+  {
+    "id": 620,
+    "language": "en",
+    "author": "Charles Bukowski",
+    "quote": "SOME PEOPLE NEVER GO CRAZY. WHAT TRULY HORRIBLE LIVES THEY LEAD."
+  },
+  {
+    "id": 621,
+    "language": "en",
+    "author": "Jack London",
+    "quote": "THE PROPER FUNCTION OF MAN IS TO LIVE, NOT TO EXIST."
+  },
+  {
+    "id": 622,
+    "language": "en",
+    "author": "Kurt Vonnegut",
+    "quote": "WE ARE WHAT WE PRETEND TO BE, SO WE MUST BE CAREFUL."
+  },
+  {
+    "id": 623,
+    "language": "en",
+    "author": "Hunter S. Thompson",
+    "quote": "ANYTHING WORTH DOING IS WORTH DOING RIGHT."
+  },
+  {
+    "id": 624,
+    "language": "en",
+    "author": "J.D. Salinger",
+    "quote": "I AM A KIND OF PARANOID IN REVERSE. I SUSPECT PEOPLE OF PLOTTING."
+  },
+  {
+    "id": 625,
+    "language": "en",
+    "author": "Truman Capote",
+    "quote": "FAILURE IS THE CONDIMENT THAT GIVES SUCCESS ITS FLAVOR."
+  },
+  {
+    "id": 626,
+    "language": "en",
+    "author": "John Steinbeck",
+    "quote": "A JOURNEY IS LIKE MARRIAGE. THE CERTAIN WAY TO BE WRONG IS TO THINK."
+  },
+  {
+    "id": 627,
+    "language": "en",
+    "author": "Ray Bradbury",
+    "quote": "YOU MUST STAY DRUNK ON WRITING SO REALITY CANNOT DESTROY YOU."
+  },
+  {
+    "id": 628,
+    "language": "en",
+    "author": "Ursula K. Le Guin",
+    "quote": "THE ONLY THING THAT MAKES LIFE POSSIBLE IS PERMANENT UNCERTAINTY."
+  },
+  {
+    "id": 629,
+    "language": "en",
+    "author": "Margaret Atwood",
+    "quote": "A WORD AFTER A WORD AFTER A WORD IS POWER."
+  },
+  {
+    "id": 630,
+    "language": "en",
+    "author": "Neil Gaiman",
+    "quote": "THE WORLD ALWAYS SEEMS BRIGHTER WHEN YOU'VE JUST MADE SOMETHING."
+  },
+  {
+    "id": 631,
+    "language": "en",
+    "author": "Terry Pratchett",
+    "quote": "WISDOM COMES FROM EXPERIENCE. EXPERIENCE IS OFTEN A RESULT OF LACK."
+  },
+  {
+    "id": 632,
+    "language": "en",
+    "author": "Douglas Adams",
+    "quote": "I MAY NOT HAVE GONE WHERE I INTENDED TO GO, BUT I THINK I ENDED UP."
+  },
+  {
+    "id": 633,
+    "language": "en",
+    "author": "George R.R. Martin",
+    "quote": "A READER LIVES A THOUSAND LIVES BEFORE HE DIES."
+  },
+  {
+    "id": 634,
+    "language": "en",
+    "author": "Haruki Murakami",
+    "quote": "PAIN IS INEVITABLE. SUFFERING IS OPTIONAL."
+  },
+  {
+    "id": 635,
+    "language": "en",
+    "author": "Paulo Coelho",
+    "quote": "IT'S THE POSSIBILITY OF HAVING A DREAM COME TRUE THAT MAKES LIFE."
+  },
+  {
+    "id": 636,
+    "language": "en",
+    "author": "Gabriel Garcia Marquez",
+    "quote": "IT IS NOT TRUE THAT PEOPLE STOP PURSUING DREAMS BECAUSE THEY GROW."
+  },
+  {
+    "id": 637,
+    "language": "en",
+    "author": "Milan Kundera",
+    "quote": "THE STRUGGLE OF MAN AGAINST POWER IS THE STRUGGLE OF MEMORY."
+  },
+  {
+    "id": 638,
+    "language": "en",
+    "author": "Albert Camus",
+    "quote": "IN THE MIDST OF WINTER, I FOUND THERE WAS, WITHIN ME, AN INVINCIBLE."
+  },
+  {
+    "id": 639,
+    "language": "en",
+    "author": "Franz Kafka",
+    "quote": "A BOOK MUST BE THE AXE FOR THE FROZEN SEA WITHIN US."
+  },
+  {
+    "id": 640,
+    "language": "en",
+    "author": "Leo Tolstoy",
+    "quote": "EVERYONE THINKS OF CHANGING THE WORLD, BUT NO ONE THINKS OF CHANGING."
+  },
+  {
+    "id": 641,
+    "language": "en",
+    "author": "Fyodor Dostoevsky",
+    "quote": "THE SOUL IS HEALED BY BEING WITH CHILDREN."
+  },
+  {
+    "id": 642,
+    "language": "en",
+    "author": "Anton Chekhov",
+    "quote": "KNOWLEDGE IS OF NO VALUE UNLESS YOU PUT IT INTO PRACTICE."
+  },
+  {
+    "id": 643,
+    "language": "en",
+    "author": "Victor Hugo",
+    "quote": "MUSIC EXPRESSES THAT WHICH CANNOT BE SAID AND ON WHICH IT IS IMPOSSIBLE."
+  },
+  {
+    "id": 644,
+    "language": "en",
+    "author": "Jean-Paul Sartre",
+    "quote": "FREEDOM IS WHAT WE DO WITH WHAT IS DONE TO US."
+  },
+  {
+    "id": 645,
+    "language": "en",
+    "author": "Simone de Beauvoir",
+    "quote": "CHANGE YOUR LIFE TODAY. DON'T GAMBLE ON THE FUTURE."
+  },
+  {
+    "id": 646,
+    "language": "en",
+    "author": "Michel Foucault",
+    "quote": "KNOWLEDGE IS NOT FOR KNOWING: KNOWLEDGE IS FOR CUTTING."
+  },
+  {
+    "id": 647,
+    "language": "en",
+    "author": "Jacques Lacan",
+    "quote": "THE DESIRE OF MAN IS THE DESIRE OF THE OTHER."
+  },
+  {
+    "id": 648,
+    "language": "en",
+    "author": "Slavoj Zizek",
+    "quote": "I ALREADY AM EATING FROM THE TRASH CAN ALL THE TIME."
+  },
+  {
+    "id": 649,
+    "language": "en",
+    "author": "Noam Chomsky",
+    "quote": "COLORLESS GREEN IDEAS SLEEP FURIOUSLY."
+  },
+  {
+    "id": 650,
+    "language": "en",
+    "author": "Bertrand Russell",
+    "quote": "THE GOOD LIFE IS ONE INSPIRED BY LOVE AND GUIDED BY KNOWLEDGE."
+  },
+  {
+    "id": 651,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "LA LIBERTE COMMENCE OU L'IGNORANCE FINIT."
+  },
+  {
+    "id": 652,
+    "language": "fr",
+    "author": "Emile Zola",
+    "quote": "UNE OEUVRE D'ART EST UN COIN DE LA CREATION VU A TRAVERS UN TEMPERAMENT."
+  },
+  {
+    "id": 653,
+    "language": "fr",
+    "author": "Guy de Maupassant",
+    "quote": "LE BAISER EST LA PLUS SURE FACON DE SE TAIRE."
+  },
+  {
+    "id": 654,
+    "language": "fr",
+    "author": "Stendhal",
+    "quote": "LE PREMIER DEVOIR DE L'HOMME EST D'ETRE HEUREUX."
+  },
+  {
+    "id": 655,
+    "language": "fr",
+    "author": "Charles Baudelaire",
+    "quote": "LE TEMPS EST UN JOUEUR AVIDE QUI GAGNE SANS TRICHER."
+  },
+  {
+    "id": 656,
+    "language": "fr",
+    "author": "Paul Verlaine",
+    "quote": "LE SOUVENIR EST UN SOUFFLE QUI PASSE."
+  },
+  {
+    "id": 657,
+    "language": "fr",
+    "author": "Stephane Mallarme",
+    "quote": "LE MONDE EST FAIT POUR ABOUTIR A UN BEAU LIVRE."
+  },
+  {
+    "id": 658,
+    "language": "fr",
+    "author": "Marcel Proust",
+    "quote": "LES VRAIS PARADIS SONT LES PARADIS QU'ON A PERDUS."
+  },
+  {
+    "id": 659,
+    "language": "fr",
+    "author": "Andre Gide",
+    "quote": "IL EST BIEN DES CHOSES QUI NE PARAISSENT IMPOSSIBLES QUE TANT."
+  },
+  {
+    "id": 660,
+    "language": "fr",
+    "author": "Jean Cocteau",
+    "quote": "UN CHEF-D'OEUVRE EST UNE BATAILLE GAGNEE CONTRE LA MORT."
+  },
+  {
+    "id": 661,
+    "language": "fr",
+    "author": "Andre Malraux",
+    "quote": "LA CULTURE NE S'HERITE PAS, ELLE SE CONQUIERT."
+  },
+  {
+    "id": 662,
+    "language": "fr",
+    "author": "Albert Camus",
+    "quote": "MAL NOMMER LES CHOSES, C'EST AJOUTER AU MALHEUR DU MONDE."
+  },
+  {
+    "id": 663,
+    "language": "fr",
+    "author": "Romain Gary",
+    "quote": "L'HUMOUR EST UNE AFFIRMATION DE LA DIGNITE."
+  },
+  {
+    "id": 664,
+    "language": "fr",
+    "author": "Boris Vian",
+    "quote": "CE QUI M'INTERESSE, CE N'EST PAS LE BONHEUR DE TOUS LES HOMMES."
+  },
+  {
+    "id": 665,
+    "language": "fr",
+    "author": "Michel Tournier",
+    "quote": "LE BONHEUR EST UNE PETITE CHOSE QUE L'ON GRIGNOTE."
+  },
+  {
+    "id": 666,
+    "language": "fr",
+    "author": "Patrick Modiano",
+    "quote": "LES SOUVENIRS SONT DES PHARES DANS LA NUIT."
+  },
+  {
+    "id": 667,
+    "language": "fr",
+    "author": "Amelie Nothomb",
+    "quote": "BOIRE EST UNE FACON DE SE METTRE AU MONDE."
+  },
+  {
+    "id": 668,
+    "language": "fr",
+    "author": "Sylvain Tesson",
+    "quote": "LA SOLITUDE EST LA PATRIE DES AMES FORTES."
+  },
+  {
+    "id": 669,
+    "language": "fr",
+    "author": "Jules Renard",
+    "quote": "LE BONHEUR EST UN REVE D'ENFANT REALISE DANS L'AGE ADULTE."
+  },
+  {
+    "id": 670,
+    "language": "fr",
+    "author": "Sacha Guitry",
+    "quote": "LE PEU QUE JE SAIS, C'EST A MON IGNORANCE QUE JE LE DOIS."
+  },
+  {
+    "id": 671,
+    "language": "fr",
+    "author": "Christian Dior",
+    "quote": "LE PARFUM EST LE COMPLEMENT INDISPENSABLE DE LA PERSONNALITE."
+  },
+  {
+    "id": 672,
+    "language": "fr",
+    "author": "Yves Saint Laurent",
+    "quote": "SANS L'ELEGANCE DU COEUR, IL N'Y A PAS D'ELEGANCE."
+  },
+  {
+    "id": 673,
+    "language": "fr",
+    "author": "Napoleon Bonaparte",
+    "quote": "L'IMPOSSIBLE EST LE REFUGE DES POLTRONS."
+  },
+  {
+    "id": 674,
+    "language": "fr",
+    "author": "Blaise Pascal",
+    "quote": "LE SILENCE ETERNEL DE CES ESPACES INFINIS M'EFFRAIE."
+  },
+  {
+    "id": 675,
+    "language": "fr",
+    "author": "Jean de La Fontaine",
+    "quote": "PATIENCE ET LONGUEUR DE TEMPS FONT PLUS QUE FORCE NI QUE RAGE."
+  },
+  {
+    "id": 676,
+    "language": "fr",
+    "author": "Moliere",
+    "quote": "ON NE MEURT QU'UNE FOIS, ET C'EST POUR SI LONGTEMPS."
+  },
+  {
+    "id": 677,
+    "language": "fr",
+    "author": "Racine",
+    "quote": "LE JOUR N'EST PAS PLUS PUR QUE LE FOND DE MON COEUR."
+  },
+  {
+    "id": 678,
+    "language": "fr",
+    "author": "Corneille",
+    "quote": "A VAINCRE SANS PERIL, ON TRIOMPHE SANS GLOIRE."
+  },
+  {
+    "id": 679,
+    "language": "fr",
+    "author": "Montesquieu",
+    "quote": "LA LIBERTE EST LE DROIT DE FAIRE TOUT CE QUE LES LOIS PERMETTENT."
+  },
+  {
+    "id": 680,
+    "language": "fr",
+    "author": "Denis Diderot",
+    "quote": "IL N'Y A QUE LES PASSIONS, ET LES GRANDES PASSIONS, QUI PUISSENT."
+  },
+  {
+    "id": 681,
+    "language": "fr",
+    "author": "Madame de Sevigne",
+    "quote": "LA VIE EST COURTE, MAIS L'ENNUI LA PROLONGE."
+  },
+  {
+    "id": 682,
+    "language": "fr",
+    "author": "Nicolas de Chamfort",
+    "quote": "L'HOMME EST UN ANIMAL QUI NE PEUT VIVRE QU'EN SOCIETE."
+  },
+  {
+    "id": 683,
+    "language": "fr",
+    "author": "George Sand",
+    "quote": "L'INTELLIGENCE DU COEUR EST LA SEULE QUI PUISSE NOUS SAUVER."
+  },
+  {
+    "id": 684,
+    "language": "fr",
+    "author": "Gustave Flaubert",
+    "quote": "IL NE FAUT PAS TOUCHER AUX IDOLES : LA DORURE EN RESTE AUX MAINS."
+  },
+  {
+    "id": 685,
+    "language": "fr",
+    "author": "Paul Eluard",
+    "quote": "IL N'Y A PAS DE HASARD, IL N'Y A QUE DES RENDEZ-VOUS."
+  },
+  {
+    "id": 686,
+    "language": "fr",
+    "author": "Louis Aragon",
+    "quote": "LE BONHEUR N'EST PAS UN ETAT, C'EST UNE FACON DE VIVRE."
+  },
+  {
+    "id": 687,
+    "language": "fr",
+    "author": "Jean Giraudoux",
+    "quote": "LE SECRET DE LA LIBERTE EST D'ECLAIRER LES HOMMES."
+  },
+  {
+    "id": 688,
+    "language": "fr",
+    "author": "Andre Breton",
+    "quote": "L'AMOUR EST LA SEULE LIBERTE QUE NOUS AYONS."
+  },
+  {
+    "id": 689,
+    "language": "fr",
+    "author": "Jacques Prevert",
+    "quote": "NOTRE PERE QUI ES AUX CIEUX RESTE-Y."
+  },
+  {
+    "id": 690,
+    "language": "fr",
+    "author": "Raymond Queneau",
+    "quote": "SI TU T'IMAGINES, SI TU T'IMAGINES FILLETTE, FILLETTE."
+  },
+  {
+    "id": 691,
+    "language": "fr",
+    "author": "Marguerite Duras",
+    "quote": "TRES VITE DANS MA VIE IL A ETE TROP TARD."
+  },
+  {
+    "id": 692,
+    "language": "fr",
+    "author": "Georges Perec",
+    "quote": "JE ME SOUVIENS DES FILMS DE LAUREL ET HARDY."
+  },
+  {
+    "id": 693,
+    "language": "fr",
+    "author": "Michel Houellebecq",
+    "quote": "TOUT PEUT ARRIVER DANS LA VIE, ET SURTOUT RIEN."
+  },
+  {
+    "id": 694,
+    "language": "fr",
+    "author": "Amelie Nothomb",
+    "quote": "LA SOUFFRANCE EST LA SEULE CHOSE QUI SOIT VRAIMENT A NOUS."
+  },
+  {
+    "id": 695,
+    "language": "fr",
+    "author": "Erik Orsenna",
+    "quote": "LA LANGUE EST UNE VILLE DONT CHAQUE MOT EST UNE MAISON."
+  },
+  {
+    "id": 696,
+    "language": "fr",
+    "author": "Jean d'Ormesson",
+    "quote": "MERCI POUR CE MOMENT DE BONHEUR QUI NE DURERA PAS."
+  },
+  {
+    "id": 697,
+    "language": "fr",
+    "author": "Christian Bobin",
+    "quote": "LE CIEL EST UNE PAGE BLANCHE OU L'ON PEUT TOUT ECRIRE."
+  },
+  {
+    "id": 698,
+    "language": "fr",
+    "author": "Eric-Emmanuel Schmitt",
+    "quote": "ON NE PEUT PAS VIVRE SANS AIMER, MAIS ON PEUT MOURIR D'AIMER."
+  },
+  {
+    "id": 699,
+    "language": "fr",
+    "author": "Yasmina Reza",
+    "quote": "RIEN N'EST PLUS GRAVE QUE DE NE PAS ETRE SERIEUX."
+  },
+  {
+    "id": 700,
+    "language": "fr",
+    "author": "Tahar Ben Jelloun",
+    "quote": "L'HOMME EST UN ENFANT QUI A OUBLIE DE GRANDIR."
+  },
+  {
+    "id": 701,
+    "language": "en",
+    "author": "William Shakespeare",
+    "quote": "ALL THE WORLD'S A STAGE, AND ALL THE MEN AND WOMEN MERELY PLAYERS."
+  },
+  {
+    "id": 702,
+    "language": "en",
+    "author": "Winston Churchill",
+    "quote": "IF YOU'RE GOING THROUGH HELL, KEEP GOING."
+  },
+  {
+    "id": 703,
+    "language": "en",
+    "author": "Benjamin Disraeli",
+    "quote": "I AM PREPARED FOR THE WORST, BUT HOPE FOR THE BEST."
+  },
+  {
+    "id": 704,
+    "language": "en",
+    "author": "Robert Louis Stevenson",
+    "quote": "DON'T JUDGE EACH DAY BY THE HARVEST YOU REAP."
+  },
+  {
+    "id": 705,
+    "language": "en",
+    "author": "Mark Twain",
+    "quote": "THE TWO MOST IMPORTANT DAYS IN YOUR LIFE ARE THE DAY YOU ARE BORN."
+  },
+  {
+    "id": 706,
+    "language": "en",
+    "author": "Thomas Jefferson",
+    "quote": "I FIND THAT THE HARDER I WORK, THE MORE LUCK I SEEM TO HAVE."
+  },
+  {
+    "id": 707,
+    "language": "en",
+    "author": "John Keats",
+    "quote": "A THING OF BEAUTY IS A JOY FOR EVER."
+  },
+  {
+    "id": 708,
+    "language": "en",
+    "author": "Henry Ford",
+    "quote": "WHETHER YOU THINK YOU CAN, OR YOU THINK YOU CAN'T--YOU'RE RIGHT."
+  },
+  {
+    "id": 709,
+    "language": "en",
+    "author": "Soren Kierkegaard",
+    "quote": "LIFE CAN ONLY BE UNDERSTOOD BACKWARDS; BUT IT MUST BE LIVED FORWARDS."
+  },
+  {
+    "id": 710,
+    "language": "en",
+    "author": "Theodore Roosevelt",
+    "quote": "KEEP YOUR EYES ON THE STARS, AND YOUR FEET ON THE GROUND."
+  },
+  {
+    "id": 711,
+    "language": "en",
+    "author": "Eleanor Roosevelt",
+    "quote": "NO ONE CAN MAKE YOU FEEL INFERIOR WITHOUT YOUR CONSENT."
+  },
+  {
+    "id": 712,
+    "language": "en",
+    "author": "Martin Luther King Jr.",
+    "quote": "THE TIME IS ALWAYS RIGHT TO DO WHAT IS RIGHT."
+  },
+  {
+    "id": 713,
+    "language": "en",
+    "author": "George Bernard Shaw",
+    "quote": "LIFE ISN'T ABOUT FINDING YOURSELF. LIFE IS ABOUT CREATING YOURSELF."
+  },
+  {
+    "id": 714,
+    "language": "en",
+    "author": "Helen Keller",
+    "quote": "ALONE WE CAN DO SO LITTLE; TOGETHER WE CAN DO SO MUCH."
+  },
+  {
+    "id": 715,
+    "language": "en",
+    "author": "Maya Angelou",
+    "quote": "TRY TO BE A RAINBOW IN SOMEONE'S CLOUD."
+  },
+  {
+    "id": 716,
+    "language": "en",
+    "author": "William James",
+    "quote": "ACT AS IF WHAT YOU DO MAKES A DIFFERENCE. IT DOES."
+  },
+  {
+    "id": 717,
+    "language": "en",
+    "author": "John F. Kennedy",
+    "quote": "MY FELLOW AMERICANS, ASK NOT WHAT YOUR COUNTRY CAN DO FOR YOU."
+  },
+  {
+    "id": 718,
+    "language": "en",
+    "author": "Margaret Mead",
+    "quote": "NEVER DOUBT THAT A SMALL GROUP OF THOUGHTFUL, COMMITTED CITIZENS."
+  },
+  {
+    "id": 719,
+    "language": "en",
+    "author": "Booker T. Washington",
+    "quote": "SUCCESS IS TO BE MEASURED NOT SO MUCH BY THE POSITION."
+  },
+  {
+    "id": 720,
+    "language": "en",
+    "author": "Frank Sinatra",
+    "quote": "THE BEST REVENGE IS MASSIVE SUCCESS."
+  },
+  {
+    "id": 721,
+    "language": "en",
+    "author": "Steve Jobs",
+    "quote": "YOUR TIME IS LIMITED, SO DON'T WASTE IT LIVING SOMEONE ELSE'S LIFE."
+  },
+  {
+    "id": 722,
+    "language": "en",
+    "author": "Mary Oliver",
+    "quote": "TELL ME, WHAT IS IT YOU PLAN TO DO WITH YOUR ONE WILD AND PRECIOUS."
+  },
+  {
+    "id": 723,
+    "language": "en",
+    "author": "Alice Walker",
+    "quote": "THE MOST COMMON WAY PEOPLE GIVE UP THEIR POWER IS BY THINKING."
+  },
+  {
+    "id": 724,
+    "language": "en",
+    "author": "David Bowie",
+    "quote": "I DON'T KNOW WHERE I'M GOING FROM HERE, BUT I PROMISE IT WON'T BE."
+  },
+  {
+    "id": 725,
+    "language": "en",
+    "author": "Jim Morrison",
+    "quote": "A FRIEND IS SOMEONE WHO GIVES YOU TOTAL FREEDOM TO BE YOURSELF."
+  },
+  {
+    "id": 726,
+    "language": "en",
+    "author": "Bob Dylan",
+    "quote": "A MAN IS A SUCCESS IF HE GETS UP IN THE MORNING AND GETS TO BED."
+  },
+  {
+    "id": 727,
+    "language": "en",
+    "author": "Leonard Cohen",
+    "quote": "THERE IS A CRACK IN EVERYTHING, THAT'S HOW THE LIGHT GETS IN."
+  },
+  {
+    "id": 728,
+    "language": "en",
+    "author": "Dolly Parton",
+    "quote": "IF YOU WANT THE RAINBOW, YOU GOTTA PUT UP WITH THE RAIN."
+  },
+  {
+    "id": 729,
+    "language": "en",
+    "author": "Katharine Hepburn",
+    "quote": "IF YOU OBEY ALL THE RULES, YOU MISS ALL THE FUN."
+  },
+  {
+    "id": 730,
+    "language": "en",
+    "author": "Marilyn Monroe",
+    "quote": "IMPERFECTION IS BEAUTY, MADNESS IS GENIUS."
+  },
+  {
+    "id": 731,
+    "language": "en",
+    "author": "Audrey Hepburn",
+    "quote": "NOTHING IS IMPOSSIBLE, THE WORD ITSELF SAYS I'M POSSIBLE!"
+  },
+  {
+    "id": 732,
+    "language": "en",
+    "author": "Bruce Lee",
+    "quote": "KNOWING IS NOT ENOUGH, WE MUST APPLY. WILLING IS NOT ENOUGH."
+  },
+  {
+    "id": 733,
+    "language": "en",
+    "author": "Muhammad Ali",
+    "quote": "HE WHO IS NOT COURAGEOUS ENOUGH TO TAKE RISKS WILL ACCOMPLISH."
+  },
+  {
+    "id": 734,
+    "language": "en",
+    "author": "Wayne Gretzky",
+    "quote": "YOU MISS 100 PERCENT OF THE SHOTS YOU DON'T TAKE."
+  },
+  {
+    "id": 735,
+    "language": "en",
+    "author": "Michael Jordan",
+    "quote": "I CAN ACCEPT FAILURE, EVERYONE FAILS AT SOMETHING."
+  },
+  {
+    "id": 736,
+    "language": "en",
+    "author": "Serena Williams",
+    "quote": "I REALLY THINK A CHAMPION IS DEFINED BY HOW THEY RECOVER."
+  },
+  {
+    "id": 737,
+    "language": "en",
+    "author": "Billie Jean King",
+    "quote": "CHAMPIONS KEEP PLAYING UNTIL THEY GET IT RIGHT."
+  },
+  {
+    "id": 738,
+    "language": "en",
+    "author": "Arthur Ashe",
+    "quote": "START WHERE YOU ARE. USE WHAT YOU HAVE. DO WHAT YOU CAN."
+  },
+  {
+    "id": 739,
+    "language": "en",
+    "author": "Nelson Mandela",
+    "quote": "EDUCATION IS THE MOST POWERFUL WEAPON WHICH YOU CAN USE."
+  },
+  {
+    "id": 740,
+    "language": "en",
+    "author": "Desmond Tutu",
+    "quote": "DO YOUR LITTLE BIT OF GOOD WHERE YOU ARE."
+  },
+  {
+    "id": 741,
+    "language": "en",
+    "author": "Kofi Annan",
+    "quote": "KNOWLEDGE IS POWER. INFORMATION IS LIBERATING."
+  },
+  {
+    "id": 742,
+    "language": "en",
+    "author": "Malala Yousafzai",
+    "quote": "WHEN THE WHOLE WORLD IS SILENT, EVEN ONE VOICE BECOMES POWERFUL."
+  },
+  {
+    "id": 743,
+    "language": "en",
+    "author": "Greta Thunberg",
+    "quote": "YOU ARE NEVER TOO SMALL TO MAKE A DIFFERENCE."
+  },
+  {
+    "id": 744,
+    "language": "en",
+    "author": "Michelle Obama",
+    "quote": "THERE IS NO LIMIT TO WHAT WE, AS WOMEN, CAN ACCOMPLISH."
+  },
+  {
+    "id": 745,
+    "language": "en",
+    "author": "Kamala Harris",
+    "quote": "YOU MAY BE THE FIRST TO DO MANY THINGS, BUT MAKE SURE YOU'RE."
+  },
+  {
+    "id": 746,
+    "language": "en",
+    "author": "Ruth Bader Ginsburg",
+    "quote": "FIGHT FOR THE THINGS THAT YOU CARE ABOUT."
+  },
+  {
+    "id": 747,
+    "language": "en",
+    "author": "Sonia Sotomayor",
+    "quote": "EXPERIENCE HAS SHOWN ME THAT YOU CANNOT TAKE EVERYTHING."
+  },
+  {
+    "id": 748,
+    "language": "en",
+    "author": "Gloria Steinem",
+    "quote": "A WOMAN WITHOUT A MAN IS LIKE A FISH WITHOUT A BICYCLE."
+  },
+  {
+    "id": 749,
+    "language": "en",
+    "author": "Betty Friedan",
+    "quote": "IT IS EASIER TO LIVE THROUGH SOMEONE ELSE THAN TO BECOME."
+  },
+  {
+    "id": 750,
+    "language": "en",
+    "author": "Muhammad Ali",
+    "quote": "DON'T COUNT THE DAYS, MAKE THE DAYS COUNT."
+  },
+  {
+    "id": 751,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "RESPIRER PARIS, CELA CONSERVE L'AME."
+  },
+  {
+    "id": 752,
+    "language": "fr",
+    "author": "Napoleon Bonaparte",
+    "quote": "ON NE CONDUIT LE PEUPLE QU'EN LUI MONTRANT UN AVENIR."
+  },
+  {
+    "id": 753,
+    "language": "fr",
+    "author": "Charles de Gaulle",
+    "quote": "LA DIFFICULTE ATTIRE L'HOMME DE CARACTERE."
+  },
+  {
+    "id": 754,
+    "language": "fr",
+    "author": "Edith Piaf",
+    "quote": "NON, RIEN DE RIEN, NON, JE NE REGRETTE RIEN."
+  },
+  {
+    "id": 755,
+    "language": "fr",
+    "author": "Serge Gainsbourg",
+    "quote": "LA LAIDEUR A CECI DE SUPERIEUR A LA BEAUTE QU'ELLE DURE."
+  },
+  {
+    "id": 756,
+    "language": "fr",
+    "author": "Coco Chanel",
+    "quote": "PERSONNE N'EST JEUNE APRES QUARANTE ANS, MAIS ON PEUT ETRE."
+  },
+  {
+    "id": 757,
+    "language": "fr",
+    "author": "Christian Dior",
+    "quote": "L'ENTHOUSIASME EST LE SECRET DE TOUTE BEAUTE."
+  },
+  {
+    "id": 758,
+    "language": "fr",
+    "author": "Jean Cocteau",
+    "quote": "PUISQUE CES MYSTERES NOUS DEPASSENT, FEIGNONS D'EN ETRE."
+  },
+  {
+    "id": 759,
+    "language": "fr",
+    "author": "Andre Gide",
+    "quote": "ON NE DECOUVRE PAS DE NOUVELLES TERRES SANS CONSENTIR A PERDRE."
+  },
+  {
+    "id": 760,
+    "language": "fr",
+    "author": "Paul Valery",
+    "quote": "QUE DE CHOSES IL FAUT IGNORER POUR AGIR."
+  },
+  {
+    "id": 761,
+    "language": "fr",
+    "author": "Marcel Pagnol",
+    "quote": "TOUT LE MONDE SAVAIT QUE C'ETAIT IMPOSSIBLE."
+  },
+  {
+    "id": 762,
+    "language": "fr",
+    "author": "Sacha Guitry",
+    "quote": "IL Y A DES GENS QUI PARLENT, QUI PARLENT, JUSQU'A CE QU'ILS."
+  },
+  {
+    "id": 763,
+    "language": "fr",
+    "author": "Michel Audiard",
+    "quote": "LES CONS, CA OSE TOUT. C'EST MEME A CA QU'ON LES RECONNAIT."
+  },
+  {
+    "id": 764,
+    "language": "fr",
+    "author": "Jean-Luc Godard",
+    "quote": "LE CINEMA, C'EST VINGT-QUATRE FOIS LA VERITE PAR SECONDE."
+  },
+  {
+    "id": 765,
+    "language": "fr",
+    "author": "Francois Truffaut",
+    "quote": "LE CINEMA EST L'ART DE FAIRE FAIRE DE JOLIES CHOSES A DES."
+  },
+  {
+    "id": 766,
+    "language": "fr",
+    "author": "Claude Lelouch",
+    "quote": "LA CHANCE EST UNE FEMME QUI NE REFUSE RIEN."
+  },
+  {
+    "id": 767,
+    "language": "fr",
+    "author": "Agnes Varda",
+    "quote": "SI ON OUVRAIT LES GENS, ON TROUVERAIT DES PAYSAGES."
+  },
+  {
+    "id": 768,
+    "language": "fr",
+    "author": "Jacques Demy",
+    "quote": "IL FAUT ESSAYER D'ETRE HEUREUX, NE SERAIT-CE QUE POUR DONNER."
+  },
+  {
+    "id": 769,
+    "language": "fr",
+    "author": "Henri Cartier-Bresson",
+    "quote": "PHOTOGRAPHIER, C'EST METTRE SUR LA MEME LIGNE DE MIRE."
+  },
+  {
+    "id": 770,
+    "language": "fr",
+    "author": "Yann Arthus-Bertrand",
+    "quote": "LA TERRE N'EST PAS UN DON DE NOS PARENTS, C'EST UN PRET."
+  },
+  {
+    "id": 771,
+    "language": "fr",
+    "author": "Coluche",
+    "quote": "JE NE SUIS PAS UN NOUVEAU RICHE, JE SUIS UN ANCIEN PAUVRE."
+  },
+  {
+    "id": 772,
+    "language": "fr",
+    "author": "L'abbe Pierre",
+    "quote": "ON N'EST JAMAIS HEUREUX QUE DANS LE BONHEUR QU'ON DONNE."
+  },
+  {
+    "id": 773,
+    "language": "fr",
+    "author": "Soeur Emmanuelle",
+    "quote": "IL FAUT AIMER POUR VIVRE, IL FAUT VIVRE POUR AIMER."
+  },
+  {
+    "id": 774,
+    "language": "fr",
+    "author": "Simone Veil",
+    "quote": "MA REVENDICATION EN TANT QUE FEMME EST QUE MA DIFFERENCE SOIT."
+  },
+  {
+    "id": 775,
+    "language": "fr",
+    "author": "Robert Badinter",
+    "quote": "LA JUSTICE N'EST PAS UNE MACHINE, C'EST UNE OEUVRE HUMAINE."
+  },
+  {
+    "id": 776,
+    "language": "fr",
+    "author": "Jacques Chirac",
+    "quote": "NOTRE MAISON BRULE ET NOUS REGARDONS AILLEURS."
+  },
+  {
+    "id": 777,
+    "language": "fr",
+    "author": "Nicolas Hulot",
+    "quote": "LE FUTUR NE SE PREVOIT PAS, IL SE PREPARE."
+  },
+  {
+    "id": 778,
+    "language": "fr",
+    "author": "Thomas Pesquet",
+    "quote": "DE LA-HAUT, ON VOIT BIEN QUE LA TERRE EST FRAGILE."
+  },
+  {
+    "id": 779,
+    "language": "fr",
+    "author": "Kylian Mbappe",
+    "quote": "DANS LE FOOT, TOUT EST POSSIBLE SI ON TRAVAILLE DUR."
+  },
+  {
+    "id": 780,
+    "language": "fr",
+    "author": "Zinedine Zidane",
+    "quote": "LES TROPHEES, C'EST BIEN, MAIS LE PLAISIR DE JOUER EST MIEUX."
+  },
+  {
+    "id": 781,
+    "language": "fr",
+    "author": "Yannick Noah",
+    "quote": "LE PLUS DIFFICILE N'EST PAS DE MONTER, MAIS DE RESTER EN HAUT."
+  },
+  {
+    "id": 782,
+    "language": "fr",
+    "author": "Marie-Jose Perec",
+    "quote": "COURIR, C'EST ETRE LIBRE. C'EST DEPASSER SES PROPRES LIMITES."
+  },
+  {
+    "id": 783,
+    "language": "fr",
+    "author": "Teddy Riner",
+    "quote": "ON NE NAIT PAS CHAMPION, ON LE DEVIENT PAR LE TRAVAIL."
+  },
+  {
+    "id": 784,
+    "language": "fr",
+    "author": "Laure Manaudou",
+    "quote": "L'EAU EST MON ELEMENT, C'EST LA QUE JE ME SENS MOI-MEME."
+  },
+  {
+    "id": 785,
+    "language": "fr",
+    "author": "Jean-Jacques Goldman",
+    "quote": "JE MARCHE SEUL DANS LES RUES QUI SE DONNENT."
+  },
+  {
+    "id": 786,
+    "language": "fr",
+    "author": "Johnny Hallyday",
+    "quote": "QU'ON ME DONNE L'ENVIE, L'ENVIE D'AVOIR ENVIE."
+  },
+  {
+    "id": 787,
+    "language": "fr",
+    "author": "Stromae",
+    "quote": "ALORS ON DANSE, ALORS ON SORT POUR OUBLIER NOS PROBLEMES."
+  },
+  {
+    "id": 788,
+    "language": "fr",
+    "author": "Daft Punk",
+    "quote": "ON EST VENUS POUR DONNER DE LA JOIE AUX GENS."
+  },
+  {
+    "id": 789,
+    "language": "fr",
+    "author": "Jean Nouvel",
+    "quote": "CHAQUE NOUVEAU BATIMENT DOIT ETRE UNE AVENTURE."
+  },
+  {
+    "id": 790,
+    "language": "fr",
+    "author": "Philippe Starck",
+    "quote": "LE DESIGN N'EST PAS DE FAIRE DE BEAUX OBJETS POUR LES RICHES."
+  },
+  {
+    "id": 791,
+    "language": "fr",
+    "author": "Alain Ducasse",
+    "quote": "LA CUISINE, C'EST UNE HISTOIRE D'AMOUR ET DE PARTAGE."
+  },
+  {
+    "id": 792,
+    "language": "fr",
+    "author": "Paul Bocuse",
+    "quote": "IL N'Y A PAS DE BONNE CUISINE SI AU DEPART ELLE N'"
+  },
+  {
+    "id": 801,
+    "language": "en",
+    "author": "Henry David Thoreau",
+    "quote": "HEAVEN IS UNDER OUR FEET AS WELL AS OVER OUR HEADS."
+  },
+  {
+    "id": 802,
+    "language": "en",
+    "author": "John Muir",
+    "quote": "IN EVERY WALK WITH NATURE ONE RECEIVES FAR MORE THAN HE SEEKS."
+  },
+  {
+    "id": 803,
+    "language": "en",
+    "author": "Rachel Carson",
+    "quote": "IN NATURE, NOTHING EXISTS ALONE. EVERYTHING IS CONNECTED."
+  },
+  {
+    "id": 804,
+    "language": "en",
+    "author": "Ansel Adams",
+    "quote": "YOU DON'T TAKE A PHOTOGRAPH, YOU MAKE IT."
+  },
+  {
+    "id": 805,
+    "language": "en",
+    "author": "Gary Snyder",
+    "quote": "NATURE IS NOT A PLACE TO VISIT. IT IS HOME."
+  },
+  {
+    "id": 806,
+    "language": "en",
+    "author": "David Attenborough",
+    "quote": "IT SEEMS TO ME THAT THE NATURAL WORLD IS THE GREATEST SOURCE."
+  },
+  {
+    "id": 807,
+    "language": "en",
+    "author": "Jacques Cousteau",
+    "quote": "THE SEA, ONCE IT CASTS ITS SPELL, HOLDS ONE IN ITS NET."
+  },
+  {
+    "id": 808,
+    "language": "en",
+    "author": "Sylvia Earle",
+    "quote": "EVEN IF YOU NEVER HAVE THE CHANCE TO SEE OR TOUCH THE OCEAN."
+  },
+  {
+    "id": 809,
+    "language": "en",
+    "author": "Jane Goodall",
+    "quote": "WHAT YOU DO MAKES A DIFFERENCE, AND YOU HAVE TO DECIDE."
+  },
+  {
+    "id": 810,
+    "language": "en",
+    "author": "Carl Sagan",
+    "quote": "SOMEWHERE, SOMETHING INCREDIBLE IS WAITING TO BE KNOWN."
+  },
+  {
+    "id": 811,
+    "language": "en",
+    "author": "Neil deGrasse Tyson",
+    "quote": "THE UNIVERSE IS UNDER NO OBLIGATION TO MAKE SENSE TO YOU."
+  },
+  {
+    "id": 812,
+    "language": "en",
+    "author": "Stephen Hawking",
+    "quote": "INTELLIGENCE IS THE ABILITY TO ADAPT TO CHANGE."
+  },
+  {
+    "id": 813,
+    "language": "en",
+    "author": "Marie Curie",
+    "quote": "NOTHING IN LIFE IS TO BE FEARED, IT IS ONLY TO BE UNDERSTOOD."
+  },
+  {
+    "id": 814,
+    "language": "en",
+    "author": "Isaac Newton",
+    "quote": "IF I HAVE SEEN FURTHER IT IS BY STANDING ON THE SHOULDERS."
+  },
+  {
+    "id": 815,
+    "language": "en",
+    "author": "Charles Darwin",
+    "quote": "IT IS NOT THE STRONGEST OF THE SPECIES THAT SURVIVES."
+  },
+  {
+    "id": 816,
+    "language": "en",
+    "author": "Nikola Tesla",
+    "quote": "IF YOU WANT TO FIND THE SECRETS OF THE UNIVERSE, THINK."
+  },
+  {
+    "id": 817,
+    "language": "en",
+    "author": "Thomas Edison",
+    "quote": "OUR GREATEST WEAKNESS LIES IN GIVING UP."
+  },
+  {
+    "id": 818,
+    "language": "en",
+    "author": "Alexander Graham Bell",
+    "quote": "WHEN ONE DOOR CLOSES, ANOTHER OPENS; BUT WE OFTEN LOOK."
+  },
+  {
+    "id": 819,
+    "language": "en",
+    "author": "Albert Einstein",
+    "quote": "LOOK DEEP INTO NATURE, AND THEN YOU WILL UNDERSTAND."
+  },
+  {
+    "id": 820,
+    "language": "en",
+    "author": "Galileo Galilei",
+    "quote": "ALL TRUTHS ARE EASY TO UNDERSTAND ONCE THEY ARE DISCOVERED."
+  },
+  {
+    "id": 821,
+    "language": "en",
+    "author": "Francis Bacon",
+    "quote": "KNOWLEDGE ITSELF IS POWER AND A GREAT SOURCE OF STRENGTH."
+  },
+  {
+    "id": 822,
+    "language": "en",
+    "author": "Rene Descartes",
+    "quote": "IT IS NOT ENOUGH TO HAVE A GOOD MIND; THE MAIN THING IS."
+  },
+  {
+    "id": 823,
+    "language": "en",
+    "author": "Baruch Spinoza",
+    "quote": "ALL THINGS EXCELLENT ARE AS DIFFICULT AS THEY ARE RARE."
+  },
+  {
+    "id": 824,
+    "language": "en",
+    "author": "Immanuel Kant",
+    "quote": "SCIENCE IS ORGANIZED KNOWLEDGE. WISDOM IS ORGANIZED LIFE."
+  },
+  {
+    "id": 825,
+    "language": "en",
+    "author": "Friedrich Nietzsche",
+    "quote": "HE WHO HAS A WHY TO LIVE CAN BEAR ALMOST ANY HOW."
+  },
+  {
+    "id": 826,
+    "language": "en",
+    "author": "Soren Kierkegaard",
+    "quote": "LIFE IS NOT A PROBLEM TO BE SOLVED, BUT A REALITY TO BE."
+  },
+  {
+    "id": 827,
+    "language": "en",
+    "author": "Jean-Paul Sartre",
+    "quote": "EVERY WORD HAS CONSEQUENCES. EVERY SILENCE, TOO."
+  },
+  {
+    "id": 828,
+    "language": "en",
+    "author": "Simone de Beauvoir",
+    "quote": "ONE IS NOT BORN, BUT RATHER BECOMES, A WOMAN."
+  },
+  {
+    "id": 829,
+    "language": "en",
+    "author": "Hannah Arendt",
+    "quote": "THE MOST RADICAL REVOLUTIONARY WILL BECOME A CONSERVATIVE."
+  },
+  {
+    "id": 830,
+    "language": "en",
+    "author": "Michel Foucault",
+    "quote": "I'M NO PROPHET. MY JOB IS MAKING WINDOWS WHERE THERE."
+  },
+  {
+    "id": 831,
+    "language": "en",
+    "author": "Noam Chomsky",
+    "quote": "OPTIMISM IS A STRATEGY FOR MAKING A BETTER FUTURE."
+  },
+  {
+    "id": 832,
+    "language": "en",
+    "author": "Bertrand Russell",
+    "quote": "TO FEAR LOVE IS TO FEAR LIFE, AND THOSE WHO FEAR LIFE."
+  },
+  {
+    "id": 833,
+    "language": "en",
+    "author": "Ludwig Wittgenstein",
+    "quote": "THE LIMITS OF MY LANGUAGE MEAN THE LIMITS OF MY WORLD."
+  },
+  {
+    "id": 834,
+    "language": "en",
+    "author": "Martin Heidegger",
+    "quote": "THE MOST THOUGHT-PROVOKING THING IN OUR THOUGHT-PROVOKING."
+  },
+  {
+    "id": 835,
+    "language": "en",
+    "author": "Arthur Schopenhauer",
+    "quote": "TALENT HITS A TARGET NO ONE ELSE CAN HIT."
+  },
+  {
+    "id": 836,
+    "language": "en",
+    "author": "Blaise Pascal",
+    "quote": "KIND WORDS DO NOT COST MUCH. YET THEY ACCOMPLISH MUCH."
+  },
+  {
+    "id": 837,
+    "language": "en",
+    "author": "Voltaire",
+    "quote": "JUDGE A MAN BY HIS QUESTIONS RATHER THAN BY HIS ANSWERS."
+  },
+  {
+    "id": 838,
+    "language": "en",
+    "author": "Jean-Jacques Rousseau",
+    "quote": "NATURE NEVER DECEIVES US; IT IS WE WHO DECEIVE OURSELVES."
+  },
+  {
+    "id": 839,
+    "language": "en",
+    "author": "Denis Diderot",
+    "quote": "ONLY PASSIONS, GREAT PASSIONS, CAN ELEVATE THE SOUL."
+  },
+  {
+    "id": 840,
+    "language": "en",
+    "author": "Montesquieu",
+    "quote": "TO BECOME TRULY GREAT, ONE HAS TO STAND WITH PEOPLE."
+  },
+  {
+    "id": 841,
+    "language": "en",
+    "author": "Epicurus",
+    "quote": "DO NOT SPOIL WHAT YOU HAVE BY DESIRING WHAT YOU HAVE NOT."
+  },
+  {
+    "id": 842,
+    "language": "en",
+    "author": "Marcus Aurelius",
+    "quote": "VERY LITTLE IS NEEDED TO MAKE A HAPPY LIFE."
+  },
+  {
+    "id": 843,
+    "language": "en",
+    "author": "Seneca",
+    "quote": "LUCK IS WHAT HAPPENS WHEN PREPARATION MEETS OPPORTUNITY."
+  },
+  {
+    "id": 844,
+    "language": "en",
+    "author": "Epictetus",
+    "quote": "IT'S NOT WHAT HAPPENS TO YOU, BUT HOW YOU REACT TO IT."
+  },
+  {
+    "id": 845,
+    "language": "en",
+    "author": "Heraclitus",
+    "quote": "THERE IS NOTHING PERMANENT EXCEPT CHANGE IN THIS WORLD."
+  },
+  {
+    "id": 846,
+    "language": "en",
+    "author": "Socrates",
+    "quote": "THE ONLY TRUE WISDOM IS IN KNOWING YOU KNOW NOTHING."
+  },
+  {
+    "id": 847,
+    "language": "en",
+    "author": "Plato",
+    "quote": "WISE MEN SPEAK BECAUSE THEY HAVE SOMETHING TO SAY."
+  },
+  {
+    "id": 848,
+    "language": "en",
+    "author": "Aristotle",
+    "quote": "EXCELLENCE IS NOT AN ACT, BUT A HABIT."
+  },
+  {
+    "id": 849,
+    "language": "en",
+    "author": "Sun Tzu",
+    "quote": "HE WHO KNOWS WHEN HE CAN FIGHT AND WHEN HE CANNOT WILL."
+  },
+  {
+    "id": 850,
+    "language": "en",
+    "author": "Lao Tzu",
+    "quote": "NATURE DOES NOT HURRY, YET EVERYTHING IS ACCOMPLISHED."
+  },
+  {
+    "id": 851,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "LIRE, C'EST BOIRE ET MANGER. LESPRIT QUI NE LIT PAS."
+  },
+  {
+    "id": 852,
+    "language": "fr",
+    "author": "Emile Zola",
+    "quote": "RIEN N'EST JAMAIS FINI, IL SUFFIT D'UN PEU DE BONHEUR."
+  },
+  {
+    "id": 853,
+    "language": "fr",
+    "author": "Gustave Flaubert",
+    "quote": "ECRIRE, C'EST UNE FACON DE VIVRE. C'EST TOUT UN ART."
+  },
+  {
+    "id": 854,
+    "language": "fr",
+    "author": "Honore de Balzac",
+    "quote": "LA PATIENCE EST CE QUI RESSEMBLE LE PLUS AU COURAGE."
+  },
+  {
+    "id": 855,
+    "language": "fr",
+    "author": "Guy de Maupassant",
+    "quote": "UNE RENCONTRE N'EST QUE LE DEBUT D'UN VOYAGE INFINI."
+  },
+  {
+    "id": 856,
+    "language": "fr",
+    "author": "Marcel Proust",
+    "quote": "LE VOYAGE N'EST PAS DE CHERCHER DE NOUVEAUX PAYSAGES."
+  },
+  {
+    "id": 857,
+    "language": "fr",
+    "author": "Paul Valery",
+    "quote": "LE VENT SE LEVE, IL FAUT TENTER DE VIVRE VRAIMENT."
+  },
+  {
+    "id": 858,
+    "language": "fr",
+    "author": "Andre Gide",
+    "quote": "L'IMPORTANT N'EST PAS CE QUE L'ON EST, MAIS CE QUE."
+  },
+  {
+    "id": 859,
+    "language": "fr",
+    "author": "Jean Cocteau",
+    "quote": "CE QUE LE PUBLIC TE REPROCHE, CULTIVE-LE, C'EST TOI."
+  },
+  {
+    "id": 860,
+    "language": "fr",
+    "author": "Albert Camus",
+    "quote": "AU MILIEU DE L'HIVER, J'AI DECOUVERT UN ETE INVINCIBLE."
+  },
+  {
+    "id": 861,
+    "language": "fr",
+    "author": "Jean-Paul Sartre",
+    "quote": "L'ENFER, C'EST LES AUTRES, MAIS SEULEMENT SI ON VEUT."
+  },
+  {
+    "id": 862,
+    "language": "fr",
+    "author": "Simone de Beauvoir",
+    "quote": "ON NE NAIT PAS FEMME, ON LE DEVIENT PAR SES CHOIX."
+  },
+  {
+    "id": 863,
+    "language": "fr",
+    "author": "Boris Vian",
+    "quote": "L'HUMOUR EST LA POLITESSE DU DESESPOIR ET DE LA VIE."
+  },
+  {
+    "id": 864,
+    "language": "fr",
+    "author": "Romain Gary",
+    "quote": "LA VIE EST UNE AVENTURE QUI MERITE D'ETRE VECUE."
+  },
+  {
+    "id": 865,
+    "language": "fr",
+    "author": "Michel Tournier",
+    "quote": "LE PLUS GRAND PLAISIR DE LA VIE EST DE VOIR LE MONDE."
+  },
+  {
+    "id": 866,
+    "language": "fr",
+    "author": "Patrick Modiano",
+    "quote": "LA VILLE EST UN LIVRE QUE L'ON LIT AVEC SES PIEDS."
+  },
+  {
+    "id": 867,
+    "language": "fr",
+    "author": "Amelie Nothomb",
+    "quote": "IL FAUT TOUJOURS GARDER UNE PETITE PLACE POUR LE REVE."
+  },
+  {
+    "id": 868,
+    "language": "fr",
+    "author": "Sylvain Tesson",
+    "quote": "LA LIBERTE EST DE POUVOIR DIRE NON AU MONDE ENTIER."
+  },
+  {
+    "id": 869,
+    "language": "fr",
+    "author": "Jules Renard",
+    "quote": "SI TU VEUX ETRE HEUREUX, COMMENCE PAR FAIRE PLAISIR."
+  },
+  {
+    "id": 870,
+    "language": "fr",
+    "author": "Sacha Guitry",
+    "quote": "LE BONHEUR, C'EST DE CONTINUER A DESIRER CE QU'ON A."
+  },
+  {
+    "id": 871,
+    "language": "fr",
+    "author": "Christian Dior",
+    "quote": "LE STYLE EST UNE MANIERE DE DIRE QUI VOUS ETES."
+  },
+  {
+    "id": 872,
+    "language": "fr",
+    "author": "Coco Chanel",
+    "quote": "LA MODE SE DEMODE, SEUL LE STYLE RESTE ET DEMEURE."
+  },
+  {
+    "id": 873,
+    "language": "fr",
+    "author": "Yves Saint Laurent",
+    "quote": "LES MODES PASSENT, LE STYLE EST ETERNEL ET BEAU."
+  },
+  {
+    "id": 874,
+    "language": "fr",
+    "author": "Jean-Luc Godard",
+    "quote": "TOUT CE DONT VOUS AVEZ BESOIN, C'EST D'UNE FILLE."
+  },
+  {
+    "id": 875,
+    "language": "fr",
+    "author": "Francois Truffaut",
+    "quote": "EST-CE QUE LES FILMS SONT PLUS IMPORTANTS QUE LA VIE."
+  },
+  {
+    "id": 876,
+    "language": "fr",
+    "author": "Agnes Varda",
+    "quote": "LE CINEMA EST UN PARTAGE, UNE VISION DE LA REALITE."
+  },
+  {
+    "id": 877,
+    "language": "fr",
+    "author": "Jacques Demy",
+    "quote": "LA VIE EST UNE CHANSON QUE L'ON CHANTE A DEUX."
+  },
+  {
+    "id": 878,
+    "language": "fr",
+    "author": "Henri Cartier-Bresson",
+    "quote": "L'OEIL DOIT APPRENDRE A VOIR AVANT DE REGARDER."
+  },
+  {
+    "id": 879,
+    "language": "fr",
+    "author": "Yann Arthus-Bertrand",
+    "quote": "NOUS SOMMES TOUS RESPONSABLES DE NOTRE PLANETE."
+  },
+  {
+    "id": 880,
+    "language": "fr",
+    "author": "Coluche",
+    "quote": "LA DICTATURE C'EST : FERME TA GUEULE. LA DEMOCRATIE."
+  },
+  {
+    "id": 881,
+    "language": "fr",
+    "author": "L'abbe Pierre",
+    "quote": "IL NE FAUT PAS ATTENDRE D'ETRE PARFAIT POUR AIDER."
+  },
+  {
+    "id": 882,
+    "language": "fr",
+    "author": "Soeur Emmanuelle",
+    "quote": "YALLA, EN AVANT POUR LA VIE ET POUR LE BONHEUR."
+  },
+  {
+    "id": 883,
+    "language": "fr",
+    "author": "Simone Veil",
+    "quote": "LE COURAGE N'EST PAS L'ABSENCE DE PEUR, MAIS SON."
+  },
+  {
+    "id": 884,
+    "language": "fr",
+    "author": "Robert Badinter",
+    "quote": "LA PEINE DE MORT EST UNE TACHE SUR NOTRE JUSTICE."
+  },
+  {
+    "id": 885,
+    "language": "fr",
+    "author": "Jacques Chirac",
+    "quote": "LA TERRE NE NOUS APPARTIENT PAS, NOUS LUI SOMMES."
+  },
+  {
+    "id": 886,
+    "language": "fr",
+    "author": "Nicolas Hulot",
+    "quote": "LA NATURE EST NOTRE MAISON, RESPECTONS SA BEAUTE."
+  },
+  {
+    "id": 887,
+    "language": "fr",
+    "author": "Thomas Pesquet",
+    "quote": "LA TERRE EST UN PETIT VAISSEAU PERDU DANS LE VIDE."
+  },
+  {
+    "id": 888,
+    "language": "fr",
+    "author": "Kylian Mbappe",
+    "quote": "LE TALENT NE SUFFIT PAS, IL FAUT TRAVAILLER CHAQUE JOUR."
+  },
+  {
+    "id": 889,
+    "language": "fr",
+    "author": "Zinedine Zidane",
+    "quote": "JOUER AU FOOT, C'EST AVANT TOUT UN PLAISIR DE GOSSE."
+  },
+  {
+    "id": 890,
+    "language": "fr",
+    "author": "Yannick Noah",
+    "quote": "LE SOURIRE EST LA PLUS BELLE ARME POUR REUSSIR."
+  },
+  {
+    "id": 891,
+    "language": "fr",
+    "author": "Marie-Jose Perec",
+    "quote": "LA VICTOIRE EST BELLE QUAND ON A DONNE SON MAXIMUM."
+  },
+  {
+    "id": 892,
+    "language": "fr",
+    "author": "Teddy Riner",
+    "quote": "LE RESPECT DE L'ADVERSAIRE EST LA BASE DU SPORT."
+  },
+  {
+    "id": 893,
+    "language": "fr",
+    "author": "Laure Manaudou",
+    "quote": "ON GAGNE AVEC SON COEUR PLUS QU'AVEC SES BRAS."
+  },
+  {
+    "id": 894,
+    "language": "fr",
+    "author": "Jean-Jacques Goldman",
+    "quote": "C'EST TA CHANCE, NE LA LAISSE PAS PASSER CE SOIR."
+  },
+  {
+    "id": 895,
+    "language": "fr",
+    "author": "Johnny Hallyday",
+    "quote": "POUR MOI LA VIE VA COMMENCER, C'EST MON DESTIN."
+  },
+  {
+    "id": 896,
+    "language": "fr",
+    "author": "Stromae",
+    "quote": "ON N'EST JAMAIS SEUL QUAND ON A DE LA MUSIQUE."
+  },
+  {
+    "id": 897,
+    "language": "fr",
+    "author": "Daft Punk",
+    "quote": "LA MUSIQUE EST UN VOYAGE SANS FIN NI FRONTIERE."
+  },
+  {
+    "id": 898,
+    "language": "fr",
+    "author": "Jean Nouvel",
+    "quote": "UN BATIMENT EST UNE EMOTION QUE L'ON HABITE."
+  },
+  {
+    "id": 899,
+    "language": "fr",
+    "author": "Philippe Starck",
+    "quote": "LE DESIGN DOIT AMELIORER LA VIE DU PLUS GRAND NOMBRE."
+  },
+  {
+    "id": 900,
+    "language": "fr",
+    "author": "Alain Ducasse",
+    "quote": "LA CUISINE EST UN DON DE SOI POUR LES AUTRES."
+  },
+  {
+    "id": 901,
+    "language": "en",
+    "author": "Winston Churchill",
+    "quote": "SUCCESS IS NOT FINAL, FAILURE IS NOT FATAL: IT IS THE COURAGE TO CONTINUE."
+  },
+  {
+    "id": 902,
+    "language": "en",
+    "author": "Confucius",
+    "quote": "IT DOES NOT MATTER HOW SLOWLY YOU GO AS LONG AS YOU DO NOT STOP."
+  },
+  {
+    "id": 903,
+    "language": "en",
+    "author": "George Addair",
+    "quote": "EVERYTHING YOU'VE EVER WANTED IS ON THE OTHER SIDE OF FEAR."
+  },
+  {
+    "id": 904,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "HARDSHIPS OFTEN PREPARE ORDINARY PEOPLE FOR AN EXTRAORDINARY DESTINY."
+  },
+  {
+    "id": 905,
+    "language": "en",
+    "author": "Theodore Roosevelt",
+    "quote": "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
+  },
+  {
+    "id": 906,
+    "language": "en",
+    "author": "Lou Holtz",
+    "quote": "YOUR TALENT DETERMINES WHAT YOU CAN DO. YOUR MOTIVATION DETERMINES HOW MUCH."
+  },
+  {
+    "id": 907,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "DON'T BE PUSHED AROUND BY THE FEARS IN YOUR MIND. BE LED BY THE DREAMS."
+  },
+  {
+    "id": 908,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "WORK HARD IN SILENCE, LET YOUR SUCCESS BE YOUR NOISE."
+  },
+  {
+    "id": 909,
+    "language": "en",
+    "author": "Eleanor Roosevelt",
+    "quote": "THE FUTURE BELONGS TO THOSE WHO BELIEVE IN THE BEAUTY OF THEIR DREAMS."
+  },
+  {
+    "id": 910,
+    "language": "en",
+    "author": "James Dean",
+    "quote": "DREAM AS IF YOU'LL LIVE FOREVER, LIVE AS IF YOU'LL DIE TODAY."
+  },
+  {
+    "id": 911,
+    "language": "en",
+    "author": "Joan Crawford",
+    "quote": "ONLY I CAN CHANGE MY LIFE. NO ONE CAN DO IT FOR ME."
+  },
+  {
+    "id": 912,
+    "language": "en",
+    "author": "Charles Swindoll",
+    "quote": "LIFE IS 10% WHAT HAPPENS TO YOU AND 90% HOW YOU REACT TO IT."
+  },
+  {
+    "id": 913,
+    "language": "en",
+    "author": "Helen Keller",
+    "quote": "OPTIMISM IS THE FAITH THAT LEADS TO ACHIEVEMENT."
+  },
+  {
+    "id": 914,
+    "language": "en",
+    "author": "Nelson Mandela",
+    "quote": "IT ALWAYS SEEMS IMPOSSIBLE UNTIL IT'S DONE."
+  },
+  {
+    "id": 915,
+    "language": "en",
+    "author": "Robert Schuller",
+    "quote": "PROBLEMS ARE NOT STOP SIGNS, THEY ARE GUIDELINES."
+  },
+  {
+    "id": 916,
+    "language": "en",
+    "author": "Booker T. Washington",
+    "quote": "IF YOU WANT TO LIFT YOURSELF UP, LIFT UP SOMEONE ELSE."
+  },
+  {
+    "id": 917,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "LIMITATIONS LIVE ONLY IN OUR MINDS. BUT IF WE USE OUR IMAGINATION."
+  },
+  {
+    "id": 918,
+    "language": "en",
+    "author": "Vince Lombardi",
+    "quote": "WINNING ISN'T EVERYTHING, BUT WANTING TO WIN IS."
+  },
+  {
+    "id": 919,
+    "language": "en",
+    "author": "Stephen Covey",
+    "quote": "I AM NOT A PRODUCT OF MY CIRCUMSTANCES. I AM A PRODUCT OF MY DECISIONS."
+  },
+  {
+    "id": 920,
+    "language": "en",
+    "author": "Christopher Columbus",
+    "quote": "YOU CAN NEVER CROSS THE OCEAN UNTIL YOU HAVE THE COURAGE TO LOSE SIGHT."
+  },
+  {
+    "id": 921,
+    "language": "en",
+    "author": "Jim Rohn",
+    "quote": "EITHER YOU RUN THE DAY OR THE DAY RUNS YOU."
+  },
+  {
+    "id": 922,
+    "language": "en",
+    "author": "Abraham Lincoln",
+    "quote": "THE BEST WAY TO PREDICT YOUR FUTURE IS TO CREATE IT."
+  },
+  {
+    "id": 923,
+    "language": "en",
+    "author": "Theodore Roosevelt",
+    "quote": "DO WHAT YOU CAN, WITH WHAT YOU HAVE, WHERE YOU ARE."
+  },
+  {
+    "id": 924,
+    "language": "en",
+    "author": "Steve Martin",
+    "quote": "BE SO GOOD THEY CAN'T IGNORE YOU. FOCUS ON THE WORK, NOT THE APPLAUSE."
+  },
+  {
+    "id": 925,
+    "language": "en",
+    "author": "Walt Disney",
+    "quote": "IF YOU CAN DREAM IT, YOU CAN DO IT. ALWAYS REMEMBER THAT THIS WHOLE THING."
+  },
+  {
+    "id": 926,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "DON'T WAIT. THE TIME WILL NEVER BE JUST RIGHT."
+  },
+  {
+    "id": 927,
+    "language": "en",
+    "author": "Arthur Ashe",
+    "quote": "START WHERE YOU ARE. USE WHAT YOU HAVE. DO WHAT YOU CAN."
+  },
+  {
+    "id": 928,
+    "language": "en",
+    "author": "Aristotle",
+    "quote": "QUALITY IS NOT AN ACT, IT IS A HABIT."
+  },
+  {
+    "id": 929,
+    "language": "en",
+    "author": "Tony Robbins",
+    "quote": "SETTING GOALS IS THE FIRST STEP IN TURNING THE INVISIBLE INTO THE VISIBLE."
+  },
+  {
+    "id": 930,
+    "language": "en",
+    "author": "Alfred A. Montapert",
+    "quote": "EXPECT PROBLEMS AND EAT THEM FOR BREAKFAST."
+  },
+  {
+    "id": 931,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "THERE IS NO SUBSTITUTE FOR HARD WORK. NEVER GIVE UP ON YOUR GOALS."
+  },
+  {
+    "id": 932,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "AIM FOR THE MOON. IF YOU MISS, YOU MAY HIT A STAR."
+  },
+  {
+    "id": 933,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "SMALL DEEDS DONE ARE BETTER THAN GREAT DEEDS PLANNED."
+  },
+  {
+    "id": 934,
+    "language": "en",
+    "author": "Pablo Picasso",
+    "quote": "ACTION IS THE FOUNDATIONAL KEY TO ALL SUCCESS."
+  },
+  {
+    "id": 935,
+    "language": "en",
+    "author": "Eleanor Roosevelt",
+    "quote": "YOU MUST DO THE THINGS YOU THINK YOU CANNOT DO."
+  },
+  {
+    "id": 936,
+    "language": "en",
+    "author": "Mark Twain",
+    "quote": "THE SECRET OF GETTING AHEAD IS GETTING STARTED."
+  },
+  {
+    "id": 937,
+    "language": "en",
+    "author": "George Eliot",
+    "quote": "IT IS NEVER TOO LATE TO BE WHAT YOU MIGHT HAVE BEEN."
+  },
+  {
+    "id": 938,
+    "language": "en",
+    "author": "C.S. Lewis",
+    "quote": "YOU ARE NEVER TOO OLD TO SET ANOTHER GOAL OR TO DREAM A NEW DREAM."
+  },
+  {
+    "id": 939,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "TO BE THE BEST, YOU MUST BE ABLE TO HANDLE THE WORST."
+  },
+  {
+    "id": 940,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "PERSISTENCE GUARANTEES THAT RESULTS ARE INEVITABLE."
+  },
+  {
+    "id": 941,
+    "language": "en",
+    "author": "Jim Rohn",
+    "quote": "DISCIPLINE IS THE BRIDGE BETWEEN GOALS AND ACCOMPLISHMENT."
+  },
+  {
+    "id": 942,
+    "language": "en",
+    "author": "Steve Jobs",
+    "quote": "THE ONLY WAY TO DO GREAT WORK IS TO LOVE WHAT YOU DO."
+  },
+  {
+    "id": 943,
+    "language": "en",
+    "author": "Jim Rohn",
+    "quote": "DON'T LET YESTERDAY TAKE UP TOO MUCH OF TODAY."
+  },
+  {
+    "id": 944,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "YOU LEARN MORE FROM FAILURE THAN FROM SUCCESS."
+  },
+  {
+    "id": 945,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "KEEP GOING. YOUR HARDEST TIMES OFTEN LEAD TO THE GREATEST MOMENTS."
+  },
+  {
+    "id": 946,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "BUILD YOUR OWN DREAMS, OR SOMEONE ELSE WILL HIRE YOU TO BUILD THEIRS."
+  },
+  {
+    "id": 947,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "THE MAN WHO HAS CONFIDENCE IN HIMSELF GAINS THE CONFIDENCE OF OTHERS."
+  },
+  {
+    "id": 948,
+    "language": "en",
+    "author": "Unknown",
+    "quote": "COURAGE IS ONE STEP AHEAD OF FEAR. IT IS THE POWER TO KEEP MOVING."
+  },
+  {
+    "id": 949,
+    "language": "en",
+    "author": "Winston Churchill",
+    "quote": "IF YOU'RE GOING THROUGH HELL, KEEP GOING."
+  },
+  {
+    "id": 950,
+    "language": "en",
+    "author": "Henry Ford",
+    "quote": "SUCCESS USUALLY COMES TO THOSE WHO ARE TOO BUSY TO BE LOOKING FOR IT."
+  },
+  {
+    "id": 951,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LA PERSEVERANCE EST LA CLE DU SUCCES."
+  },
+  {
+    "id": 952,
+    "language": "fr",
+    "author": "Nelson Mandela",
+    "quote": "LE COURAGE N'EST PAS L'ABSENCE DE PEUR, MAIS LA CAPACITE DE LA VAINCRE."
+  },
+  {
+    "id": 953,
+    "language": "fr",
+    "author": "Georg Hegel",
+    "quote": "RIEN DE GRAND NE S'EST ACCOMPLI DANS LE MONDE SANS PASSION."
+  },
+  {
+    "id": 954,
+    "language": "fr",
+    "author": "Pericles",
+    "quote": "LE SECRET DU BONHEUR EST LA LIBERTE, LE SECRET DE LA LIBERTE EST LE COURAGE."
+  },
+  {
+    "id": 955,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "IL N'Y A PAS DE CHEMIN VERS LE BONHEUR, LE BONHEUR EST LE CHEMIN."
+  },
+  {
+    "id": 956,
+    "language": "fr",
+    "author": "Antoine de Saint-Exupery",
+    "quote": "ON NE VOIT BIEN QU'AVEC LE COEUR. L'ESSENTIEL EST INVISIBLE POUR LES YEUX."
+  },
+  {
+    "id": 957,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "AGIS COMME S'IL ETAIT IMPOSSIBLE D'ECHOUER."
+  },
+  {
+    "id": 958,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LA CHUTE N'EST PAS UN ECHEC. L'ECHEC EST DE RESTER LA OU ON EST TOMBE."
+  },
+  {
+    "id": 959,
+    "language": "fr",
+    "author": "Jean-Michel Guenassia",
+    "quote": "LE MEILLEUR MOYEN DE REALISER SES REVES EST DE SE REVEILLER."
+  },
+  {
+    "id": 960,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "POUR EXECUTER DE GRANDES CHOSES, IL FAUT VIVRE COMME SI ON NE DEVAIT JAMAIS."
+  },
+  {
+    "id": 961,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "L'AVENIR APPARTIENT A CEUX QUI SE LEVENT TOT."
+  },
+  {
+    "id": 962,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "TOUT CE QUE L'ESPRIT PEUT CONCEVOIR ET CROIRE, IL PEUT L'ACCOMPLIR."
+  },
+  {
+    "id": 963,
+    "language": "fr",
+    "author": "Winston Churchill",
+    "quote": "LE SUCCES C'EST D'ALLER D'ECHEC EN ECHEC SANS PERDRE SON ENTHOUSIASME."
+  },
+  {
+    "id": 964,
+    "language": "fr",
+    "author": "Oscar Wilde",
+    "quote": "SOYEZ VOUS-MEME, TOUS LES AUTRES SONT DEJA PRIS."
+  },
+  {
+    "id": 965,
+    "language": "fr",
+    "author": "Albert Einstein",
+    "quote": "L'IMAGINATION EST PLUS IMPORTANTE QUE LE SAVOIR."
+  },
+  {
+    "id": 966,
+    "language": "fr",
+    "author": "Nelson Mandela",
+    "quote": "L'EDUCATION EST L'ARME LA PLUS PUISSANTE POUR CHANGER LE MONDE."
+  },
+  {
+    "id": 967,
+    "language": "fr",
+    "author": "Oscar Wilde",
+    "quote": "VIVRE, C'EST CE QU'IL Y A DE PLUS RARE. LA PLUPART DES GENS EXISTENT."
+  },
+  {
+    "id": 968,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LE BONHEUR N'EST PAS UNE DESTINATION, C'EST UNE FACON DE VOYAGER."
+  },
+  {
+    "id": 969,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LA VIE EST UN DEFI A RELEVER, UN BONHEUR A MERITER, UNE AVENTURE A TENTER."
+  },
+  {
+    "id": 970,
+    "language": "fr",
+    "author": "Winston Churchill",
+    "quote": "NE CRAIGNEZ PAS LA PERFECTION, VOUS NE L'ATTEINDREZ JAMAIS."
+  },
+  {
+    "id": 971,
+    "language": "fr",
+    "author": "Confucius",
+    "quote": "CHOISISSEZ UN TRAVAIL QUE VOUS AIMEZ ET VOUS N'AUREZ PAS A TRAVAILLER."
+  },
+  {
+    "id": 972,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LE MONDE APPARTIENT AUX OPTIMISTES, LES PESSIMISTES NE SONT QUE DES."
+  },
+  {
+    "id": 973,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LES LIMITES NE SONT QUE DANS NOS TETES."
+  },
+  {
+    "id": 974,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "CHAQUE JOUR EST UNE NOUVELLE CHANCE D'ETRE MEILLEUR."
+  },
+  {
+    "id": 975,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LA VOLONTE EST LA FORCE QUI PERMET DE FRANCHIR TOUTES LES MONTAGNES."
+  },
+  {
+    "id": 976,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LE TALENT EST UNE FORCE, MAIS LA PATIENCE EST UNE VERTU."
+  },
+  {
+    "id": 977,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "IL FAUT VISER LA LUNE POUR TOMBER DANS LES ETOILES."
+  },
+  {
+    "id": 978,
+    "language": "fr",
+    "author": "Jean-Jacques Rousseau",
+    "quote": "LA PATIENCE EST AMERE, MAIS SON FRUIT EST DOUX."
+  },
+  {
+    "id": 979,
+    "language": "fr",
+    "author": "Nelson Mandela",
+    "quote": "LA PLUS GRANDE GLOIRE N'EST PAS DE NE JAMAIS TOMBER, MAIS DE SE RELEVER."
+  },
+  {
+    "id": 980,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "TOUT EST POSSIBLE A QUI REVE, TRAVAILLE ET N'ABANDONNE JAMAIS."
+  },
+  {
+    "id": 981,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LE BONHEUR EST SOUVENT LA SEULE CHOSE QU'ON PUISSE DONNER SANS L'AVOIR."
+  },
+  {
+    "id": 982,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "SEUL ON VA PLUS VITE, ENSEMBLE ON VA PLUS LOIN."
+  },
+  {
+    "id": 983,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LE SUCCES N'EST PAS LA CLE DU BONHEUR. LE BONHEUR EST LA CLE DU SUCCES."
+  },
+  {
+    "id": 984,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LA VIE NE CONSISTE PAS A ATTENDRE QUE LES ORAGES PASSENT."
+  },
+  {
+    "id": 985,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "APPRENDRE A DANSER SOUS LA PLUIE EST LA CLE DU BONHEUR."
+  },
+  {
+    "id": 986,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "NE JUGEZ PAS CHAQUE JOUR A LA RECOLTE QUE VOUS FAITES."
+  },
+  {
+    "id": 987,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LE RIRE EST LA DISTANCE LA PLUS COURTE ENTRE DEUX PERSONNES."
+  },
+  {
+    "id": 988,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "FAITES DE VOTRE VIE UN REVE, ET D'UN REVE UNE REALITE."
+  },
+  {
+    "id": 989,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "ON NE REGRETTE QUE CE QU'ON N'A PAS FAIT."
+  },
+  {
+    "id": 990,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LA VERITE EST CE QUI REND LE MONDE PLUS BEAU."
+  },
+  {
+    "id": 991,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LE DESTIN N'EST PAS UNE QUESTION DE CHANCE, C'EST UNE QUESTION DE CHOIX."
+  },
+  {
+    "id": 992,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "TRAVAILLEZ DUR EN SILENCE ET LAISSEZ LE SUCCES FAIRE DU BRUIT."
+  },
+  {
+    "id": 993,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LA VIE EST COURTE, PROFITEZ DE CHAQUE INSTANT."
+  },
+  {
+    "id": 994,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LE SAVOIR EST LA SEULE RICHESSE QUE L'ON PEUT EMPORTER."
+  },
+  {
+    "id": 995,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "CROIS EN TES REVES ET ILS SE REALISERONT PEUT-ETRE."
+  },
+  {
+    "id": 996,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "L'ACTION EST LA CLE FONDAMENTALE DE TOUT SUCCES."
+  },
+  {
+    "id": 997,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "ON N'EST JAMAIS TROP VIEUX POUR SE FIXER UN NOUVEL OBJECTIF."
+  },
+  {
+    "id": 998,
+    "language": "fr",
+    "author": "Victor Hugo",
+    "quote": "LA VIE EST UNE FLEUR DONT L'AMOUR EST LE MIEL."
+  },
+  {
+    "id": 999,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "IL N'Y A PAS DE REUSSITE SANS EFFORT CONSTANT."
+  },
+  {
+    "id": 1000,
+    "language": "fr",
+    "author": "Unknown",
+    "quote": "LA FIN D'UN VOYAGE EST LE DEBUT D'UN AUTRE."
+  },
+  {
+    "id": 1001,
+    "language": "en",
+    "author": "Amelia Earhart",
+    "quote": "ADVENTURE IS WORTHWHILE IN ITSELF."
+  },
+  {
+    "id": 1002,
+    "language": "en",
+    "author": "Jack Kerouac",
+    "quote": "LIVE, TRAVEL, ADVENTURE, BLESS, AND DON'T BE SORRY."
+  },
+  {
+    "id": 1003,
+    "language": "en",
+    "author": "Robert Frost",
+    "quote": "TWO ROADS DIVERGED IN A WOOD, AND I TOOK THE ONE LESS TRAVELED."
+  },
+  {
+    "id": 1004,
+    "language": "en",
+    "author": "Helen Keller",
+    "quote": "LIFE IS EITHER A DARING ADVENTURE OR NOTHING AT ALL."
+  },
+  {
+    "id": 1005,
+    "language": "en",
+    "author": "T.S. Eliot",
+    "quote": "ONLY THOSE WHO WILL RISK GOING TOO FAR CAN POSSIBLY FIND OUT."
+  },
+  {
+    "id": 1006,
+    "language": "en",
+    "author": "Andre Gide",
+    "quote": "MAN CANNOT DISCOVER NEW OCEANS UNLESS HE HAS THE COURAGE."
+  },
+  {
+    "id": 1007,
+    "language": "en",
+    "author": "Paulo Coelho",
+    "quote": "IT'S THE POSSIBILITY OF HAVING A DREAM COME TRUE THAT MAKES."
+  },
+  {
+    "id": 1008,
+    "language": "en",
+    "author": "Ralph Waldo Emerson",
+    "quote": "DO NOT GO WHERE THE PATH MAY LEAD, GO INSTEAD WHERE THERE IS."
+  },
+  {
+    "id": 1009,
+    "language": "en",
+    "author": "Jon Krakauer",
+    "quote": "THE CORE OF MANS SPIRIT COMES FROM NEW EXPERIENCES."
+  },
+  {
+    "id": 1010,
+    "language": "en",
+    "author": "Terry Pratchett",
+    "quote": "COMING BACK TO WHERE YOU STARTED IS NOT THE SAME AS NEVER."
+  },
+  {
+    "id": 1011,
+    "language": "en",
+    "author": "Mary Anne Radmacher",
+    "quote": "COURAGE DOES NOT ALWAYS ROAR. SOMETIMES IT IS THE QUIET VOICE."
+  },
+  {
+    "id": 1012,
+    "language": "en",
+    "author": "Maya Angelou",
+    "quote": "YOU MAY ENCOUNTER MANY DEFEATS, BUT YOU MUST NOT BE DEFEATED."
+  },
+  {
+    "id": 1013,
+    "language": "en",
+    "author": "Elizabeth Gilbert",
+    "quote": "TO BE ABLE TO FIND YOUR OWN WAY IS THE ONLY WAY."
+  },
+  {
+    "id": 1014,
+    "language": "en",
+    "author": "J.R.R. Tolkien",
+    "quote": "NOT ALL THOSE WHO WANDER ARE LOST."
+  },
+  {
+    "id": 1015,
+    "language": "en",
+    "author": "Lewis Carroll",
+    "quote": "IF YOU DON'T KNOW WHERE YOU ARE GOING, ANY ROAD WILL GET YOU THERE."
+  },
+  {
+    "id": 1016,
+    "language": "en",
+    "author": "Mark Twain",
+    "quote": "TWENTY YEARS FROM NOW YOU WILL BE MORE DISAPPOINTED BY THE THINGS."
+  },
+  {
+    "id": 1017,
+    "language": "en",
+    "author": "Ibn Battuta",
+    "quote": "TRAVELING LEAVES YOU SPEECHLESS, THEN TURNS YOU INTO A STORYTELLER."
+  },
+  {
+    "id": 1018,
+    "language": "en",
+    "author": "Eleanor Roosevelt",
+    "quote": "THE PURPOSE OF LIFE IS TO LIVE IT, TO TASTE EXPERIENCE."
+  },
+  {
+    "id": 1019,
+    "language": "en",
+    "author": "Marcel Proust",
+    "quote": "THE REAL VOYAGE OF DISCOVERY CONSISTS NOT IN SEEKING NEW."
+  },
+  {
+    "id": 1020,
+    "language": "en",
+    "author": "Henry David Thoreau",
+    "quote": "GO CONFIDENTLY IN THE DIRECTION OF YOUR DREAMS."
+  },
+  {
+    "id": 1021,
+    "language": "en",
+    "author": "Kurt Vonnegut",
+    "quote": "WE HAVE TO BE CONTINUALLY JUMPING OFF CLIFFS AND DEVELOPING."
+  },
+  {
+    "id": 1022,
+    "language": "en",
+    "author": "Ray Bradbury",
+    "quote": "LOVE WHAT YOU DO AND DO WHAT YOU LOVE."
+  },
+  {
+    "id": 1023,
+    "language": "en",
+    "author": "Neil Gaiman",
+    "quote": "GO AND MAKE INTERESTING MISTAKES, MAKE GLORIOUS AND FANTASTIC."
+  },
+  {
+    "id": 1024,
+    "language": "en",
+    "author": "Pablo Picasso",
+    "quote": "EVERYTHING YOU CAN IMAGINE IS REAL."
+  },
+  {
+    "id": 1025,
+    "language": "en",
+    "author": "Vincent van Gogh",
+    "quote": "I WOULD RATHER DIE OF PASSION THAN OF BOREDOM."
+  },
+  {
+    "id": 1026,
+    "language": "en",
+    "author": "Salvador Dali",
+    "quote": "AT THE AGE OF SIX I WANTED TO BE A COOK. AT SEVEN I WANTED."
+  },
+  {
+    "id": 1027,
+    "language": "en",
+    "author": "Andy Warhol",
+    "quote": "THEY SAY TIME CHANGES THINGS, BUT YOU ACTUALLY HAVE TO CHANGE."
+  },
+  {
+    "id": 1028,
+    "language": "en",
+    "author": "Georgia O'Keeffe",
+    "quote": "I'VE BEEN ABSOLUTELY TERRIFIED EVERY MOMENT OF MY LIFE."
+  },
+  {
+    "id": 1029,
+    "language": "en",
+    "author": "Henri Matisse",
+    "quote": "CREATIVITY TAKES COURAGE."
+  },
+  {
+    "id": 1030,
+    "language": "en",
+    "author": "Frank Zappa",
+    "quote": "WITHOUT DEVIATION FROM THE NORM, PROGRESS IS NOT POSSIBLE."
+  },
+  {
+    "id": 1031,
+    "language": "en",
+    "author": "Steve Jobs",
+    "quote": "CREATIVITY IS JUST CONNECTING THINGS."
+  },
+  {
+    "id": 1032,
+    "language": "en",
+    "author": "David Bowie",
+    "quote": "TOMORROW BELONGS TO THOSE WHO CAN HEAR IT COMING."
+  },
+  {
+    "id": 1033,
+    "language": "en",
+    "author": "John Lennon",
+    "quote": "EVERYTHING WILL BE OKAY IN THE END. IF IT'S NOT OKAY, IT'S NOT."
+  },
+  {
+    "id": 1034,
+    "language": "en",
+    "author": "George Harrison",
+    "quote": "IF YOU DON'T KNOW WHERE YOU'RE GOING, ANY ROAD WILL TAKE YOU."
+  },
+  {
+    "id": 1035,
+    "language": "en",
+    "author": "Ringo Starr",
+    "quote": "I GET BY WITH A LITTLE HELP FROM MY FRIENDS."
+  },
+  {
+    "id": 1036,
+    "language": "en",
+    "author": "Freddie Mercury",
+    "quote": "I WON'T BE A ROCK STAR. I WILL BE A LEGEND."
+  },
+  {
+    "id": 1037,
+    "language": "en",
+    "author": "Mick Jagger",
+    "quote": "YOU CAN'T ALWAYS GET WHAT YOU WANT, BUT IF YOU TRY SOMETIMES."
+  },
+  {
+    "id": 1038,
+    "language": "en",
+    "author": "Keith Richards",
+    "quote": "MUSIC IS A LANGUAGE THAT DOESN'T SPEAK IN PARTICULAR WORDS."
+  },
+  {
+    "id": 1039,
+    "language": "en",
+    "author": "Eric Clapton",
+    "quote": "EVERY TIME YOU PICK UP YOUR GUITAR TO PLAY, PLAY AS IF IT'S."
+  },
+  {
+    "id": 1040,
+    "language": "en",
+    "author": "Jimi Hendrix",
+    "quote": "WHEN THE POWER OF LOVE OVERCOMES THE LOVE OF POWER, THE WORLD."
+  },
+  {
+    "id": 1041,
+    "language": "en",
+    "author": "Bob Marley",
+    "quote": "THE GREATNESS OF A MAN IS NOT IN HOW MUCH WEALTH HE ACQUIRES."
+  },
+  {
+    "id": 1042,
+    "language": "en",
+    "author": "Janis Joplin",
+    "quote": "DON'T COMPROMISE YOURSELF. YOU ARE ALL YOU'VE GOT."
+  },
+  {
+    "id": 1043,
+    "language": "en",
+    "author": "Joni Mitchell",
+    "quote": "WE ARE STARDUST, WE ARE GOLDEN, AND WE'VE GOT TO GET OURSELVES."
+  },
+  {
+    "id": 1044,
+    "language": "en",
+    "author": "Patti Smith",
+    "quote": "TO ME, PUNK ROCK IS THE FREEDOM TO CREATE, FREEDOM TO BE."
+  },
+  {
+    "id": 1045,
+    "language": "en",
+    "author": "Debbie Harry",
+    "quote": "I HAVE A LOT OF REGRETS, BUT I'M NOT GOING TO THINK OF THEM."
+  },
+  {
+    "id": 1046,
+    "language": "en",
+    "author": "Stevie Nicks",
+    "quote": "YOUR DESTINY IS WHAT YOU MAKE OF IT."
+  },
+  {
+    "id": 1047,
+    "language": "en",
+    "author": "Bruce Springsteen",
+    "quote": "IT'S A TOWN FULL OF LOSERS, I'M PULLING OUT OF HERE TO WIN."
+  },
+  {
+    "id": 1048,
+    "language": "en",
+    "author": "Tom Petty",
+    "quote": "YOU BELONG AMONG THE WILDFLOWERS, YOU BELONG SOMEWHERE CLOSE."
+  },
+  {
+    "id": 1049,
+    "language": "en",
+    "author": "Prince",
+    "quote": "A STRONG SPIRIT TRANSCENDS RULES."
+  },
+  {
+    "id": 1050,
+    "language": "en",
+    "author": "Madonna",
+    "quote": "A LOT OF PEOPLE ARE AFRAID TO SAY WHAT THEY WANT."
+  },
+  {
+    "id": 1051,
+    "language": "fr",
+    "author": "Jacques Brel",
+    "quote": "LE TALENT, C'EST D'AVOIR ENVIE DE FAIRE QUELQUE CHOSE."
+  },
+  {
+    "id": 1052,
+    "language": "fr",
+    "author": "Edith Piaf",
+    "quote": "JE ME FOUS DU PASSE. LE PRESENT ME SUFFIT AMPLEMENT."
+  },
+  {
+    "id": 1053,
+    "language": "fr",
+    "author": "Charles Aznavour",
+    "quote": "IL FAUT SAVOIR QUITTER LA TABLE QUAND L'AMOUR EST DESSERVI."
+  },
+  {
+    "id": 1054,
+    "language": "fr",
+    "author": "Georges Brassens",
+    "quote": "LE TEMPS NE FAIT RIEN A L'AFFAIRE. QUAND ON EST CON, ON EST."
+  },
+  {
+    "id": 1055,
+    "language": "fr",
+    "author": "Leo Ferre",
+    "quote": "AVEC LE TEMPS, VA, TOUT S'EN VA."
+  },
+  {
+    "id": 1056,
+    "language": "fr",
+    "author": "Serge Gainsbourg",
+    "quote": "JE CONNAIS MES LIMITES. C'EST POURQUOI JE VAIS AU-DELA."
+  },
+  {
+    "id": 1057,
+    "language": "fr",
+    "author": "Francoise Hardy",
+    "quote": "LE TEMPS DE L'AMOUR, C'EST LONG ET C'EST COURT A LA FOIS."
+  },
+  {
+    "id": 1058,
+    "language": "fr",
+    "author": "Barbara",
+    "quote": "LE PLUS BEAU VOYAGE, C'EST CELUI QU'ON N'A PAS ENCORE FAIT."
+  },
+  {
+    "id": 1059,
+    "language": "fr",
+    "author": "Dalida",
+    "quote": "PAROLES, PAROLES, TOUJOURS DES PAROLES ET ENCORE DES MOTS."
+  },
+  {
+    "id": 1060,
+    "language": "fr",
+    "author": "Yves Montand",
+    "quote": "C'EST SI BON DE SE DIRE DES MOTS DOUX."
+  },
+  {
+    "id": 1061,
+    "language": "fr",
+    "author": "Juliette Greco",
+    "quote": "JE SUIS COMME JE SUIS. JE SUIS FAITE COMME CA."
+  },
+  {
+    "id": 1062,
+    "language": "fr",
+    "author": "Alain Bashung",
+    "quote": "J'AI FAIM DE TOUT, J'AI FAIM DE VOUS."
+  },
+  {
+    "id": 1063,
+    "language": "fr",
+    "author": "Renaud",
+    "quote": "C'EST PAS L'HOMME QUI PREND LA MER, C'EST LA MER QUI PREND."
+  },
+  {
+    "id": 1064,
+    "language": "fr",
+    "author": "Francis Cabrel",
+    "quote": "JE L'AIME A MOURIR, ELLE A GOMME LES CHIFFRES DES HORLOGES."
+  },
+  {
+    "id": 1065,
+    "language": "fr",
+    "author": "Michel Berger",
+    "quote": "QUELQUES MOTS D'AMOUR, C'EST TOUT CE QU'IL ME FAUT."
+  },
+  {
+    "id": 1066,
+    "language": "fr",
+    "author": "France Gall",
+    "quote": "RESISTE, PROUVE QUE TU EXISTES."
+  },
+  {
+    "id": 1067,
+    "language": "fr",
+    "author": "Daniel Balavoine",
+    "quote": "JE NE SUIS PAS UN HEROS, MES FAUX PAS ME COLLENT A LA PEAU."
+  },
+  {
+    "id": 1068,
+    "language": "fr",
+    "author": "Joe Dassin",
+    "quote": "AUX CHAMPS-ELYSEES, AU SOLEIL, SOUS LA PLUIE, A MIDI OU A."
+  },
+  {
+    "id": 1069,
+    "language": "fr",
+    "author": "Charles Trenet",
+    "quote": "LA MER QU'ON VOIT DANSER LE LONG DES GOLFES CLAIRS."
+  },
+  {
+    "id": 1070,
+    "language": "fr",
+    "author": "Maurice Chevalier",
+    "quote": "POUR ETRE HEUREUX, IL FAUT PEU DE CHOSES."
+  },
+  {
+    "id": 1071,
+    "language": "fr",
+    "author": "Jean Cocteau",
+    "quote": "UN CHEF-D'OEUVRE EST UNE BATAILLE GAGNEE CONTRE LA MORT."
+  },
+  {
+    "id": 1072,
+    "language": "fr",
+    "author": "Paul Cezanne",
+    "quote": "PEINDRE D'APRES NATURE, CE N'EST PAS COPIER L'OBJECTIF."
+  },
+  {
+    "id": 1073,
+    "language": "fr",
+    "author": "Claude Monet",
+    "quote": "JE VEUX PEINDRE L'AIR DANS LEQUEL SE TROUVE LE PONT."
+  },
+  {
+    "id": 1074,
+    "language": "fr",
+    "author": "Pierre-Auguste Renoir",
+    "quote": "LA DOULEUR PASSE, MAIS LA BEAUTE RESTE."
+  },
+  {
+    "id": 1075,
+    "language": "fr",
+    "author": "Edgar Degas",
+    "quote": "L'ART N'EST PAS CE QUE VOUS VOYEZ, MAIS CE QUE VOUS FAITES."
+  },
+  {
+    "id": 1076,
+    "language": "fr",
+    "author": "Auguste Rodin",
+    "quote": "L'ART, C'EST LA CONTEMPLATION. C'EST LE PLAISIR DE L'ESPRIT."
+  },
+  {
+    "id": 1077,
+    "language": "fr",
+    "author": "Gustave Courbet",
+    "quote": "JE NE PEUX PAS PEINDRE UN ANGE, CAR JE N'EN AI JAMAIS VU."
+  },
+  {
+    "id": 1078,
+    "language": "fr",
+    "author": "Eugene Delacroix",
+    "quote": "LE TALENT FAIT CE QU'IL VEUT, LE GENIE FAIT CE QU'IL PEUT."
+  },
+  {
+    "id": 1079,
+    "language": "fr",
+    "author": "Camille Pissarro",
+    "quote": "HEUREUX SONT CEUX QUI VOIENT DE BELLES CHOSES DANS LES."
+  },
+  {
+    "id": 1080,
+    "language": "fr",
+    "author": "Marc Chagall",
+    "quote": "SI TOUTE VIE FINIT INEVITABLEMENT, NOUS DEVONS LA COLORER."
+  },
+  {
+    "id": 1081,
+    "language": "fr",
+    "author": "Georges Braque",
+    "quote": "L'ART EST FAIT POUR TROUBLER, LA SCIENCE RASSURE."
+  },
+  {
+    "id": 1082,
+    "language": "fr",
+    "author": "Henri Rousseau",
+    "quote": "RIEN NE ME FAIT AUTANT DE PLAISIR QUE DE CONTEMPLER LA."
+  },
+  {
+    "id": 1083,
+    "language": "fr",
+    "author": "Raoul Dufy",
+    "quote": "LE BLEU EST LA SEULE COULEUR QUI GARDE SA PROPRE CARACTERE."
+  },
+  {
+    "id": 1084,
+    "language": "fr",
+    "author": "Marcel Duchamp",
+    "quote": "JE ME SERS DE L'ART POUR ETABLIR UN MODE DE VIE."
+  },
+  {
+    "id": 1085,
+    "language": "fr",
+    "author": "Jean Arp",
+    "quote": "L'ART EST UN FRUIT QUI POUSSE DANS L'HOMME."
+  },
+  {
+    "id": 1086,
+    "language": "fr",
+    "author": "Francis Picabia",
+    "quote": "NOTRE TETE EST RONDE POUR PERMETTRE A LA PENSEE DE CHANGER."
+  },
+  {
+    "id": 1087,
+    "language": "fr",
+    "author": "Yves Klein",
+    "quote": "L'ESSENTIEL N'A PAS DE FORME."
+  },
+  {
+    "id": 1088,
+    "language": "fr",
+    "author": "Niki de Saint Phalle",
+    "quote": "L'ART EST MA MANIERE DE CRIER."
+  },
+  {
+    "id": 1089,
+    "language": "fr",
+    "author": "Louise Bourgeois",
+    "quote": "L'ART EST UNE GARANTIE DE SANTE MENTALE."
+  },
+  {
+    "id": 1090,
+    "language": "fr",
+    "author": "Sonia Delaunay",
+    "quote": "CELUI QUI SAIT VIVRE LE PRESENT VIT PARTOUT."
+  },
+  {
+    "id": 1091,
+    "language": "fr",
+    "author": "Alberto Giacometti",
+    "quote": "PLUS JE TRAVAILLE, PLUS JE VOIS LES CHOSES DIFFEREMMENT."
+  },
+  {
+    "id": 1092,
+    "language": "fr",
+    "author": "Fernand Leger",
+    "quote": "L'HOMME A BESOIN DE COULEUR POUR VIVRE."
+  },
+  {
+    "id": 1093,
+    "language": "fr",
+    "author": "Robert Delaunay",
+    "quote": "LA COULEUR EST LA FORCE MEME DE LA VIE."
+  },
+  {
+    "id": 1094,
+    "language": "fr",
+    "author": "Paul Klee",
+    "quote": "L'ART NE REPRODUIT PAS LE VISIBLE, IL REND VISIBLE."
+  },
+  {
+    "id": 1095,
+    "language": "fr",
+    "author": "Jean Dubuffet",
+    "quote": "L'ART DOIT TOUJOURS FAIRE UN PEU RIRE ET UN PEU PEUR."
+  },
+  {
+    "id": 1096,
+    "language": "fr",
+    "author": "Pierre Soulages",
+    "quote": "C'EST CE QUE JE FAIS QUI M'APPREND CE QUE JE CHERCHE."
+  },
+  {
+    "id": 1097,
+    "language": "fr",
+    "author": "Georges Rouault",
+    "quote": "L'ART EST UNE PLAINTE QUI DEVIENT UN CHANT DE JOIE."
+  },
+  {
+    "id": 1098,
+    "language": "fr",
+    "author": "Maurice Vlaminck",
+    "quote": "LA PEINTURE EST UNE MANIERE DE VIVRE."
+  },
+  {
+    "id": 1099,
+    "language": "fr",
+    "author": "Andre Derain",
+    "quote": "LES COULEURS ETAIENT POUR NOUS DES CARTOUCHES DE DYNAMITE."
+  },
+  {
+    "id": 1100,
+    "language": "fr",
+    "author": "Kees van Dongen",
+    "quote": "LA PEINTURE EST LE PLUS BEAU DES MENSONGES."
+  }
+]
