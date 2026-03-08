@@ -1,2 +1,6 @@
 # DQ
 Multiplayer version of DQ
+
+This version 7.3 allows two players to solve one random quote afer another, in French or in English, while remaining synced through Websockets, on Iphone 16, Mac, Android (S9,S22) , Safari or Chrome. French names are in green, English ones in blue. When a quotes diapoints, just flag it after solving it, the ids will be stored locally and shared between the players. When a new DQ version is available, force refresh on the home screen. If that fails IM the github URL; that usually does it.
+
+As more quotes are removed, a new batch (usually 100 at a time) will be created by Gemini. There are currently about 500 French and 500 English quotes in the github repository quotes.json file .  Before Andre initiates the Merge of the quotes.json master file with the new batch, he will collect all rejected quotes IDs from participating devices (copy rejected ids button, paste into an email and send me the list) and enter that list in the Merge.py program before running it. These rejected quotes will remain in the quotes.json file but their ID will become negative. The DropQuote program will only randomly choose quotes with positive IDs. The merge program insures there are no duplicate quote while merging, so a rejected quote will not become visible again, even if proposed in a new batch. 
